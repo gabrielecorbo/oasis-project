@@ -4,7 +4,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from pulp import *
 from scipy.spatial import distance
-from plot_roads import read_shapefile, plot_roads
+#from plot_roads import read_shapefile, plot_roads
 import math
 
 desired_width = 320
@@ -13,9 +13,9 @@ np.set_printoptions(linewidth=desired_width)
 pd.set_option('display.max_columns', 12)
 
 # Import GIS data and car park location data
-GIS_data = pd.read_csv('/optimise_EV_location/mean_car_count_per_grid.csv')
-car_park_data = pd.read_csv('/optimise_EV_location/council_car_parks_in_grid.csv')
-existing_chg_data = pd.read_csv('/optimise_EV_location/existing_ev_charging_locations_touching.csv')
+GIS_data = pd.read_csv('D:/ricca/Documents/ASP/Github/oasis-project/manchester/csv_files/mean_car_count_per_grid.csv')
+car_park_data = pd.read_csv('D:/ricca/Documents/ASP/Github/oasis-project/manchester/csv_files/council_car_parks_in_grid.csv')
+existing_chg_data = pd.read_csv('D:/ricca/Documents/ASP/Github/oasis-project/manchester/csv_files/existing_ev_charging_locations_touching.csv')
 
 GIS_df = pd.DataFrame(GIS_data)
 car_park_df = pd.DataFrame(car_park_data)
@@ -44,7 +44,6 @@ def gen_sets(df_demand, df_parking):
     demand_lc = df_demand.index.tolist()
     # set of candidates for charging station locations (currently existing parking lots)
     chg_lc = df_parking.index.tolist()
-
     return demand_lc, chg_lc
 
 
