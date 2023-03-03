@@ -13,9 +13,9 @@ np.set_printoptions(linewidth=desired_width)
 pd.set_option('display.max_columns', 12)
 
 # Import GIS data and car park location data
-GIS_data = pd.read_csv('D:/ricca/Documents/ASP/Github/oasis-project/manchester/csv_files/mean_car_count_per_grid.csv')
-car_park_data = pd.read_csv('D:/ricca/Documents/ASP/Github/oasis-project/manchester/csv_files/council_car_parks_in_grid.csv')
-existing_chg_data = pd.read_csv('D:/ricca/Documents/ASP/Github/oasis-project/manchester/csv_files/existing_ev_charging_locations_touching.csv')
+GIS_data = pd.read_csv(os.getcwd()+'\\csv_files\\mean_car_count_per_grid.csv')
+car_park_data = pd.read_csv(os.getcwd()+'\\csv_files\\council_car_parks_in_grid.csv')
+existing_chg_data = pd.read_csv(os.getcwd()+'\\csv_files\\existing_ev_charging_locations_touching.csv')
 
 GIS_df = pd.DataFrame(GIS_data)
 car_park_df = pd.DataFrame(car_park_data)
@@ -205,8 +205,8 @@ def optimize(df_demand, df_parking):
 #     opt_loc_df2.to_csv(path_or_buf='optimal_locations.csv')
 
     # Import the road shapefiles
-    shp_path_roads_1 = '/optimise_EV_location/Road_Data/SD_region.shp'
-    shp_path_roads_2 = '/optimise_EV_location/Road_Data/SJ_region.shp'
+    shp_path_roads_1 = os.getcwd()+'\\shapefiles//SD_region.shp'
+    shp_path_roads_2 = os.getcwd()+'\\shapefiles\\SJ_region.shp'
 
     roads_df = plot_roads(shp_path_roads_1, shp_path_roads_2)
 

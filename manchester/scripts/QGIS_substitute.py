@@ -19,7 +19,7 @@ pd.set_option('display.max_columns', 10)
 
 
 # locate manchester traffic data
-data_path = 'D:/ricca/Documents/ASP/Github/oasis-project/manchester/csv_files/manchester_traffic_data.csv'
+data_path = os.getcwd()+'\\csv_files\\manchester_traffic_data.csv'
 data = pd.read_csv(data_path)
 raw_traffic_df = pd.DataFrame(data=data)
 print(raw_traffic_df.info())
@@ -52,11 +52,11 @@ traffic_points_gdf = point_df_to_gdf(raw_traffic_df)
 print(traffic_points_gdf.head())
 # traffic_points_gdf = traffic_points_gdf.set_crs(crs="EPSG:4326")
 print('Traffic CRS', '\n', traffic_points_gdf.crs)
-traffic_points_gdf.to_file("D:/ricca/Documents/ASP/Github/oasis-project/manchester/shapefiles/traffic_points.shp")
+traffic_points_gdf.to_file(os.getcwd()+'\\shapefiles\\traffic_points.shp')
 
 # adding roads to the plot of the traffic measurement points
-shp_path_roads_1 = 'D:/ricca/Documents/ASP/Github/oasis-project/manchester/shapefiles/SD_Region.shp'
-shp_path_roads_2 = 'D:/ricca/Documents/ASP/Github/oasis-project/manchester/shapefiles/SJ_Region.shp'
+shp_path_roads_1 = os.getcwd()+'\\shapefiles\\SD_Region.shp'
+shp_path_roads_2 = os.getcwd()+'\\shapefiles\\SJ_Region.shp'
 sf_roads_1, sf_roads_2 = (shp.Reader(shp_path_roads_1), shp.Reader(shp_path_roads_2, encoding='windows-1252'))
 
 def read_shapefile(sf):
@@ -141,16 +141,16 @@ def polygon_grid(ymin, ymax, xmin, xmax):
             polygons.append(Polygon([(x, y), (x + width, y), (x + width, y + height), (x, y + height)]))
     poly_grid = gpd.GeoDataFrame({'geometry': polygons})
     poly_grid.plot(ax=base, facecolor="none", edgecolor='black', lw=0.7, zorder=15)
-    poly_grid.to_file("D:/ricca/Documents/ASP/Github/oasis-project/manchester/shapefiles/grid.shp")
+    poly_grid.to_file(os.getcwd()+'\\shapefiles\\grid.shp')
 
 
 polygon_grid(x1_y1[1], x2_y2[1], x1_y1[0], x2_y2[0])
 
 
-traffic_points = gpd.read_file("D:/ricca/Documents/ASP/Github/oasis-project/manchester/shapefiles/traffic_points.shp")
+traffic_points = gpd.read_file(os.getcwd()+'\\shapefiles\\traffic_points.shp')
 print(traffic_points)
 
-polys = gpd.read_file("D:/ricca/Documents/ASP/Github/oasis-project/manchester/shapefiles/grid.shp")
+polys = gpd.read_file(os.getcwd()+'\\shapefiles\\grid.shp')
 
 points_polys = gpd.sjoin(traffic_points, polys, how="right")
 print(points_polys.head())
