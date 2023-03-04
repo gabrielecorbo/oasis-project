@@ -32,6 +32,8 @@ for x in cols[:-1]:
          polygons.append(Polygon([(x, y), (x + width, y), (x + width, y + height), (x, y + height)]))
 poly_grid = gpd.GeoDataFrame({'geometry': polygons})
 base = df_roads_exc_mtrwy.plot(figsize=(12, 8), color='deepskyblue', lw=0.4, zorder=0)  # Zorder controls the layering of the charts with
+base.set_xlim(x_lim)
+base.set_ylim(y_lim)
 poly_grid.plot(ax=base, facecolor="none", edgecolor='black', lw=0.7, zorder=15)
 
 #base = poly_grid.plot(figsize=(12, 8), facecolor="none", edgecolor='black', lw=0.7, zorder=15)  # Zorder controls the layering of the charts with

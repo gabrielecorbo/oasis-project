@@ -33,7 +33,7 @@ raw_traffic_df = raw_traffic_df.drop(labels=['region_id', 'region_name', 'local_
                                              'buses_and_coaches','lgvs', 'hgvs_2_rigid_axle', 'hgvs_3_rigid_axle',
                                              'hgvs_4_or_more_rigid_axle', 'hgvs_3_or_4_articulated_axle', 'hgvs_5_articulated_axle',
                                              'hgvs_6_articulated_axle' ,'all_hgvs','all_motor_vehicles','year','road_name','road_type',
-                                             'link_length_km','count_point_id',], axis=1)
+                                             'link_length_km','count_point_id'], axis=1)
 
 
 # Add a coordinate column to the dataframe and convert to UK EPSG:27700 (meters)
@@ -104,10 +104,22 @@ x2_y2 = (-2.1899126640044337, 53.50104467521926)            # longitudes (bounda
 #x2, y2 = pyproj.transform(inProj, outProj, x2, y2)
 #print(x1, y1)
 #print(x2, y2)
+#rect mio per clippare punti
+rect=Polygon([(x_lim[0],y_lim[0]),(x_lim[0],y_lim[1]),(x_lim[1],y_lim[1]),(x_lim[1],y_lim[0]),(x_lim[0],y_lim[0])])
+rect_gdf=gpd.GeoDataFrame([1], geometry = [rect], crs=27700)
+traffic_points_clip=traffic_points_gdf.clip(rect)
+traffic_points_clip.to_file(os.getcwd()+'\\shapefiles\\traffic_points_clip.shp')
+df_roads_exc_mtrwy_clip=df_roads_exc_mtrwy.clip(rect)
+#df_roads_exc_mtrwy_clip.to_file(os.getcwd()+'\\shapefiles\\map.shp')
+#
 base = df_roads_exc_mtrwy.plot(figsize=(12, 8), color='deepskyblue', lw=0.4, zorder=0)  # Zorder controls the layering of the charts with
 base.set_xlim(x_lim)
 base.set_ylim(y_lim)
-traffic_points_gdf.plot(ax=base, x='easting', y='northing', c='cars_and_taxis', cmap='viridis', kind='scatter', s=7, zorder=10)
+#plt.scatter(x=traffic_points_gdf.easting,y=traffic_points_gdf.northing,c=traffic_points_gdf.cars_and_taxis, cmap='plasma', s=15, zorder=10)
+
+#traffic_points_gdf.plot(ax=base, x='easting', y='northing', c='cars_and_taxis', cmap='viridis', kind='scatter', s=35, zorder=10)
+traffic_points_clip.plot(ax=base, x='easting', y='northing', c='cars_and_taxis', cmap='viridis', kind='scatter', s=35, zorder=10)
+
 #traffic_points_gdf.plot(ax=base, x='easting', y='northing', cmap='viridis', kind='scatter', s=7, zorder=10)
 
 
@@ -173,5 +185,6 @@ print(points_polys['index_left'].unique())
 stats_pt = points_polys.groupby('index_left')['cars_and_t'].agg(['mean'])
 stats_pt.columns = ["_".join(x) for x in stats_pt.columns.ravel()]
 print(stats_pt)
-
 plt.show()
+
+
