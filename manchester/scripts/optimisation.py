@@ -211,7 +211,7 @@ def optimize(df_demand, df_parking):
     df_roads_1, df_roads_2 = (read_shapefile(sf_roads_1), read_shapefile(sf_roads_2))
     df_roads = pd.concat([df_roads_1, df_roads_2])  # Combine road dataframes into single dataframe
 
-    roads_df = df_roads_exc_mtrwy
+    roads_df = df_roads_exc_mtrwy #accrocco al volo
 
     base = roads_df.plot(figsize=(12, 8), color='grey', lw=0.4, zorder=0)
     plot = sns.scatterplot(ax=base, x=opt_loc_df['Easting'], y=opt_loc_df['Northing'], color='dodgerblue', legend='full')
