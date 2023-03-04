@@ -29,30 +29,40 @@ print(raw_traffic_df.info())
 raw_traffic_df = raw_traffic_df[raw_traffic_df['year'] == 2019]
 raw_traffic_df = raw_traffic_df.drop(labels=['region_id', 'region_name', 'local_authority_id', 'local_authority_name',
                                              'start_junction_road_name', 'end_junction_road_name', 'link_length_miles',
-                                             'estimation_method'], axis=1)
+                                             'estimation_method', 'estimation_method_detailed', 'pedal_cycles', 'two_wheeled_motor_vehicles',
+                                             'buses_and_coaches','lgvs', 'hgvs_2_rigid_axle', 'hgvs_3_rigid_axle',
+                                             'hgvs_4_or_more_rigid_axle', 'hgvs_3_or_4_articulated_axle', 'hgvs_5_articulated_axle',
+                                             'hgvs_6_articulated_axle' ,'all_hgvs','all_motor_vehicles','year','road_name','road_type',
+                                             'link_length_km','count_point_id',], axis=1)
+
 
 # Add a coordinate column to the dataframe and convert to UK EPSG:27700 (meters)
-proj = pyproj.Transformer.from_crs(4326, 27700, always_xy=True)
-x1, y1 = (raw_traffic_df['longitude'], raw_traffic_df['latitude'])
-x2, y2 = proj.transform(x1, y1)
-x2, y2 = (pd.DataFrame(x2, columns=['horizontal']), pd.DataFrame(y2, columns=['vertical']))
-raw_traffic_df = pd.concat([raw_traffic_df, x2, y2], axis=1)
-
+#proj = pyproj.Transformer.from_crs(4326, 27700, always_xy=True)
+#x1, y1 = (raw_traffic_df['longitude'], raw_traffic_df['latitude'])
+#x2, y2 = proj.transform(x1, y1)
+#x2, y2 = (pd.DataFrame(x2, columns=['horizontal']), pd.DataFrame(y2, columns=['vertical']))
+#raw_traffic_df = pd.concat([raw_traffic_df, x2, y2], axis=1)
+#
 def point_df_to_gdf(df):
     """takes a dataframe with columns named 'longitude' and 'latitude'
     to transform to a geodataframe with point features"""
 
-    df['coordinates'] = df[['longitude', 'latitude']].values.tolist()
+    df['coordinates'] = df[['easting', 'northing']].values.tolist()
     df['coordinates'] = df['coordinates'].apply(Point)
     df = gpd.GeoDataFrame(df, geometry='coordinates')
     return df
 
 
+
 traffic_points_gdf = point_df_to_gdf(raw_traffic_df)
+#traffic_points_gdf = raw_traffic_df
+
 print(traffic_points_gdf.head())
-# traffic_points_gdf = traffic_points_gdf.set_crs(crs="EPSG:4326")
+#traffic_points_gdf = traffic_points_gdf.set_crs(crs="EPSG:4326")
 print('Traffic CRS', '\n', traffic_points_gdf.crs)
 traffic_points_gdf.to_file(os.getcwd()+'\\shapefiles\\traffic_points.shp')
+
+#sf_traffic_points
 
 # adding roads to the plot of the traffic measurement points
 shp_path_roads_1 = os.getcwd()+'\\shapefiles\\SD_Region.shp'
@@ -86,18 +96,19 @@ y_lim = (394500, 400500)                                    # y coordinates (bou
 x_lim = (382000, 387500)                                    # x coordinates (boundaries of city of Manchester)
 x1_y1 = (-2.272481011086273, 53.44695395956606)             # latitudes (boundaries of city of Manchester)
 x2_y2 = (-2.1899126640044337, 53.50104467521926)            # longitudes (boundaries of city of Manchester)
-# inProj = pyproj.CRS(init='epsg:27700')
-# outProj = pyproj.CRS(init='epsg:4326')
-# x1, y1 = x_lim[0], y_lim[0]
-# x2, y2 = x_lim[1], y_lim[1]
-# x1, y1 = pyproj.transform(inProj, outProj, x1, y1)
-# x2, y2 = pyproj.transform(inProj, outProj, x2, y2)
-# print(x1, y1)
-# print(x2, y2)
+#inProj = pyproj.CRS(init='epsg:27700')
+#outProj = pyproj.CRS(init='epsg:4326')
+#x1, y1 = x_lim[0], y_lim[0]
+#x2, y2 = x_lim[1], y_lim[1]
+#x1, y1 = pyproj.transform(inProj, outProj, x1, y1)
+#x2, y2 = pyproj.transform(inProj, outProj, x2, y2)
+#print(x1, y1)
+#print(x2, y2)
 base = df_roads_exc_mtrwy.plot(figsize=(12, 8), color='deepskyblue', lw=0.4, zorder=0)  # Zorder controls the layering of the charts with
 base.set_xlim(x_lim)
 base.set_ylim(y_lim)
-traffic_points_gdf.plot(ax=base, x='horizontal', y='vertical', c='cars_and_taxis', cmap='viridis', kind='scatter', s=7, zorder=10)
+traffic_points_gdf.plot(ax=base, x='easting', y='northing', c='cars_and_taxis', cmap='viridis', kind='scatter', s=7, zorder=10)
+#traffic_points_gdf.plot(ax=base, x='easting', y='northing', cmap='viridis', kind='scatter', s=7, zorder=10)
 
 
 def point_grid(y_min, y_max, x_min, x_max):
@@ -144,8 +155,8 @@ def polygon_grid(ymin, ymax, xmin, xmax):
     poly_grid.to_file(os.getcwd()+'\\shapefiles\\grid.shp')
 
 
-polygon_grid(x1_y1[1], x2_y2[1], x1_y1[0], x2_y2[0])
-
+#polygon_grid(x1_y1[1], x2_y2[1], x1_y1[0], x2_y2[0])
+polygon_grid(y_lim[0], y_lim[1], x_lim[0], x_lim[1])
 
 traffic_points = gpd.read_file(os.getcwd()+'\\shapefiles\\traffic_points.shp')
 print(traffic_points)
@@ -162,4 +173,5 @@ print(points_polys['index_left'].unique())
 stats_pt = points_polys.groupby('index_left')['cars_and_t'].agg(['mean'])
 stats_pt.columns = ["_".join(x) for x in stats_pt.columns.ravel()]
 print(stats_pt)
+
 plt.show()
