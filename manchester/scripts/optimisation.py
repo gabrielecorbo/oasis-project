@@ -227,5 +227,5 @@ def optimize(df_demand, df_parking):
 #    print(opt_loc_df2)
     
     plt.show()
-
+    
     return opt_location, df_status

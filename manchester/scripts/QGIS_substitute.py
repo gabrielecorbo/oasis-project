@@ -18,11 +18,18 @@ np.set_printoptions(linewidth=desired_width)
 pd.set_option('display.max_columns', 10)
 
 
-# locate manchester traffic data
+#locate manchester traffic data
 data_path = os.getcwd()+'\\csv_files\\manchester_traffic_data.csv'
 data = pd.read_csv(data_path)
 raw_traffic_df = pd.DataFrame(data=data)
 print(raw_traffic_df.info())
+
+
+#importo EV charging station
+data_path = os.getcwd()+'\\csv_files\\mean_car_count_per_grid.csv'
+data = pd.read_csv(data_path)
+mean_car_count = pd.DataFrame(data=data)
+
 
 
 # Only use traffic data from the year 2019 and drop useless columns
@@ -92,10 +99,10 @@ df_roads_exc_mtrwy = df_roads[~df_roads['class'].str.contains('Motorway')]
 df_roads_exc_mtrwy['coords'] = df_roads_exc_mtrwy['coords'].apply(LineString)
 df_roads_exc_mtrwy = gpd.GeoDataFrame(df_roads_exc_mtrwy, geometry='coords')
 
-y_lim = (394500, 400500)                                    # y coordinates (boundaries of city of Manchester)
-x_lim = (382000, 387500)                                    # x coordinates (boundaries of city of Manchester)
-x1_y1 = (-2.272481011086273, 53.44695395956606)             # latitudes (boundaries of city of Manchester)
-x2_y2 = (-2.1899126640044337, 53.50104467521926)            # longitudes (boundaries of city of Manchester)
+y_lim = (393500,401000)                                    # y coordinates (boundaries of city of Manchester)
+x_lim = (380000,389500)                                    # x coordinates (boundaries of city of Manchester)
+x1_y1 = (-2.3025301804946854,53.437909674331976)             # latitudes (boundaries of city of Manchester)
+x2_y2 = (-2.1597774081293526,53.5055991531199)            # longitudes (boundaries of city of Manchester)
 #inProj = pyproj.CRS(init='epsg:27700')
 #outProj = pyproj.CRS(init='epsg:4326')
 #x1, y1 = x_lim[0], y_lim[0]
@@ -151,7 +158,7 @@ def point_grid(y_min, y_max, x_min, x_max):
 def polygon_grid(ymin, ymax, xmin, xmax):
     """This function takes the coordinate limits and creates a polygon grid
     across the area"""
-
+    
     height = 500
     width = 500
 
@@ -159,12 +166,58 @@ def polygon_grid(ymin, ymax, xmin, xmax):
     rows = list(np.arange(ymin, ymax + height, height))
 
     polygons = []
+    colori=[]
+    tot_traffic=[]
     for x in cols[:-1]:
         for y in rows[:-1]:
-            polygons.append(Polygon([(x, y), (x + width, y), (x + width, y + height), (x, y + height)]))
+            rect_i=Polygon([(x, y), (x + width, y), (x + width, y + height), (x, y + height)])
+            polygons.append(rect_i)
+            parziale=traffic_points_gdf.clip(rect_i)["cars_and_taxis"].sum()
+            tot_traffic.append(parziale)
+            if parziale <8830:
+                colori.append(1)
+            elif (parziale<22200):
+                colori.append(2)
+            elif (parziale<60000):
+                colori.append(3)
+            else:
+                colori.append(4)
+            
+            
+            
+    print("CIAOOOOOO")
+    print(tot_traffic)
+    print(pd.Series(tot_traffic).describe())
+    tot_traffic=np.array(tot_traffic)
+    tot_traffic=tot_traffic.reshape(len(rows)-1,len(cols)-1)
+    #print(tot_traffic)
+    
+    colori=np.array(colori)
+    colori=colori.reshape(len(rows)-1,len(cols)-1)
+    
     poly_grid = gpd.GeoDataFrame({'geometry': polygons})
     poly_grid.plot(ax=base, facecolor="none", edgecolor='black', lw=0.7, zorder=15)
+    sns.color_palette("Blues", as_cmap=True)
+ 
+    base2=sns.heatmap(colori, cmap='Blues')
+    poly_grid.plot(ax=base2, facecolor="none", edgecolor='black', lw=0.7, zorder=15)
     poly_grid.to_file(os.getcwd()+'\\shapefiles\\grid.shp')
+    
+    
+#    tot_traffic=np.array(mean_car_count["cars_and_taxis_mean"])
+#    tot_traffic=tot_traffic.reshape(17,16)
+#    print(tot_traffic)
+#    poly_grid = gpd.GeoDataFrame({'geometry': polygons})
+#    poly_grid.plot(ax=base, facecolor="none", edgecolor='black', lw=0.7, zorder=15)
+#    sns.color_palette("Blues", as_cmap=True)
+# 
+#    base2=sns.heatmap(tot_traffic, cmap='Blues')
+#    poly_grid.plot(ax=base2, facecolor="none", edgecolor='black', lw=0.7, zorder=15)
+#    poly_grid.to_file(os.getcwd()+'\\shapefiles\\grid.shp')
+    
+    
+    
+    
 
 
 #polygon_grid(x1_y1[1], x2_y2[1], x1_y1[0], x2_y2[0])
