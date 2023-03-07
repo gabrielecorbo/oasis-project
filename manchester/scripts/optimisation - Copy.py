@@ -3,6 +3,7 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 from pulp import *
+import pathlib
 from scipy.spatial import distance
 #from plot_roads import read_shapefile, plot_roads
 import math
@@ -13,9 +14,18 @@ np.set_printoptions(linewidth=desired_width)
 pd.set_option('display.max_columns', 12)
 
 # Import GIS data and car park location data
-GIS_data = pd.read_csv('D:/ricca/Documents/ASP/Github/oasis-project/manchester/csv_files/mean_car_count_per_grid.csv')
-car_park_data = pd.read_csv('D:/ricca/Documents/ASP/Github/oasis-project/manchester/csv_files/council_car_parks_in_grid.csv')
-existing_chg_data = pd.read_csv('D:/ricca/Documents/ASP/Github/oasis-project/manchester/csv_files/existing_ev_charging_locations_touching.csv')
+path1=str(pathlib.Path("optimisation.py").parent.resolve())
+path1= path1.replace("scripts","csv_files")+"\mean_car_count_per_grid.csv"
+print(path1)
+GIS_data = pd.read_csv(path1)
+
+path2=str(pathlib.Path("optimisation.py").parent.resolve())
+path2= path2.replace("scripts","csv_files")+"\council_car_parks_in_grid.csv"
+car_park_data = pd.read_csv(path2)
+
+path3=str(pathlib.Path("optimisation.py").parent.resolve())
+path3= path3.replace("scripts","csv_files")+"\existing_ev_charging_locations_touching.csv"
+existing_chg_data = pd.read_csv(path3)
 
 GIS_df = pd.DataFrame(GIS_data)
 car_park_df = pd.DataFrame(car_park_data)
