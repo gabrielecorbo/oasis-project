@@ -1,0 +1,10 @@
+Inizio lavoro:
+- debug codice manchester (scaricare pacchetti python e sistemare directory generica per github)
+- avevamo lo shape file dei traffic points, ma non i relativi valori (csv)
+- abbiamo scaricato, dal sito indicato dall'autore, il file csv (manchester traffic data) da associare allo shape di traffic points
+- abbiamo scaricato, dal sito del pakistano, lo shape file MAP di manchester
+
+10/03
+- Realizzato grid a esagoni
+- Implementato mappa OSM satellitare
+- 
