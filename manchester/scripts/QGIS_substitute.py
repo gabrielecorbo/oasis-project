@@ -11,6 +11,7 @@ import mapclassify as mc
 from scipy import ndimage
 import geopandas as gpd
 from shapely.geometry import shape, Point, Polygon
+import csv
 
 
 
@@ -270,6 +271,8 @@ def exagon(r,y_lim,x_lim):
     polygons = []
     tot_traffic=[]
     tot_chargers=[]
+    tot_centroide=[]
+    colore=[]
     # create the hexagons
     for x in range(xmin, xmax, h):
         k=1
@@ -314,20 +317,41 @@ def exagon(r,y_lim,x_lim):
                 )
                 polygons.append(hexagon)
                 k=0
+            centroide=[x,y]
+            tot_centroide.append(centroide)
             parziale=traffic_points_gdf.clip(hexagon)["cars_and_taxis"].sum()
             tot_traffic.append(parziale)
             chargers=existing_chargers_gdf.clip(hexagon)['easting'].count()
             tot_chargers.append(chargers)
-                    
-
+            
+    mas=max(tot_traffic)
+    for k in range(len(tot_traffic)):
+        if tot_traffic[k]==0:
+            col='lightcyan'
+        elif tot_traffic[k]<=0.15*mas:
+            col='lightskyblue'
+        elif tot_traffic[k]<=0.4*mas:
+            col='deepskyblue'
+        elif tot_traffic[k]<=0.6*mas:
+            col='royalblue'
+        elif tot_traffic[k]<=mas:
+            col='darkblue'
+        colore.append(col)
+    with open('dati.csv', mode='w') as csv_file:
+        csv_writer = csv.writer(csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        #scriviamo prima la riga di intestazione
+        csv_writer.writerow(['ID', 'Traffico', 'Caricatori', 'Centroide','Colore'])
+        for k in range(len(tot_chargers)):
+            csv_writer.writerow([k,tot_traffic[k],tot_chargers[k],tot_centroide[k],colore[k]])
     poly_grid = gpd.GeoDataFrame({'geometry': polygons})
-    poly_grid.plot(ax=base, facecolor="none", edgecolor='black', lw=0.7, zorder=15)
+    poly_grid.plot(ax=base, facecolor=colore, edgecolor='black', lw=0.5, zorder=15)
     poly_grid.to_file(os.getcwd()+'\\shapefiles\\grid_exa.shp')
     print('ciao')
     print(tot_chargers)
+    print(sum(tot_chargers))
 
 #exagon grid
-exagon(350,y_lim,x_lim)
+exagon(150,y_lim,x_lim)
 
 traffic_points = gpd.read_file(os.getcwd()+'\\shapefiles\\traffic_points.shp')
 print(traffic_points)
