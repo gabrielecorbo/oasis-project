@@ -12,6 +12,7 @@ from scipy import ndimage
 import geopandas as gpd
 
 
+
 desired_width = 320
 pd.set_option('display.width', desired_width)
 np.set_printoptions(linewidth=desired_width)
@@ -100,8 +101,8 @@ df_roads_exc_mtrwy['coords'] = df_roads_exc_mtrwy['coords'].apply(LineString)
 df_roads_exc_mtrwy = gpd.GeoDataFrame(df_roads_exc_mtrwy, geometry='coords')
 
 y_lim = (393500,401000)                                    # y coordinates (boundaries of city of Manchester)
-x_lim = (380000,389500)                                    # x coordinates (boundaries of city of Manchester)
-x1_y1 = (-2.3025301804946854,53.437909674331976)             # latitudes (boundaries of city of Manchester)
+x_lim = (382500,389500)                                    # x coordinates (boundaries of city of Manchester)
+x1_y1 = (-2.2648971967997866,53.437999025519474)             # latitudes (boundaries of city of Manchester)
 x2_y2 = (-2.1597774081293526,53.5055991531199)            # longitudes (boundaries of city of Manchester)
 #inProj = pyproj.CRS(init='epsg:27700')
 #outProj = pyproj.CRS(init='epsg:4326')
@@ -199,10 +200,10 @@ def polygon_grid(ymin, ymax, xmin, xmax):
     poly_grid.plot(ax=base, facecolor="none", edgecolor='black', lw=0.7, zorder=15)
     sns.color_palette("Blues", as_cmap=True)
  
-    base2=sns.heatmap(colori, cmap='Blues')
-    poly_grid.plot(ax=base2, facecolor="none", edgecolor='black', lw=0.7, zorder=15)
-    poly_grid.to_file(os.getcwd()+'\\shapefiles\\grid.shp')
-    
+#    base2=sns.heatmap(colori, cmap='Blues')
+#    poly_grid.plot(ax=base2, facecolor="none", edgecolor='black', lw=0.7, zorder=15)
+#    poly_grid.to_file(os.getcwd()+'\\shapefiles\\grid.shp')
+#    
     
 #    tot_traffic=np.array(mean_car_count["cars_and_taxis_mean"])
 #    tot_traffic=tot_traffic.reshape(17,16)
@@ -216,17 +217,87 @@ def polygon_grid(ymin, ymax, xmin, xmax):
 #    poly_grid.to_file(os.getcwd()+'\\shapefiles\\grid.shp')
     
     
-    
-    
-
 
 #polygon_grid(x1_y1[1], x2_y2[1], x1_y1[0], x2_y2[0])
-polygon_grid(y_lim[0], y_lim[1], x_lim[0], x_lim[1])
+#polygon_grid(y_lim[0], y_lim[1], x_lim[0], x_lim[1])
+
+def exagon(r,y_lim,x_lim):
+
+    #r = 500  # for the hexagon size
+
+    #y_lim = (393500,401000)                                    # y coordinates (boundaries of city of Manchester)
+    #x_lim = (382500,389500)                                    # x coordinates (boundaries of city of Manchester)
+    xmin =x_lim[0]
+    xmax =x_lim[1]
+    ymin =y_lim[0]
+    ymax =y_lim[1]
+
+
+
+    # twice the height of a hexagon's equilateral triangle
+    h = int(r * math.sqrt(3))
+
+    polygons = []
+    
+    # create the hexagons
+    for x in range(xmin, xmax, h):
+        k=1
+        for y in range(ymin, ymax, int(h * h / r / 2)):
+            if k==0:
+                x=x+r * math.sqrt(3)/2
+                hexagon = shape(
+                    {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [x, y + r],
+                                [x + h / 2, y + r / 2],
+                                [x + h / 2, y - r / 2],
+                                [x, y - r],
+                                [x - h / 2, y - r / 2],
+                                [x - h / 2, y + r / 2],
+                                [x, y + r],
+                            ]
+                        ],
+                    }
+                )
+                polygons.append(hexagon)
+                x=x-r * math.sqrt(3)/2
+                k=1
+            elif k==1:
+                hexagon = shape(
+                    {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [x, y + r],
+                                [x + h / 2, y + r / 2],
+                                [x + h / 2, y - r / 2],
+                                [x, y - r],
+                                [x - h / 2, y - r / 2],
+                                [x - h / 2, y + r / 2],
+                                [x, y + r],
+                            ]
+                        ],
+                    }
+                )
+                polygons.append(hexagon)
+                k=0
+                    
+
+    poly_grid = gpd.GeoDataFrame({'geometry': polygons})
+    poly_grid.plot(ax=base, facecolor="none", edgecolor='black', lw=0.7, zorder=15)
+    poly_grid.to_file(os.getcwd()+'\\shapefiles\\grid_exa.shp')
+    print('ciao')
+
+
+#exagon grid
+exagon(350,y_lim,x_lim)
 
 traffic_points = gpd.read_file(os.getcwd()+'\\shapefiles\\traffic_points.shp')
 print(traffic_points)
 
-polys = gpd.read_file(os.getcwd()+'\\shapefiles\\grid.shp')
+polys = gpd.read_file(os.getcwd()+'\\shapefiles\\grid_exa.shp')
 
 points_polys = gpd.sjoin(traffic_points, polys, how="right")
 print(points_polys.head())
