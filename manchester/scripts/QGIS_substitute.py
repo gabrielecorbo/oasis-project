@@ -10,6 +10,7 @@ from shapely.geometry.polygon import Polygon
 import mapclassify as mc
 from scipy import ndimage
 import geopandas as gpd
+from shapely.geometry import shape, Point, Polygon
 
 
 
@@ -26,12 +27,15 @@ raw_traffic_df = pd.DataFrame(data=data)
 print(raw_traffic_df.info())
 
 
-#importo EV charging station
+#importo mean car count
 data_path = os.getcwd()+'\\csv_files\\mean_car_count_per_grid.csv'
 data = pd.read_csv(data_path)
 mean_car_count = pd.DataFrame(data=data)
 
-
+#importo Existing EV charging stations
+data_path = os.getcwd()+'\\csv_files\\existing_ev_charging_locations_touching.csv'
+data = pd.read_csv(data_path)
+existing_chargers = pd.DataFrame(data=data)
 
 # Only use traffic data from the year 2019 and drop useless columns
 raw_traffic_df = raw_traffic_df[raw_traffic_df['year'] == 2019]
@@ -43,6 +47,29 @@ raw_traffic_df = raw_traffic_df.drop(labels=['region_id', 'region_name', 'local_
                                              'hgvs_6_articulated_axle' ,'all_hgvs','all_motor_vehicles','year','road_name','road_type',
                                              'link_length_km','count_point_id'], axis=1)
 
+
+# Tolgo i NaN con coordinata centroide e tengo solo longitude e latitude del dataframe
+#for i in range(len(existing_chargers)):
+#    if (math.isnan(existing_chargers.iloc[i,7])):
+#        existing_chargers.iloc[i,7]=(existing_chargers.iloc[i,3]+existing_chargers.iloc[i,5])/2
+#        existing_chargers.iloc[i,8]=(existing_chargers.iloc[i,2]+existing_chargers.iloc[i,4])/2
+#        
+drop_columns = ['id', 'latitude_touch', 'name','fid']
+existing_chargers = existing_chargers.drop(labels=drop_columns, axis=1)
+#Droppo le righe vuote senza existing chargers
+#existing_chargers=existing_chargers.iloc[0:156,:]
+existing_chargers.dropna(inplace=True)
+
+# Add a coordinate column to the dataframe and convert to UK EPSG:27700 (meters)
+proj = pyproj.Transformer.from_crs(4326, 27700, always_xy=True)
+x1, y1 = (existing_chargers['longitude'], existing_chargers['latitude'])
+x2, y2 = proj.transform(x1, y1)
+x2, y2 = (pd.DataFrame(x2, columns=['easting']), pd.DataFrame(y2, columns=['northing']))
+existing_chargers = pd.concat([existing_chargers, x2, y2], axis=1)
+
+drop_columns = ['left', 'top', 'right', 'bottom','latitude','longitude']
+existing_chargers = existing_chargers.drop(labels=drop_columns, axis=1)
+print(existing_chargers)
 
 # Add a coordinate column to the dataframe and convert to UK EPSG:27700 (meters)
 #proj = pyproj.Transformer.from_crs(4326, 27700, always_xy=True)
@@ -61,7 +88,6 @@ def point_df_to_gdf(df):
     return df
 
 
-
 traffic_points_gdf = point_df_to_gdf(raw_traffic_df)
 #traffic_points_gdf = raw_traffic_df
 
@@ -69,8 +95,12 @@ print(traffic_points_gdf.head())
 #traffic_points_gdf = traffic_points_gdf.set_crs(crs="EPSG:4326")
 print('Traffic CRS', '\n', traffic_points_gdf.crs)
 traffic_points_gdf.to_file(os.getcwd()+'\\shapefiles\\traffic_points.shp')
-
 #sf_traffic_points
+
+#converto da dataframe a gdf
+existing_chargers_gdf = point_df_to_gdf(existing_chargers)
+#creo shapefile di existing chargers
+existing_chargers_gdf.to_file(os.getcwd()+'\\shapefiles\\existing_chargers.shp')
 
 # adding roads to the plot of the traffic measurement points
 shp_path_roads_1 = os.getcwd()+'\\shapefiles\\SD_Region.shp'
@@ -238,7 +268,8 @@ def exagon(r,y_lim,x_lim):
     h = int(r * math.sqrt(3))
 
     polygons = []
-    
+    tot_traffic=[]
+    tot_chargers=[]
     # create the hexagons
     for x in range(xmin, xmax, h):
         k=1
@@ -283,13 +314,17 @@ def exagon(r,y_lim,x_lim):
                 )
                 polygons.append(hexagon)
                 k=0
+            parziale=traffic_points_gdf.clip(hexagon)["cars_and_taxis"].sum()
+            tot_traffic.append(parziale)
+            chargers=existing_chargers_gdf.clip(hexagon)['easting'].count()
+            tot_chargers.append(chargers)
                     
 
     poly_grid = gpd.GeoDataFrame({'geometry': polygons})
     poly_grid.plot(ax=base, facecolor="none", edgecolor='black', lw=0.7, zorder=15)
     poly_grid.to_file(os.getcwd()+'\\shapefiles\\grid_exa.shp')
     print('ciao')
-
+    print(tot_chargers)
 
 #exagon grid
 exagon(350,y_lim,x_lim)
