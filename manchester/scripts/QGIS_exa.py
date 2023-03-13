@@ -77,6 +77,9 @@ existing_chargers = existing_chargers.drop(labels=drop_columns, axis=1)
 mean_car_count['easting'] = (mean_car_count['right'] + mean_car_count['left'])/2
 mean_car_count['northing'] = (mean_car_count['top'] + mean_car_count['bottom'])/2
 
+#load poi
+gp_poi=gpd.read_file(os.getcwd()+'\shapefiles\gis_osm_pois_free_1.shp')
+
 
 # Add a coordinate column to the dataframe and convert to UK EPSG:27700 (meters)
 #proj = pyproj.Transformer.from_crs(4326, 27700, always_xy=True)
