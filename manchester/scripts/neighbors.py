@@ -7,7 +7,7 @@ def neighbors(rows,colums,index):
         for i in range(rows)[::-1]:
             mat[i,j]=k
             k+=1
-    print(mat)
+    #print(mat)
     i_inx=rows-index%rows-1
     j_inx=int(index/rows)
     print(i_inx,j_inx)
@@ -72,6 +72,6 @@ def neighbors(rows,colums,index):
     return v,v2
 
 
-neighbors(6,6,0)
+neighbors(50,50,400)
     
      

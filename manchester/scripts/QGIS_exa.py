@@ -288,9 +288,10 @@ def exagon(r,y_lim,x_lim):
     print('ciao')
     print(tot_chargers)
     print(sum(tot_chargers))
+    return polygons
 
 #exagon grid
-exagon(150,y_lim,x_lim)
+polygons = exagon(150,y_lim,x_lim)
 
 traffic_points = gpd.read_file(os.getcwd()+'\\shapefiles\\traffic_points.shp')
 print(traffic_points)

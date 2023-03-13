@@ -6,6 +6,7 @@ from pulp import *
 from scipy.spatial import distance
 #from plot_roads import read_shapefile, plot_roads
 import math
+from scripts.neighbors import neighbors
 
 desired_width = 320
 pd.set_option('display.width', desired_width)
@@ -214,4 +215,33 @@ def optimize(df_demand, df_parking):
     
     plt.show()
     
+    rows =  34#int((401000-393500)/(2*150)) 
+    cols =  28#int((389500-382500)/(math.sqrt(3)*150))
+    v1tot=[]
+    v2tot=[]
+    #pol1=[]
+    #pol2=[]
+    #optpol=[]
+    for i in opt_location:
+        v=neighbors(rows,cols,i)
+        v1tot = v1tot + v[0]
+        v2tot = v2tot + v[1]
+    
+    pol1=[polygons[int(i)] for i in v1tot]
+    #for i in range(len(v1tot)):
+    #    pol1.append(polygons[v1tot[i]])
+    poly_grid1 = gpd.GeoDataFrame({'geometry': pol1})
+    poly_grid1.to_file(os.getcwd()+'\\shapefiles\\exa_1.shp')
+    pol2=[polygons[int(i)] for i in v2tot]
+    #for i in range(len(v2tot)):
+    #    pol2.append(polygons[v2tot[i]])
+    #pol2=polygons[enumerate(v2tot)]
+    poly_grid2 = gpd.GeoDataFrame({'geometry': pol2})
+    poly_grid2.to_file(os.getcwd()+'\\shapefiles\\exa_2.shp')
+    optpol=[polygons[int(i)] for i in opt_location]
+    #for i in range(len(opt_location)):
+    #    optpol.append(polygons[opt_location[i]])
+    #optpol=polygons[enumerate(opt_location)]
+    poly_grid_opt = gpd.GeoDataFrame({'geometry': optpol})
+    poly_grid_opt.to_file(os.getcwd()+'\\shapefiles\\exa_opt.shp')
     return opt_location, df_status
