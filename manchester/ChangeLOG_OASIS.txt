@@ -8,3 +8,8 @@ Inizio lavoro:
 - Realizzato grid a esagoni
 - Implementato mappa OSM satellitare
 - 
+To do:
+-Nuovi dati nuove città
+-Distanza POI e capire come inserirla
+-Aggiornare report
+-Media su punti traffico
