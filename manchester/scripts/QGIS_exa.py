@@ -172,8 +172,8 @@ poi_df = pd.concat([poi_df, x2, y2], axis=1)
 #print('HEREEEEEE')
 #print(poi_df.head())
 
-y_lim = (393500,401000)                                    # y coordinates (boundaries of city of Manchester)
-x_lim = (382500,389500)                                    # x coordinates (boundaries of city of Manchester)
+y_lim = (391000,402000)                                    # y coordinates (boundaries of city of Manchester)
+x_lim = (380000,390000)                                    # x coordinates (boundaries of city of Manchester)
 x1_y1 = (-2.2648971967997866,53.437999025519474)             # latitudes (boundaries of city of Manchester)
 x2_y2 = (-2.1597774081293526,53.5055991531199)            # longitudes (boundaries of city of Manchester)
 #inProj = pyproj.CRS(init='epsg:27700')
@@ -294,8 +294,6 @@ def exagon(r,y_lim,x_lim):
             v_n = neigh.neighbors(rows,cols,i)[0]
             tot_traffic[i] = np.mean([tot_traffic_pre[int(j)] for j in v_n])
     
-    print(tot_traffic_pre)
-    print(tot_traffic)
     mas=max(tot_traffic)
     for k in range(len(tot_traffic)):
         if tot_traffic[k]<=0.0*mas:

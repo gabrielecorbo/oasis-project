@@ -9,6 +9,7 @@ import math
 import importlib
 import scripts.neighbors as neigh
 importlib.reload(neigh)
+#from sklearn.preprocessing import scale,MinMaxScaler
 
 desired_width = 320
 pd.set_option('display.width', desired_width)
@@ -84,8 +85,13 @@ def gen_parameters(df_demand, df_parking):
     distance_matrix_poi = distance.cdist(coords_parking, coords_pois, 'euclidean')
     distance_matrix_poi = pd.DataFrame(distance_matrix_poi, index=df_parking.index.tolist())
     distance_poi = distance_matrix_poi.sum()
+    max = np.max(distance_poi)
+    min = np.min(distance_poi)
+    d_poi_scale = (distance_poi - min)/(max - min) 
+    plt.hist(d_poi_scale)
+    plt.show()
     #print(distance_poi.head())
-    return di, m, p, t, ci_j, cr_j, ce_j, pe, alpha, lj, N, distance_matrix3
+    return di, m, p, t, ci_j, cr_j, ce_j, pe, alpha, lj, N, distance_matrix3, d_poi_scale
 
 
 def gen_demand(df_demand):
@@ -103,7 +109,7 @@ def optimize(df_demand, df_parking):
     demand_lc, chg_lc = gen_sets(df_demand, df_parking)
 
     # Import parameters function
-    di, m, p, t, ci_j, cr_j, ce_j, pe, alpha, lj, N, distance_matrix = gen_parameters(df_demand, df_parking)
+    di, m, p, t, ci_j, cr_j, ce_j, pe, alpha, lj, N, distance_matrix, d_poi_scale = gen_parameters(df_demand, df_parking)
 
     # Import current demand of car park z in cell i
     diz = gen_demand(df_demand)
@@ -131,10 +137,11 @@ def optimize(df_demand, df_parking):
             else:
                 r[i][j] = 0
     count = np.count_nonzero(r == 1)
-    print("The number of potential connections with a distance less than 500m is:", count)
+    #print("The number of potential connections with a distance less than 500m is:", count)
 
     # Objective function
-    prob += lpSum(p[j] * t[j] * q[j] - c[j] for j in chg_lc)
+    # The scaled distance from the POI is considered as a multiplication factor
+    prob += lpSum((p[j] * t[j] * q[j] - c[j])*(1-d_poi_scale[j]) for j in chg_lc)
 
     # Create empty dictionary for the remaining demand in cell i
     zip_iterator = zip(demand_lc, [None]*len(demand_lc))
