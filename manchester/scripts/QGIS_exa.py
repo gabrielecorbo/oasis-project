@@ -201,19 +201,11 @@ base.set_ylim(y_lim)
 traffic_points_clip.plot(ax=base, x='easting', y='northing', c='cars_and_taxis', cmap='viridis', kind='scatter', s=35, zorder=10)
 
 #traffic_points_gdf.plot(ax=base, x='easting', y='northing', cmap='viridis', kind='scatter', s=7, zorder=10)
-
 def exagon(r,y_lim,x_lim):
-
-    #r = 500  # for the hexagon size
-
-    #y_lim = (393500,401000)                                    # y coordinates (boundaries of city of Manchester)
-    #x_lim = (382500,389500)                                    # x coordinates (boundaries of city of Manchester)
     xmin =x_lim[0]
     xmax =x_lim[1]
     ymin =y_lim[0]
     ymax =y_lim[1]
-
-
 
     # twice the height of a hexagon's equilateral triangle
     h = int(r * math.sqrt(3))
@@ -279,8 +271,6 @@ def exagon(r,y_lim,x_lim):
             tot_centroide_y.append(centroide_y)
             parziale=traffic_points_gdf.clip(hexagon)["cars_and_taxis"].sum()
             tot_traffic_pre.append(parziale)
-            #smallClip = gpd.clip(hexagon, mean_car_count_gdf)
-            #smallClip_explode = smallClip['geometry'].explode()
             mixed=mean_car_count_gdf.clip(hexagon)["mixed_use_area_per_cell"].mean()
             tot_mixed.append(mixed)
             chargers=existing_chargers_gdf.clip(hexagon)['easting'].count()
@@ -316,9 +306,6 @@ def exagon(r,y_lim,x_lim):
     poly_grid = gpd.GeoDataFrame({'geometry': polygons})
     poly_grid.plot(ax=base, facecolor=colore, edgecolor='black', lw=0.5, zorder=15)
     poly_grid.to_file(os.getcwd()+'\\shapefiles\\grid_exa.shp')
-    #print('ciao')
-    #print(tot_chargers)
-    #print(sum(tot_chargers))
     return polygons,rows,cols
 
 #exagon grid
