@@ -78,7 +78,7 @@ mean_car_count['easting'] = (mean_car_count['right'] + mean_car_count['left'])/2
 mean_car_count['northing'] = (mean_car_count['top'] + mean_car_count['bottom'])/2
 
 #load poi
-gp_poi=gpd.read_file(os.getcwd()+'\shapefiles\gis_osm_pois_free_1.shp')
+gp_poi=shp.Reader(os.getcwd()+'\shapefiles\gis_osm_pois_free_1.shp')
 
 
 # Add a coordinate column to the dataframe and convert to UK EPSG:27700 (meters)
@@ -124,7 +124,7 @@ existing_chargers_gdf.to_file(os.getcwd()+'\\shapefiles\\existing_chargers.shp')
 #converto da dataframe a gdf
 mean_car_count_gdf = point_df_to_gdf(mean_car_count)
 #mean_car_count_gdf = polygon_df_to_gdf(mean_car_count)
-print(mean_car_count_gdf.head())
+#print(mean_car_count_gdf.head())
 
 # adding roads to the plot of the traffic measurement points
 shp_path_roads_1 = os.getcwd()+'\\shapefiles\\SD_Region.shp'
@@ -153,6 +153,20 @@ df_roads = pd.concat([df_roads_1, df_roads_2])  # Combine road dataframes into s
 df_roads_exc_mtrwy = df_roads[~df_roads['class'].str.contains('Motorway')]
 df_roads_exc_mtrwy['coords'] = df_roads_exc_mtrwy['coords'].apply(LineString)
 df_roads_exc_mtrwy = gpd.GeoDataFrame(df_roads_exc_mtrwy, geometry='coords')
+
+# Convert poi
+poi_df = read_shapefile(gp_poi)
+poi_df['longitude']=[poi_df['coords'][i][0][0] for i in range(len(poi_df))]
+poi_df['latitude']=[poi_df['coords'][i][0][1] for i in range(len(poi_df))]
+
+# Add a coordinate column to the dataframe and convert to UK EPSG:27700 (meters)
+proj = pyproj.Transformer.from_crs(4326, 27700, always_xy=True)
+x1, y1 = (poi_df['longitude'], poi_df['latitude'])
+x2, y2 = proj.transform(x1, y1)
+x2, y2 = (pd.DataFrame(x2, columns=['easting']), pd.DataFrame(y2, columns=['northing']))
+poi_df = pd.concat([poi_df, x2, y2], axis=1)
+#print('HEREEEEEE')
+#print(poi_df.head())
 
 y_lim = (393500,401000)                                    # y coordinates (boundaries of city of Manchester)
 x_lim = (382500,389500)                                    # x coordinates (boundaries of city of Manchester)
@@ -207,6 +221,8 @@ def exagon(r,y_lim,x_lim):
     tot_centroide_x=[]
     tot_centroide_y=[]
     colore=[]
+    rows=0
+    cols=0
     # create the hexagons
     for x in range(xmin, xmax, h):
         k=1
@@ -265,7 +281,9 @@ def exagon(r,y_lim,x_lim):
             tot_mixed.append(mixed)
             chargers=existing_chargers_gdf.clip(hexagon)['easting'].count()
             tot_chargers.append(chargers)
-            
+            rows+=1
+        cols+=1   
+    rows=int(rows/cols)
     mas=max(tot_traffic)
     for k in range(len(tot_traffic)):
         if tot_traffic[k]==0:
@@ -288,29 +306,29 @@ def exagon(r,y_lim,x_lim):
     poly_grid = gpd.GeoDataFrame({'geometry': polygons})
     poly_grid.plot(ax=base, facecolor=colore, edgecolor='black', lw=0.5, zorder=15)
     poly_grid.to_file(os.getcwd()+'\\shapefiles\\grid_exa.shp')
-    print('ciao')
-    print(tot_chargers)
-    print(sum(tot_chargers))
-    return polygons
+    #print('ciao')
+    #print(tot_chargers)
+    #print(sum(tot_chargers))
+    return polygons,rows,cols
 
 #exagon grid
-polygons = exagon(150,y_lim,x_lim)
+polygons,rows,cols = exagon(150,y_lim,x_lim)
 
 traffic_points = gpd.read_file(os.getcwd()+'\\shapefiles\\traffic_points.shp')
-print(traffic_points)
+#print(traffic_points)
 
 polys = gpd.read_file(os.getcwd()+'\\shapefiles\\grid_exa.shp')
 
 points_polys = gpd.sjoin(traffic_points, polys, how="right")
-print(points_polys.head())
-print(points_polys.info())
-print(points_polys['index_left'].unique())
+#print(points_polys.head())
+#print(points_polys.info())
+#print(points_polys['index_left'].unique())
 # print(points_polys.loc[points_polys.index_left == 0, 'cars_and_t'].count())
 
 # Calculate the average of the traffic counts in each grid unit
 stats_pt = points_polys.groupby('index_left')['cars_and_t'].agg(['mean'])
 stats_pt.columns = ["_".join(x) for x in stats_pt.columns.ravel()]
-print(stats_pt)
+#print(stats_pt)
 plt.show()
 
-
+print('Done')

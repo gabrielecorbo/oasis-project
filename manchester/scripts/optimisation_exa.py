@@ -6,7 +6,9 @@ from pulp import *
 from scipy.spatial import distance
 #from plot_roads import read_shapefile, plot_roads
 import math
-from scripts.neighbors import neighbors
+import importlib
+import scripts.neighbors as neigh
+importlib.reload(neigh)
 
 desired_width = 320
 pd.set_option('display.width', desired_width)
@@ -21,8 +23,8 @@ GIS_df['mixed_use_area_per_cell']=GIS_df['mixed_use_area_per_cell'].fillna(0)
 car_park_data = GIS_df.iloc[:,[0,4,5]]
 car_park_df = pd.DataFrame(car_park_data)
 
-print(GIS_df)
-print(car_park_df)
+#print(GIS_df)
+#print(car_park_df)
 
 def gen_sets(df_demand, df_parking):
     """Generate sets to use in the optimization problem"""
@@ -76,7 +78,13 @@ def gen_parameters(df_demand, df_parking):
     distance_matrix2 = scaling_ratio * distance_matrix
     distance_matrix3 = pd.DataFrame(distance_matrix2, index=df_parking.index.tolist(),
                                     columns=df_demand.index.tolist())
-
+                                    
+    #poi_df = read_shapefile(gp_poi)
+    coords_pois = [(x, y) for x, y in zip(poi_df['easting'], poi_df['northing'])]
+    distance_matrix_poi = distance.cdist(coords_parking, coords_pois, 'euclidean')
+    distance_matrix_poi = pd.DataFrame(distance_matrix_poi, index=df_parking.index.tolist())
+    distance_poi = distance_matrix_poi.sum()
+    #print(distance_poi.head())
     return di, m, p, t, ci_j, cr_j, ce_j, pe, alpha, lj, N, distance_matrix3
 
 
@@ -215,15 +223,15 @@ def optimize(df_demand, df_parking):
     
     plt.show()
     
-    rows =  34#int((401000-393500)/(2*150)) 
-    cols =  28#int((389500-382500)/(math.sqrt(3)*150))
+    #rows =  34#int((401000-393500)/(2*150)) 
+    #cols =  28#int((389500-382500)/(math.sqrt(3)*150))
     v1tot=[]
     v2tot=[]
     #pol1=[]
     #pol2=[]
     #optpol=[]
     for i in opt_location:
-        v=neighbors(rows,cols,i)
+        v=neigh.neighbors(rows,cols,i)
         v1tot = v1tot + v[0]
         v2tot = v2tot + v[1]
     
@@ -244,4 +252,6 @@ def optimize(df_demand, df_parking):
     #optpol=polygons[enumerate(opt_location)]
     poly_grid_opt = gpd.GeoDataFrame({'geometry': optpol})
     poly_grid_opt.to_file(os.getcwd()+'\\shapefiles\\exa_opt.shp')
+    
+    print('Done')
     return opt_location, df_status

@@ -8,7 +8,7 @@ opt_loc,stat=optimize(GIS_df,car_park_df)
 
 
 opt_loc=car_park_df.iloc[opt_loc]
-print(opt_loc)
+print(opt_loc[['centroid_x', 'centroid_y']])
 
 def point_df_to_gdf2(df):
     """takes a dataframe with columns named 'longitude' and 'latitude'

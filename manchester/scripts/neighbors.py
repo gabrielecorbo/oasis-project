@@ -10,7 +10,7 @@ def neighbors(rows,colums,index):
     #print(mat)
     i_inx=rows-index%rows-1
     j_inx=int(index/rows)
-    print(i_inx,j_inx)
+    #print(i_inx,j_inx)
     v=[]
     if (i_inx-1)>=0:
         v.append(mat[i_inx-1,j_inx])
@@ -30,7 +30,7 @@ def neighbors(rows,colums,index):
             v.append(mat[i_inx+1,j_inx-1])
         if (i_inx-1)>=0 and (j_inx-1)>=0:
             v.append(mat[i_inx-1,j_inx-1])
-    print(v)
+    #print(v)
 
     ##### second level
     v2=[]
@@ -68,10 +68,7 @@ def neighbors(rows,colums,index):
             v2.append(mat[i_inx+1,j_inx+1])
         if (i_inx-1)>=0 and (j_inx+1)<colums:
             v2.append(mat[i_inx-1,j_inx+1])
-    print(v2)
+    #print(v2)
     return v,v2
-
-
-neighbors(50,50,400)
     
      
