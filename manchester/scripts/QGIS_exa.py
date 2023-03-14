@@ -14,6 +14,10 @@ import geopandas as gpd
 from shapely.geometry import shape, Point, Polygon
 import csv
 import os
+import importlib
+import scripts.neighbors as neigh
+importlib.reload(neigh)
+import copy
 
 
 desired_width = 320
@@ -215,7 +219,7 @@ def exagon(r,y_lim,x_lim):
     h = int(r * math.sqrt(3))
 
     polygons = []
-    tot_traffic=[]
+    tot_traffic_pre=[]
     tot_mixed=[]
     tot_chargers=[]
     tot_centroide_x=[]
@@ -274,7 +278,7 @@ def exagon(r,y_lim,x_lim):
             tot_centroide_x.append(centroide_x)
             tot_centroide_y.append(centroide_y)
             parziale=traffic_points_gdf.clip(hexagon)["cars_and_taxis"].sum()
-            tot_traffic.append(parziale)
+            tot_traffic_pre.append(parziale)
             #smallClip = gpd.clip(hexagon, mean_car_count_gdf)
             #smallClip_explode = smallClip['geometry'].explode()
             mixed=mean_car_count_gdf.clip(hexagon)["mixed_use_area_per_cell"].mean()
@@ -284,9 +288,17 @@ def exagon(r,y_lim,x_lim):
             rows+=1
         cols+=1   
     rows=int(rows/cols)
+    tot_traffic = copy.copy(tot_traffic_pre)
+    for i in range(len(tot_traffic)):
+        if tot_traffic_pre[i]==0:
+            v_n = neigh.neighbors(rows,cols,i)[0]
+            tot_traffic[i] = np.mean([tot_traffic_pre[int(j)] for j in v_n])
+    
+    print(tot_traffic_pre)
+    print(tot_traffic)
     mas=max(tot_traffic)
     for k in range(len(tot_traffic)):
-        if tot_traffic[k]==0:
+        if tot_traffic[k]<=0.0*mas:
             col='lightcyan'
         elif tot_traffic[k]<=0.15*mas:
             col='lightskyblue'
