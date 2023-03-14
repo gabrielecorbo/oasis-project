@@ -10,6 +10,6 @@ Inizio lavoro:
 - 
 To do:
 -Nuovi dati nuove città
--Distanza POI e capire come inserirla
+-Distanza POI [X] e capire come inserirla [X?]
 -Aggiornare report
--Media su punti traffico
+-Media su punti traffico [X]
