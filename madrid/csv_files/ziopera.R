@@ -115,3 +115,11 @@
 
 rm(list=ls())
 totred <- read.csv('totred.csv')
+coord <- read.table('point ubication.csv', header=T,sep = ';') 
+head(coord)
+head(totred)
+
+df <- merge(totred, coord[c("id", "utm_x", "utm_y", "longitud", "latitud")],  by = c("id"))
+head(df)
+
+write.csv(df, file='traffic_points.csv')
