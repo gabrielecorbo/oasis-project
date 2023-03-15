@@ -27,7 +27,7 @@ pd.set_option('display.max_columns', 10)
 
 
 #locate manchester traffic data
-data_path = os.getcwd()+'\\csv_files\\traffic_points.csv'
+data_path = os.getcwd()+'\\csv_files\\manchester_traffic_data.csv'
 data = pd.read_csv(data_path)
 raw_traffic_df = pd.DataFrame(data=data)
 #print(raw_traffic_df.info())
@@ -96,7 +96,7 @@ def point_df_to_gdf(df):
     """takes a dataframe with columns named 'longitude' and 'latitude'
     to transform to a geodataframe with point features"""
 
-    df['coordinates'] = df[['longitud', 'latitud']].values.tolist()
+    df['coordinates'] = df[['easting', 'northing']].values.tolist()
     df['coordinates'] = df['coordinates'].apply(Point)
     df = gpd.GeoDataFrame(df, geometry='coordinates')
     return df
