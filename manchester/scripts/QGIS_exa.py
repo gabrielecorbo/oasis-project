@@ -34,25 +34,9 @@ raw_traffic_df = pd.DataFrame(data=data)
 
 
 #importo mean car count
-data_path = os.getcwd()+'\\csv_files\\mean_car_count_per_grid.csv'
-data = pd.read_csv(data_path)
-mean_car_count = pd.DataFrame(data=data)
-
-#importo Existing EV charging stations
-data_path = os.getcwd()+'\\csv_files\\existing_ev_charging_locations_touching.csv'
-data = pd.read_csv(data_path)
-existing_chargers = pd.DataFrame(data=data)
-
-# Only use traffic data from the year 2019 and drop useless columns
-raw_traffic_df = raw_traffic_df[raw_traffic_df['year'] == 2019]
-raw_traffic_df = raw_traffic_df.drop(labels=['region_id', 'region_name', 'local_authority_id', 'local_authority_name',
-                                             'start_junction_road_name', 'end_junction_road_name', 'link_length_miles',
-                                             'estimation_method', 'estimation_method_detailed', 'pedal_cycles', 'two_wheeled_motor_vehicles',
-                                             'buses_and_coaches','lgvs', 'hgvs_2_rigid_axle', 'hgvs_3_rigid_axle',
-                                             'hgvs_4_or_more_rigid_axle', 'hgvs_3_or_4_articulated_axle', 'hgvs_5_articulated_axle',
-                                             'hgvs_6_articulated_axle' ,'all_hgvs','all_motor_vehicles','year','road_name','road_type',
-                                             'link_length_km','count_point_id'], axis=1)
-
+#data_path = os.getcwd()+'\\csv_files\\mean_car_count_per_grid.csv'
+#data = pd.read_csv(data_path)
+#mean_car_count = pd.DataFrame(data=data)
 
 # Tolgo i NaN con coordinata centroide e tengo solo longitude e latitude del dataframe
 #for i in range(len(existing_chargers)):
@@ -60,30 +44,30 @@ raw_traffic_df = raw_traffic_df.drop(labels=['region_id', 'region_name', 'local_
 #        existing_chargers.iloc[i,7]=(existing_chargers.iloc[i,3]+existing_chargers.iloc[i,5])/2
 #        existing_chargers.iloc[i,8]=(existing_chargers.iloc[i,2]+existing_chargers.iloc[i,4])/2
 #        
-drop_columns = ['id', 'latitude_touch', 'name','fid']
-existing_chargers = existing_chargers.drop(labels=drop_columns, axis=1)
-#Droppo le righe vuote senza existing chargers
-#existing_chargers=existing_chargers.iloc[0:156,:]
-existing_chargers.dropna(inplace=True)
-
+#drop_columns = ['id', 'latitude_touch', 'name','fid']
+#existing_chargers = existing_chargers.drop(labels=drop_columns, axis=1)
+##Droppo le righe vuote senza existing chargers
+##existing_chargers=existing_chargers.iloc[0:156,:]
+#existing_chargers.dropna(inplace=True)
+#
 # Add a coordinate column to the dataframe and convert to UK EPSG:27700 (meters)
-proj = pyproj.Transformer.from_crs(4326, 27700, always_xy=True)
-x1, y1 = (existing_chargers['longitude'], existing_chargers['latitude'])
-x2, y2 = proj.transform(x1, y1)
-x2, y2 = (pd.DataFrame(x2, columns=['easting']), pd.DataFrame(y2, columns=['northing']))
-existing_chargers = pd.concat([existing_chargers, x2, y2], axis=1)
-
-drop_columns = ['left', 'top', 'right', 'bottom','latitude','longitude']
-existing_chargers = existing_chargers.drop(labels=drop_columns, axis=1)
-#print(existing_chargers)
-
-# Create demand centroids for each cell i
-mean_car_count['easting'] = (mean_car_count['right'] + mean_car_count['left'])/2
-mean_car_count['northing'] = (mean_car_count['top'] + mean_car_count['bottom'])/2
-
+#proj = pyproj.Transformer.from_crs(4326, 27700, always_xy=True)
+#x1, y1 = (existing_chargers['longitude'], existing_chargers['latitude'])
+#x2, y2 = proj.transform(x1, y1)
+#x2, y2 = (pd.DataFrame(x2, columns=['easting']), pd.DataFrame(y2, columns=['northing']))
+#existing_chargers = pd.concat([existing_chargers, x2, y2], axis=1)
+#
+#drop_columns = ['left', 'top', 'right', 'bottom','latitude','longitude']
+#existing_chargers = existing_chargers.drop(labels=drop_columns, axis=1)
+##print(existing_chargers)
+#
+## Create demand centroids for each cell i
+#mean_car_count['easting'] = (mean_car_count['right'] + mean_car_count['left'])/2
+#mean_car_count['northing'] = (mean_car_count['top'] + mean_car_count['bottom'])/2
+#
 #load poi
 gp_poi=shp.Reader(os.getcwd()+'\shapefiles\gis_osm_pois_free_1.shp')
-
+#
 
 # Add a coordinate column to the dataframe and convert to UK EPSG:27700 (meters)
 #proj = pyproj.Transformer.from_crs(4326, 27700, always_xy=True)
@@ -120,20 +104,19 @@ traffic_points_gdf = point_df_to_gdf(raw_traffic_df)
 traffic_points_gdf.to_file(os.getcwd()+'\\shapefiles\\traffic_points.shp')
 #sf_traffic_points
 
-#converto da dataframe a gdf
-existing_chargers_gdf = point_df_to_gdf(existing_chargers)
-#creo shapefile di existing chargers
-existing_chargers_gdf.to_file(os.getcwd()+'\\shapefiles\\existing_chargers.shp')
 
-#converto da dataframe a gdf
-mean_car_count_gdf = point_df_to_gdf(mean_car_count)
-#mean_car_count_gdf = polygon_df_to_gdf(mean_car_count)
-#print(mean_car_count_gdf.head())
+##converto da dataframe a gdf
+#mean_car_count_gdf = point_df_to_gdf(mean_car_count)
+##mean_car_count_gdf = polygon_df_to_gdf(mean_car_count)
+##print(mean_car_count_gdf.head())
 
 # adding roads to the plot of the traffic measurement points
-shp_path_roads_1 = os.getcwd()+'\\shapefiles\\SD_Region.shp'
-shp_path_roads_2 = os.getcwd()+'\\shapefiles\\SJ_Region.shp'
-sf_roads_1, sf_roads_2 = (shp.Reader(shp_path_roads_1), shp.Reader(shp_path_roads_2, encoding='windows-1252'))
+#shp_path_roads_1 = os.getcwd()+'\\shapefiles\\SD_Region.shp'
+#shp_path_roads_2 = os.getcwd()+'\\shapefiles\\SJ_Region.shp'
+#sf_roads_1, sf_roads_2 = (shp.Reader(shp_path_roads_1), shp.Reader(shp_path_roads_2, encoding='windows-1252'))
+#
+
+shp_charg_stat = shp.Reader(os.getcwd()+'\\shapefiles\\charging_stations.shp')
 
 def read_shapefile(sf):
     """
@@ -150,25 +133,30 @@ def read_shapefile(sf):
     return df
 
 
-df_roads_1, df_roads_2 = (read_shapefile(sf_roads_1), read_shapefile(sf_roads_2))
-df_roads = pd.concat([df_roads_1, df_roads_2])  # Combine road dataframes into single dataframe
+#df_roads_1, df_roads_2 = (read_shapefile(sf_roads_1), read_shapefile(sf_roads_2))
+#df_roads = pd.concat([df_roads_1, df_roads_2])  # Combine road dataframes into single dataframe
+#
 
-# Select whether to include motorways or not (currently excludes motorways)
-df_roads_exc_mtrwy = df_roads[~df_roads['class'].str.contains('Motorway')]
-df_roads_exc_mtrwy['coords'] = df_roads_exc_mtrwy['coords'].apply(LineString)
-df_roads_exc_mtrwy = gpd.GeoDataFrame(df_roads_exc_mtrwy, geometry='coords')
+df_charg_stat = read_shapefile(shp_charg_stat)
+df_charg_stat['longitud']=[df_charg_stat['coords'][i][0][0] for i in range(len(df_charg_stat))]
+df_charg_stat['latitud']=[df_charg_stat['coords'][i][0][1] for i in range(len(df_charg_stat))]
+print(df_charg_stat)
+#converto da dataframe a gdf
+existing_chargers_gdf = point_df_to_gdf(df_charg_stat)
+#creo shapefile di existing chargers
+#existing_chargers_gdf.to_file(os.getcwd()+'\\shapefiles\\existing_chargers.shp')
 
 # Convert poi
 poi_df = read_shapefile(gp_poi)
-poi_df['longitude']=[poi_df['coords'][i][0][0] for i in range(len(poi_df))]
-poi_df['latitude']=[poi_df['coords'][i][0][1] for i in range(len(poi_df))]
+poi_df['longitud']=[poi_df['coords'][i][0][0] for i in range(len(poi_df))]
+poi_df['latitud']=[poi_df['coords'][i][0][1] for i in range(len(poi_df))]
 
-# Add a coordinate column to the dataframe and convert to UK EPSG:27700 (meters)
-proj = pyproj.Transformer.from_crs(4326, 27700, always_xy=True)
-x1, y1 = (poi_df['longitude'], poi_df['latitude'])
-x2, y2 = proj.transform(x1, y1)
-x2, y2 = (pd.DataFrame(x2, columns=['easting']), pd.DataFrame(y2, columns=['northing']))
-poi_df = pd.concat([poi_df, x2, y2], axis=1)
+## Add a coordinate column to the dataframe and convert to UK EPSG:27700 (meters)
+#proj = pyproj.Transformer.from_crs(4326, 27700, always_xy=True)
+#x1, y1 = (poi_df['longitude'], poi_df['latitude'])
+#x2, y2 = proj.transform(x1, y1)
+#x2, y2 = (pd.DataFrame(x2, columns=['easting']), pd.DataFrame(y2, columns=['northing']))
+#poi_df = pd.concat([poi_df, x2, y2], axis=1)
 #print('HEREEEEEE')
 #print(poi_df.head())
 
@@ -189,17 +177,17 @@ rect=Polygon([(x_lim[0],y_lim[0]),(x_lim[0],y_lim[1]),(x_lim[1],y_lim[1]),(x_lim
 rect_gdf=gpd.GeoDataFrame([1], geometry = [rect], crs=27700)
 traffic_points_clip=traffic_points_gdf.clip(rect)
 traffic_points_clip.to_file(os.getcwd()+'\\shapefiles\\traffic_points_clip.shp')
-df_roads_exc_mtrwy_clip=df_roads_exc_mtrwy.clip(rect)
+#df_roads_exc_mtrwy_clip=df_roads_exc_mtrwy.clip(rect)
 #df_roads_exc_mtrwy_clip.to_file(os.getcwd()+'\\shapefiles\\map.shp')
 #
-base = df_roads_exc_mtrwy.plot(figsize=(12, 8), color='deepskyblue', lw=0.4, zorder=0)  # Zorder controls the layering of the charts with
-base.set_xlim(x_lim)
-base.set_ylim(y_lim)
-#plt.scatter(x=traffic_points_gdf.easting,y=traffic_points_gdf.northing,c=traffic_points_gdf.cars_and_taxis, cmap='plasma', s=15, zorder=10)
-
-#traffic_points_gdf.plot(ax=base, x='easting', y='northing', c='cars_and_taxis', cmap='viridis', kind='scatter', s=35, zorder=10)
-traffic_points_clip.plot(ax=base, x='easting', y='northing', c='cars_and_taxis', cmap='viridis', kind='scatter', s=35, zorder=10)
-
+#base = df_roads_exc_mtrwy.plot(figsize=(12, 8), color='deepskyblue', lw=0.4, zorder=0)  # Zorder controls the layering of the charts with
+#base.set_xlim(x_lim)
+#base.set_ylim(y_lim)
+##plt.scatter(x=traffic_points_gdf.easting,y=traffic_points_gdf.northing,c=traffic_points_gdf.cars_and_taxis, cmap='plasma', s=15, zorder=10)
+#
+##traffic_points_gdf.plot(ax=base, x='easting', y='northing', c='cars_and_taxis', cmap='viridis', kind='scatter', s=35, zorder=10)
+#traffic_points_clip.plot(ax=base, x='easting', y='northing', c='cars_and_taxis', cmap='viridis', kind='scatter', s=35, zorder=10)
+#
 #traffic_points_gdf.plot(ax=base, x='easting', y='northing', cmap='viridis', kind='scatter', s=7, zorder=10)
 def exagon(r,y_lim,x_lim):
     xmin =x_lim[0]
@@ -269,11 +257,11 @@ def exagon(r,y_lim,x_lim):
                 centroide_y=y
             tot_centroide_x.append(centroide_x)
             tot_centroide_y.append(centroide_y)
-            parziale=traffic_points_gdf.clip(hexagon)["cars_and_taxis"].sum()
+            parziale=traffic_points_gdf.clip(hexagon)["x"].sum()
             tot_traffic_pre.append(parziale)
-            mixed=mean_car_count_gdf.clip(hexagon)["mixed_use_area_per_cell"].mean()
-            tot_mixed.append(mixed)
-            chargers=existing_chargers_gdf.clip(hexagon)['easting'].count()
+            #mixed=mean_car_count_gdf.clip(hexagon)["mixed_use_area_per_cell"].mean()
+            #tot_mixed.append(mixed)
+            chargers=existing_chargers_gdf.clip(hexagon)['longitud'].count()
             tot_chargers.append(chargers)
             rows+=1
         cols+=1   
@@ -300,9 +288,9 @@ def exagon(r,y_lim,x_lim):
     with open('dati.csv', mode='w') as csv_file:
         csv_writer = csv.writer(csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         #scriviamo prima la riga di intestazione
-        csv_writer.writerow(['ID', 'Traffico', 'no_existing_chg','mixed_use_area_per_cell', 'centroid_x', 'centroid_y', 'Colore'])
+        csv_writer.writerow(['ID', 'Traffico', 'no_existing_chg', 'centroid_x', 'centroid_y', 'Colore']) #,'mixed_use_area_per_cell'
         for k in range(len(tot_chargers)):
-            csv_writer.writerow([k,tot_traffic[k],tot_chargers[k],tot_mixed[k],tot_centroide_x[k],tot_centroide_y[k],colore[k]])
+            csv_writer.writerow([k,tot_traffic[k],tot_chargers[k],tot_centroide_x[k],tot_centroide_y[k],colore[k]]) #,tot_mixed[k]
     poly_grid = gpd.GeoDataFrame({'geometry': polygons})
     poly_grid.plot(ax=base, facecolor=colore, edgecolor='black', lw=0.5, zorder=15)
     poly_grid.to_file(os.getcwd()+'\\shapefiles\\grid_exa.shp')
