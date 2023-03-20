@@ -1,10 +1,24 @@
 '''
 This file creates the plots of the data and a shapefile from the optimimal point.
 '''
-gen_sets(GIS_df,car_park_df)
-gen_parameters(GIS_df,car_park_df)
-gen_demand(GIS_df)
-opt_loc,stat=optimize(GIS_df,car_park_df)
+import pandas as pd
+import importlib
+import optimisation_exa as opte   #scripts.
+importlib.reload(opte)
+import os
+from shapely.geometry import Point
+import geopandas as gpd
+
+# Import GIS data and car park location data
+GIS_data = pd.read_csv(os.getcwd()+'\\dati.csv')
+GIS_df = pd.DataFrame(GIS_data)
+car_park_data = GIS_df.iloc[:,[0,3,4]]
+car_park_df = pd.DataFrame(car_park_data)
+
+opte.gen_sets(GIS_df,car_park_df)
+opte.gen_parameters(GIS_df,car_park_df)
+opte.gen_demand(GIS_df)
+opt_loc,stat=opte.optimize(GIS_df,car_park_df)
 
 
 opt_loc=car_park_df.iloc[opt_loc]

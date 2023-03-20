@@ -4,11 +4,15 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from pulp import *
 from scipy.spatial import distance
-#from plot_roads import read_shapefile, plot_roads
+from shapely.geometry import LineString
+#from plot_roads import qge.read_shapefile, plot_roads
+import shapefile as shp
 import math
 import importlib
 import neighbors as neigh   #scripts.
 importlib.reload(neigh)
+import QGIS_exa_mad as qge
+importlib.reload(qge)
 #from sklearn.preprocessing import scale,MinMaxScaler
 
 desired_width = 320
@@ -19,11 +23,16 @@ pd.set_option('display.max_columns', 12)
 # Import GIS data and car park location data
 GIS_data = pd.read_csv(os.getcwd()+'\\dati.csv')
 GIS_df = pd.DataFrame(GIS_data)
-GIS_df['mixed_use_area_per_cell']=GIS_df['mixed_use_area_per_cell'].fillna(0)
+#GIS_df['mixed_use_area_per_cell']=GIS_df['mixed_use_area_per_cell'].fillna(0)
 
-car_park_data = GIS_df.iloc[:,[0,4,5]]
+car_park_data = GIS_df.iloc[:,[0,3,4]]
 car_park_df = pd.DataFrame(car_park_data)
 
+# Convert poi
+gp_poi=shp.Reader(os.getcwd()+'\shapefiles\gis_osm_pois_free_1.shp')
+poi_df = qge.read_shapefile(gp_poi)
+poi_df['longitud']=[poi_df['coords'][i][0][0] for i in range(len(poi_df))]
+poi_df['latitud']=[poi_df['coords'][i][0][1] for i in range(len(poi_df))]
 #print(GIS_df)
 #print(car_park_df)
 
@@ -48,9 +57,9 @@ def gen_parameters(df_demand, df_parking):
     N = 10      # Total number of stations to be installed
     r= 150      # "Radius" of the exagon
     
-    Ai = df_demand["mixed_use_area_per_cell"]  # Ai stands for sum of area of the mixed use parts in cell i
+    #Ai = df_demand["mixed_use_area_per_cell"]  # Ai stands for sum of area of the mixed use parts in cell i
     A = math.sqrt(3)*1.5*r*r             # A is the total area of cell i
-    vi = Ai / A * v0                           # Where vi is the charging possibility of an EV in cell i
+    vi = v0 #Ai / A * v0                           # Where vi is the charging possibility of an EV in cell i
     fi = df_demand["Traffico"]          # Where fi is the average traffic flow in grid i
     di = u * vi * fi                           # Where di represents the charging demand of EV in grid i
     di = di.to_dict()
@@ -80,8 +89,8 @@ def gen_parameters(df_demand, df_parking):
     distance_matrix3 = pd.DataFrame(distance_matrix2, index=df_parking.index.tolist(),
                                     columns=df_demand.index.tolist())
                                     
-    #poi_df = read_shapefile(gp_poi)
-    coords_pois = [(x, y) for x, y in zip(poi_df['easting'], poi_df['northing'])]
+    #poi_df = qge.read_shapefile(gp_poi)
+    coords_pois = [(x, y) for x, y in zip(poi_df['longitud'], poi_df['latitud'])]
     distance_matrix_poi = distance.cdist(coords_parking, coords_pois, 'euclidean')
     distance_matrix_poi = pd.DataFrame(distance_matrix_poi, index=df_parking.index.tolist())
     distance_poi = distance_matrix_poi.sum()
@@ -207,13 +216,12 @@ def optimize(df_demand, df_parking):
 #     opt_loc_df2.to_csv(path_or_buf='optimal_locations.csv')
 
     # Import the road shapefiles
-    shp_path_roads_1 = os.getcwd()+'\\shapefiles\\SD_region.shp'
-    shp_path_roads_2 = os.getcwd()+'\\shapefiles\\SJ_region.shp'
-    sf_roads_1, sf_roads_2 = (shp.Reader(shp_path_roads_1), shp.Reader(shp_path_roads_2, encoding='windows-1252'))
-    df_roads_1, df_roads_2 = (read_shapefile(sf_roads_1), read_shapefile(sf_roads_2))
-    df_roads = pd.concat([df_roads_1, df_roads_2])  # Combine road dataframes into single dataframe
-
-    roads_df = df_roads_exc_mtrwy #accrocco al volo
+    shp_path_roads_1 = os.getcwd()+'\\shapefiles\\gis_osm_roads_free_1.shp'
+    sf_roads_1 = shp.Reader(shp_path_roads_1)
+    df_roads = qge.read_shapefile(sf_roads_1)
+    df_roads['coords'] = df_roads['coords'].apply(LineString)
+    df_roads = gpd.GeoDataFrame(df_roads, geometry='coords')
+    roads_df = df_roads #accrocco al volo
 
     base = roads_df.plot(figsize=(12, 8), color='grey', lw=0.4, zorder=0)
     plot = sns.scatterplot(ax=base, x=opt_loc_df['centroid_x'], y=opt_loc_df['centroid_y'], color='dodgerblue', legend='full')
