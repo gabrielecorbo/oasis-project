@@ -140,19 +140,21 @@ def read_shapefile(sf):
 shp_path_roads_1 = os.getcwd()+'\\shapefiles\\gis_osm_roads_free_1.shp'
 sf_roads_1 = shp.Reader(shp_path_roads_1)
 df_roads = read_shapefile(sf_roads_1)
-df_roads['longitud']=[df_roads['coords'][i][0][0] for i in range(len(df_roads))]
-df_roads['latitud']=[df_roads['coords'][i][0][1] for i in range(len(df_roads))]
-#converto da dataframe a gdf
-gdf_roads = point_df_to_gdf(df_roads)
+df_roads['coords'] = df_roads['coords'].apply(LineString)
+df_roads = gpd.GeoDataFrame(df_roads, geometry='coords')
 
 df_charg_stat = read_shapefile(shp_charg_stat)
 df_charg_stat['longitud']=[df_charg_stat['coords'][i][0][0] for i in range(len(df_charg_stat))]
 df_charg_stat['latitud']=[df_charg_stat['coords'][i][0][1] for i in range(len(df_charg_stat))]
+drop_columns = ['coords']
+df_charg_stat = df_charg_stat.drop(labels=drop_columns, axis=1)
+#print(existing_chargers)
 #print(df_charg_stat)
 #converto da dataframe a gdf
 existing_chargers_gdf = point_df_to_gdf(df_charg_stat)
+#print(existing_chargers_gdf)
 #creo shapefile di existing chargers
-#existing_chargers_gdf.to_file(os.getcwd()+'\\shapefiles\\existing_chargers.shp')
+existing_chargers_gdf.to_file(os.getcwd()+'\\shapefiles\\existing_chargers.shp')
 
 # Convert poi
 poi_df = read_shapefile(gp_poi)
@@ -185,8 +187,10 @@ rect=Polygon([(x_lim[0],y_lim[0]),(x_lim[0],y_lim[1]),(x_lim[1],y_lim[1]),(x_lim
 rect_gdf=gpd.GeoDataFrame([1], geometry = [rect], crs=27700)
 traffic_points_clip=traffic_points_gdf.clip(rect)
 traffic_points_clip.to_file(os.getcwd()+'\\shapefiles\\traffic_points_clip.shp')
-gdf_roads_clip=gdf_roads.clip(rect)
-#gdf_roads_clip.to_file(os.getcwd()+'\\shapefiles\\map.shp')
+gdf_roads_clip=df_roads.clip(rect)
+#drop_columns = ['coords']
+#gdf_roads_clip = gdf_roads_clip.drop(labels=drop_columns, axis=1)
+gdf_roads_clip.to_file(os.getcwd()+'\\shapefiles\\map.shp')
 #
 base = gdf_roads_clip.plot(figsize=(12, 8), color='deepskyblue', lw=0.4, zorder=0)  # Zorder controls the layering of the charts with
 base.set_xlim(x_lim)
@@ -279,7 +283,7 @@ def exagon(r,y_lim,x_lim):
         if tot_traffic_pre[i]==0:
             v_n = neigh.neighbors(rows,cols,i)[0]
             tot_traffic[i] = np.mean([tot_traffic_pre[int(j)] for j in v_n])
-    print(tot_traffic)
+    
     mas=max(tot_traffic)
     for k in range(len(tot_traffic)):
         if tot_traffic[k]<=0.0*mas:

@@ -7,7 +7,7 @@ from scipy.spatial import distance
 #from plot_roads import read_shapefile, plot_roads
 import math
 import importlib
-import scripts.neighbors as neigh
+import neighbors as neigh   #scripts.
 importlib.reload(neigh)
 #from sklearn.preprocessing import scale,MinMaxScaler
 
