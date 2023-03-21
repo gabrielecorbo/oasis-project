@@ -1,0 +1,71 @@
+{
+    "UserComments": [
+        {
+            "ID": 24171,
+            "ChargePointID": 174630,
+            "CommentTypeID": 10,
+            "UserName": "xester",
+            "Rating": 5,
+            "DateCreated": "2021-04-09T18:15:56.15Z",
+            "User": {
+                "ID": 6169,
+                "Username": "xester"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-02-24T12:19:00Z",
+    "ID": 174630,
+    "UUID": "735D81F1-32E2-4346-9962-56025C338299",
+    "DataProviderID": 1,
+    "OperatorID": 3523,
+    "UsageTypeID": 6,
+    "AddressInfo": {
+        "ID": 174989,
+        "Title": "Centro Porsche SEVILLA",
+        "AddressLine1": "Av. Ruta de la Plata  3",
+        "AddressLine2": "Polg.ind. Parque Plata",
+        "Town": "Camas",
+        "StateOrProvince": "Sevilla",
+        "Postcode": "41900",
+        "CountryID": 210,
+        "Latitude": 37.420691214721,
+        "Longitude": -6.03056664243536,
+        "ContactTelephone1": "95 425 35 06",
+        "RelatedURL": "http://www.porsche.es",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 270575,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 500,
+            "Voltage": 920,
+            "PowerKW": 320,
+            "CurrentTypeID": 30,
+            "Quantity": 2,
+            "Comments": "Porsche HPD2020 charger.The DC Charge allows charging one vehicle at 320kW, or two simultaneous charges at 160kW. Boosted with a 160 kWh battery. Charging power limited for 400V cars"
+        },
+        {
+            "ID": 270576,
+            "ConnectionTypeID": 1036,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 400,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 4,
+    "StatusTypeID": 150,
+    "DateLastStatusUpdate": "2023-02-24T12:19:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2021-04-09T18:16:00Z",
+    "SubmissionStatusTypeID": 200
+}

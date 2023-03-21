@@ -1,0 +1,40 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-11-18T19:19:00Z",
+    "ID": 70987,
+    "UUID": "1DE52ADE-56EF-43EC-8559-9B3E4DB66959",
+    "DataProviderID": 1,
+    "OperatorID": 23,
+    "OperatorsReference": "18933",
+    "UsageTypeID": 4,
+    "UsageCost": "",
+    "AddressInfo": {
+        "ID": 71333,
+        "Title": "l'Aldea Tesla Supercharger",
+        "AddressLine1": "l'Aldea Tesla Supercharger",
+        "Town": "l'Aldea",
+        "StateOrProvince": "Catalonia",
+        "Postcode": "",
+        "CountryID": 210,
+        "Latitude": 40.75299563306788,
+        "Longitude": 0.6063634699942213,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 101709,
+            "ConnectionTypeID": 27,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 150,
+            "CurrentTypeID": 30,
+            "Quantity": 8
+        }
+    ],
+    "NumberOfPoints": 8,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-11-18T19:19:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2016-08-22T11:48:00Z",
+    "SubmissionStatusTypeID": 200
+}

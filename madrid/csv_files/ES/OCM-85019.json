@@ -1,0 +1,80 @@
+{
+    "UserComments": [
+        {
+            "ID": 21307,
+            "ChargePointID": 85019,
+            "CommentTypeID": 10,
+            "UserName": "SEOcretario",
+            "Comment": "Los 2 Destination Chargers operativos y funcionando correctamente",
+            "Rating": 5,
+            "DateCreated": "2019-08-08T10:27:46.403Z",
+            "User": {
+                "ID": 21209,
+                "Username": "SEOcretario"
+            },
+            "CheckinStatusTypeID": 140
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 19155,
+            "ChargePointID": 85019,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM85019/OCM-85019.orig.2019080810281832.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM85019/OCM-85019.thmb.2019080810281832.jpg",
+            "Comment": "Tesla Model S cargando",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 21209,
+                "Username": "SEOcretario"
+            },
+            "DateCreated": "2019-08-08T10:29:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-09-20T14:55:00Z",
+    "ID": 85019,
+    "UUID": "90365A26-3284-413D-86EB-EF65D1D43657",
+    "DataProviderID": 1,
+    "OperatorID": 45,
+    "OperatorsReference": "25892",
+    "UsageTypeID": 6,
+    "UsageCost": "0",
+    "AddressInfo": {
+        "ID": 85365,
+        "Title": "Hotel Silken Amara Plaza",
+        "AddressLine1": "7 Plaza Pio Xii",
+        "Town": "San Sebastian",
+        "StateOrProvince": "Guipuzcoa",
+        "Postcode": "20010",
+        "CountryID": 210,
+        "Latitude": 43.3077639264122,
+        "Longitude": -1.97844863764726,
+        "ContactTelephone1": "+34 943 464 600",
+        "ContactEmail": "info@hoteles-silken.com",
+        "RelatedURL": "https://www.hoteles-silken.com/es/hotel-amara-plaza-san-sebastian/",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 120770,
+            "ConnectionTypeID": 30,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 400,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "2 cargadores Tesla Destination Charger con conector tipo 2 incorporado, con potencia hasta 22kW. Disponible para clientes del hotel.",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-09-20T14:55:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2017-03-24T06:27:00Z",
+    "SubmissionStatusTypeID": 200
+}

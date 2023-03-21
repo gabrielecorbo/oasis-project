@@ -1,0 +1,128 @@
+{
+    "UserComments": [
+        {
+            "ID": 14103,
+            "ChargePointID": 57807,
+            "CommentTypeID": 10,
+            "UserName": "Jim3cantos",
+            "Comment": "Charging now at 3.1kw. ",
+            "Rating": 4,
+            "DateCreated": "2016-08-19T17:23:32.177Z",
+            "User": {
+                "ID": 6750,
+                "Username": "Jim3cantos"
+            },
+            "CheckinStatusTypeID": 10
+        },
+        {
+            "ID": 14045,
+            "ChargePointID": 57807,
+            "CommentTypeID": 10,
+            "UserName": "Jim3cantos",
+            "Comment": "Working ok",
+            "Rating": 4,
+            "DateCreated": "2016-08-12T22:24:51.487Z",
+            "User": {
+                "ID": 6750,
+                "Username": "Jim3cantos"
+            },
+            "CheckinStatusTypeID": 10
+        },
+        {
+            "ID": 8321,
+            "ChargePointID": 57807,
+            "CommentTypeID": 50,
+            "UserName": "Jim3cantos",
+            "Comment": "Ask for the card at the reception of the Congress palace or at the cafeteria el lienzo from 9 a.m. to midnight.",
+            "Rating": 4,
+            "DateCreated": "2015-12-26T14:44:28.147Z",
+            "User": {
+                "ID": 6750,
+                "Username": "Jim3cantos"
+            },
+            "CheckinStatusTypeID": 10
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 8111,
+            "ChargePointID": 57807,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM57807/OCM-57807.orig.2016081917212078.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM57807/OCM-57807.thmb.2016081917212078.jpg",
+            "Comment": "Charging now",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 6750,
+                "Username": "Jim3cantos"
+            },
+            "DateCreated": "2016-08-19T17:22:00Z"
+        },
+        {
+            "ID": 3660,
+            "ChargePointID": 57807,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM57807/OCM-57807.orig.2015122600194113.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM57807/OCM-57807.thmb.2015122600194113.jpg",
+            "Comment": "Charging on type 2 connector",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 6750,
+                "Username": "Jim3cantos"
+            },
+            "DateCreated": "2015-12-26T00:20:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-01-16T08:57:00Z",
+    "ID": 57807,
+    "UUID": "EC5643C6-9E47-431C-A03C-1D30D81C41A5",
+    "DataProviderID": 1,
+    "OperatorID": 3279,
+    "UsageTypeID": 1,
+    "UsageCost": "Free",
+    "AddressInfo": {
+        "ID": 58153,
+        "Title": "Lienzo Norte",
+        "AddressLine1": "Avenida de Madrid 102",
+        "Town": "Avila",
+        "StateOrProvince": "Avila",
+        "Postcode": "05001",
+        "CountryID": 210,
+        "Latitude": 40.6599077981715,
+        "Longitude": -4.705484802932773,
+        "ContactTelephone1": "",
+        "ContactEmail": "info@lienzonorte.com",
+        "AccessComments": "Enfrente del palacio de Congresos el lienzo norte",
+        "RelatedURL": "http://www.lienzonorte.es",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 73269,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 7.2
+        },
+        {
+            "ID": 73270,
+            "ConnectionTypeID": 28,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 3.6,
+            "CurrentTypeID": 10
+        }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-01-16T08:57:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2015-12-25T22:47:00Z",
+    "SubmissionStatusTypeID": 200
+}

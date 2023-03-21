@@ -1,0 +1,79 @@
+{
+    "UserComments": [
+        {
+            "ID": 22942,
+            "ChargePointID": 161803,
+            "CommentTypeID": 10,
+            "UserName": "Dr. Guero",
+            "Comment": "Important, although there are two sockets available, only one must be used at the same time, or else the station shuts off and manual power up by local officials will be required. RFID required, plug and charge. Cables needed",
+            "Rating": 4,
+            "DateCreated": "2020-07-25T10:04:42.857Z",
+            "User": {
+                "ID": 23441,
+                "Username": "Dr. Guero"
+            },
+            "CheckinStatusTypeID": 210,
+            "IsActionedByEditor": false
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 23166,
+            "ChargePointID": 161803,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM161803/OCM-161803.orig.2020072509593205.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM161803/OCM-161803.thmb.2020072509593205.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 23441,
+                "Username": "Dr. Guero"
+            },
+            "DateCreated": "2020-07-25T10:00:00Z"
+        }
+    ],
+    "IsRecentlyVerified": false,
+    "DateLastVerified": "2020-07-26T08:57:00Z",
+    "ID": 161803,
+    "UUID": "12899F4D-31C7-4C15-A4EA-C571A87EDF04",
+    "DataProviderID": 1,
+    "OperatorID": 1,
+    "UsageTypeID": 4,
+    "UsageCost": "free",
+    "AddressInfo": {
+        "ID": 162160,
+        "Title": "Camprodon",
+        "AddressLine1": "Plaça de la Vila",
+        "Town": "Camprodon",
+        "StateOrProvince": "Girona",
+        "Postcode": "17867",
+        "CountryID": 210,
+        "Latitude": 42.311560663061755,
+        "Longitude": 2.3649062292698773,
+        "ContactTelephone1": "+34972 740 005",
+        "AccessComments": "Important, although there are two sockets available, only one must be used at the same time, or else the station shuts off and manual power up by local officials will be required. RFID required, plug and charge. Cables needed",
+        "RelatedURL": "https://www.camprodon.cat/",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 232820,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 400,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2020-07-26T08:57:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2020-07-25T09:45:00Z",
+    "SubmissionStatusTypeID": 200
+}

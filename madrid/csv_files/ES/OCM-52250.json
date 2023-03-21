@@ -1,0 +1,47 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-09-11T09:00:00Z",
+    "ID": 52250,
+    "UUID": "74384C8D-42E5-46ED-B740-745B1177FC73",
+    "DataProviderID": 1,
+    "OperatorID": 1,
+    "UsageTypeID": 1,
+    "AddressInfo": {
+        "ID": 52596,
+        "Title": "Universitat de Vic",
+        "AddressLine1": "Carrer de Miramarges, 2",
+        "Town": "Vic",
+        "StateOrProvince": "Barcelona",
+        "Postcode": "08500",
+        "CountryID": 210,
+        "Latitude": 41.9336129,
+        "Longitude": 2.24816179999993,
+        "AccessComments": "Targeta recàrrega Ajuntament de Vic / Ask for a card at the City Hall",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 64892,
+            "ConnectionTypeID": 28,
+            "StatusTypeID": 100,
+            "Amps": 16,
+            "CurrentTypeID": 10,
+            "Quantity": 2
+        },
+        {
+            "ID": 338537,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 11,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-09-11T09:00:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2015-08-27T10:46:00Z",
+    "SubmissionStatusTypeID": 200
+}

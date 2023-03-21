@@ -1,0 +1,51 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-10-14T10:59:00Z",
+    "ID": 84151,
+    "UUID": "DF92FC5A-FC72-40FA-8CCC-701BAD6C1B3F",
+    "DataProviderID": 1,
+    "OperatorID": 45,
+    "OperatorsReference": "24787",
+    "UsageTypeID": 1,
+    "AddressInfo": {
+        "ID": 84497,
+        "Title": "El Corte Ingles Diagonal",
+        "AddressLine1": "El Corte Inglés",
+        "Town": "Barcelona",
+        "StateOrProvince": "Catalonia",
+        "Postcode": "08028",
+        "CountryID": 210,
+        "Latitude": 41.387395701624826,
+        "Longitude": 2.12824072750891,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 119552,
+            "ConnectionTypeID": 30,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 16,
+            "Voltage": 400,
+            "PowerKW": 11,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        },
+        {
+            "ID": 340588,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 3.7,
+            "CurrentTypeID": 10,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 3,
+    "GeneralComments": "2 Tesla Connectors, up to 11kW.Available for patrons only. Self park.",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-10-14T10:59:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2017-02-16T17:02:00Z",
+    "SubmissionStatusTypeID": 200
+}

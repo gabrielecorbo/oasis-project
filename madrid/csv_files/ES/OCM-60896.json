@@ -1,0 +1,53 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-10-09T19:26:00Z",
+    "ID": 60896,
+    "UUID": "38E3D4DB-E694-4B30-94E9-FE8EB104EFDB",
+    "DataProviderID": 1,
+    "OperatorID": 45,
+    "UsageTypeID": 5,
+    "AddressInfo": {
+        "ID": 61242,
+        "Title": "Parking Plaza de la Constitución",
+        "AddressLine1": "Calle Guadalajara, 3-5",
+        "Town": "Getafe",
+        "StateOrProvince": "Madrid",
+        "Postcode": "28901",
+        "CountryID": 210,
+        "Latitude": 40.3058559,
+        "Longitude": -3.732334700000024,
+        "ContactTelephone1": "916653620",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 77245,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 16,
+            "Voltage": 230,
+            "PowerKW": 3.7,
+            "CurrentTypeID": 10,
+            "Quantity": 4
+        },
+        {
+            "ID": 77246,
+            "ConnectionTypeID": 28,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 10,
+            "Voltage": 230,
+            "PowerKW": 2.4,
+            "CurrentTypeID": 10,
+            "Quantity": 4
+        }
+    ],
+    "NumberOfPoints": 4,
+    "GeneralComments": "Pedir activación al encargado",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-10-09T19:26:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2016-02-13T00:23:00Z",
+    "SubmissionStatusTypeID": 200
+}

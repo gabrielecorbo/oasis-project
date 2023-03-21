@@ -1,0 +1,75 @@
+{
+    "MediaItems": [
+        {
+            "ID": 35472,
+            "ChargePointID": 191853,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM191853/OCM-191853.orig.2022111911251255.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM191853/OCM-191853.thmb.2022111911251255.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 40036,
+                "Username": "lmjgarcia"
+            },
+            "DateCreated": "2022-11-19T11:25:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-02-18T12:46:00Z",
+    "ID": 191853,
+    "UUID": "F8E61726-595C-4FC9-A075-39A4E489FA7E",
+    "DataProviderID": 1,
+    "OperatorID": 210,
+    "UsageTypeID": 4,
+    "UsageCost": "0,40€/kWh DC - 0,30€/kWh AC",
+    "AddressInfo": {
+        "ID": 192212,
+        "Title": "Ayunt. Madrid: CASTELLO",
+        "AddressLine1": " Calle Castelló 105, 28006 Madrid",
+        "Town": "Madrid",
+        "StateOrProvince": "Community of Madrid",
+        "Postcode": "28006",
+        "CountryID": 210,
+        "Latitude": 40.43511268097791,
+        "Longitude": -3.680739211529499,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 311600,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 311601,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 311602,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-02-18T12:46:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2022-03-02T16:32:00Z",
+    "SubmissionStatusTypeID": 200
+}

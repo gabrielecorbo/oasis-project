@@ -1,0 +1,144 @@
+{
+    "MediaItems": [
+        {
+            "ID": 35730,
+            "ChargePointID": 172193,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM172193/OCM-172193.orig.2022120219321755.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM172193/OCM-172193.thmb.2022120219321755.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 40036,
+                "Username": "lmjgarcia"
+            },
+            "DateCreated": "2022-12-02T19:32:00Z"
+        },
+        {
+            "ID": 35729,
+            "ChargePointID": 172193,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM172193/OCM-172193.orig.2022120219310170.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM172193/OCM-172193.thmb.2022120219310170.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 40036,
+                "Username": "lmjgarcia"
+            },
+            "DateCreated": "2022-12-02T19:31:00Z"
+        },
+        {
+            "ID": 33030,
+            "ChargePointID": 172193,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM172193/OCM-172193.orig.2022082308012865.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM172193/OCM-172193.thmb.2022082308012865.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 40036,
+                "Username": "lmjgarcia"
+            },
+            "DateCreated": "2022-08-23T08:02:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-02-21T17:44:00Z",
+    "ID": 172193,
+    "UUID": "687E269F-C8BE-4328-BDD7-423610A6CCD6",
+    "DataProviderID": 1,
+    "OperatorID": 3324,
+    "UsageTypeID": 4,
+    "UsageCost": " 0,55€/kWh DC >90KW  - 0.39€/kWh DC50kW/AC",
+    "AddressInfo": {
+        "ID": 172552,
+        "Title": "E.S. Torquemada",
+        "AddressLine1": "E.S. Torquemada",
+        "Town": "Torquemada",
+        "StateOrProvince": "Castile and León",
+        "Postcode": "",
+        "CountryID": 210,
+        "Latitude": 42.03619213642639,
+        "Longitude": -4.280527307305192,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 263197,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 300,
+            "Voltage": 1000,
+            "PowerKW": 100,
+            "CurrentTypeID": 30,
+            "Quantity": 2,
+            "Comments": "Ingeteam RAPID120 Charger. The DC charger allows charging one vehicle at 100kW, or two simultaneous charges at 50kW"
+        },
+        {
+            "ID": 263198,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 500,
+            "Voltage": 920,
+            "PowerKW": 360,
+            "CurrentTypeID": 30,
+            "Quantity": 2,
+            "Comments": "ABB Terra360 Charger. The DC charger allows charging one vehicle at 360kW, or two simultaneous charges at 180kW. Max 500A, charging power limited for 400V cars"
+        },
+        {
+            "ID": 263199,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 500,
+            "Voltage": 920,
+            "PowerKW": 360,
+            "CurrentTypeID": 30,
+            "Quantity": 2,
+            "Comments": "ABB Terra360 Charger. The DC charger allows charging one vehicle at 360kW, or two simultaneous charges at 180kW. Max 500A, charging power limited for 400V cars"
+        },
+        {
+            "ID": 316927,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1,
+            "Comments": "Efacec QC45 Charger"
+        },
+        {
+            "ID": 349605,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 349606,
+            "ConnectionTypeID": 1036,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 43,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 8,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-02-21T17:44:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2021-01-20T18:53:00Z",
+    "SubmissionStatusTypeID": 200
+}

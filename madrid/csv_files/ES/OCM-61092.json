@@ -1,0 +1,63 @@
+{
+    "UserComments": [
+        {
+            "ID": 20958,
+            "ChargePointID": 61092,
+            "CommentTypeID": 10,
+            "UserName": "eljohny",
+            "DateCreated": "2019-05-04T22:25:29.197Z",
+            "User": {
+                "ID": 20604,
+                "Username": "eljohny"
+            },
+            "CheckinStatusTypeID": 10
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-09-18T14:25:00Z",
+    "ID": 61092,
+    "UUID": "8EB4BFC6-FC75-49CB-BD5A-9C54F1DAAC4C",
+    "DataProviderID": 1,
+    "OperatorID": 1,
+    "UsageTypeID": 1,
+    "UsageCost": "Free for patrons.",
+    "AddressInfo": {
+        "ID": 61438,
+        "Title": "Zaragoza Delicias",
+        "AddressLine1": "Avenida Navarra, 92",
+        "Town": "Zaragoza",
+        "StateOrProvince": "Zaragoza",
+        "Postcode": "50011",
+        "CountryID": 210,
+        "Latitude": 41.6578835828871,
+        "Longitude": -0.911699526631651,
+        "ContactTelephone1": "976 30 00 93",
+        "RelatedURL": "http://www.comfersa.es/",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 77667,
+            "ConnectionTypeID": 28,
+            "LevelID": 2,
+            "Amps": 16,
+            "Voltage": 230,
+            "PowerKW": 3.7
+        },
+        {
+            "ID": 77668,
+            "ConnectionTypeID": 25,
+            "LevelID": 2,
+            "Amps": 16,
+            "Voltage": 230,
+            "PowerKW": 3.7
+        }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "Avisar al encargado. Self park.",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-09-18T14:25:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2016-02-13T00:24:00Z",
+    "SubmissionStatusTypeID": 200
+}

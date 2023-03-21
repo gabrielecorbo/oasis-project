@@ -1,0 +1,58 @@
+{
+    "MediaItems": [
+        {
+            "ID": 35591,
+            "ChargePointID": 191840,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM191840/OCM-191840.orig.2022112511451158.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM191840/OCM-191840.thmb.2022112511451158.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 40036,
+                "Username": "lmjgarcia"
+            },
+            "DateCreated": "2022-11-25T11:45:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-02-11T09:32:00Z",
+    "ID": 191840,
+    "UUID": "EC96053A-CB19-480A-A4E4-EBA7FA12DDEC",
+    "DataProviderID": 1,
+    "OperatorID": 3276,
+    "UsageTypeID": 4,
+    "UsageCost": " parking fee + 0,39€/kWh",
+    "AddressInfo": {
+        "ID": 192199,
+        "Title": "GMP - Luchana 23",
+        "AddressLine1": " Luchana 23",
+        "Town": "Madrid",
+        "StateOrProvince": "Community of Madrid",
+        "Postcode": "28010",
+        "CountryID": 210,
+        "Latitude": 40.43139874400342,
+        "Longitude": -3.699781852173885,
+        "AccessComments": "parking level -1",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 311583,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 9
+        }
+    ],
+    "NumberOfPoints": 9,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-02-11T09:32:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2022-03-02T16:21:00Z",
+    "SubmissionStatusTypeID": 200
+}

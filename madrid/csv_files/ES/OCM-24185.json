@@ -1,0 +1,72 @@
+{
+    "MediaItems": [
+        {
+            "ID": 15037,
+            "ChargePointID": 24185,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM24185/OCM-24185.orig.2018020420122597.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM24185/OCM-24185.thmb.2018020420122597.jpg",
+            "Comment": "Punto de recarga IBIL",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 17999,
+                "Username": "Suzuka"
+            },
+            "DateCreated": "2018-02-04T20:13:00Z"
+        }
+    ],
+    "IsRecentlyVerified": false,
+    "DateLastVerified": "2022-09-04T10:25:00Z",
+    "ID": 24185,
+    "UUID": "DF422FE7-621C-41D0-BDAA-038946470E6A",
+    "DataProviderID": 1,
+    "OperatorID": 91,
+    "UsageTypeID": 4,
+    "AddressInfo": {
+        "ID": 24530,
+        "Title": "Estacion Servicio Repsol Mostoles",
+        "AddressLine1": "Carretera Villaviciosa, 55, 28935 Móstoles, Madrid",
+        "AddressLine2": "Peñaca",
+        "Town": "Móstoles",
+        "StateOrProvince": "Área metropolitana de Madrid y Corredor del Henares",
+        "Postcode": "28935",
+        "CountryID": 210,
+        "Latitude": 40.33411193667051,
+        "Longitude": -3.8868320405101686,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 26248,
+            "ConnectionTypeID": 2,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30
+        },
+        {
+            "ID": 336770,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 50,
+            "Quantity": 1
+        },
+        {
+            "ID": 336771,
+            "ConnectionTypeID": 1036,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 43,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-09-04T10:25:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2014-07-12T14:14:00Z",
+    "SubmissionStatusTypeID": 200
+}

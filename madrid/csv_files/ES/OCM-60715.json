@@ -1,0 +1,78 @@
+{
+    "UserComments": [
+        {
+            "ID": 14137,
+            "ChargePointID": 60715,
+            "CommentTypeID": 10,
+            "UserName": "xester",
+            "Rating": 5,
+            "DateCreated": "2016-08-23T17:37:20.777Z",
+            "User": {
+                "ID": 6169,
+                "Username": "xester"
+            },
+            "CheckinStatusTypeID": 10
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-10-21T22:10:00Z",
+    "ID": 60715,
+    "UUID": "E3163854-E1F2-4F15-A0B9-F0DB80BDE98D",
+    "DataProviderID": 1,
+    "OperatorID": 3577,
+    "UsageTypeID": 1,
+    "AddressInfo": {
+        "ID": 61061,
+        "Title": "B:SM  Fra Juniper Serra (DC50kW AC43kW)\" ",
+        "AddressLine1": "Fra Juniper Serra,  59",
+        "Town": "Barcelona ",
+        "CountryID": 210,
+        "Latitude": 41.432965,
+        "Longitude": 2.203728,
+        "ContactTelephone1": "93.291.41.50 ",
+        "AccessComments": "24h ",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 76968,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 76969,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 76970,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "https://w30.bcn.cat/APPS/portaltramits/portal/channel/default.html?&stpid=20100001027&style=empresa",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-10-21T22:10:00Z",
+    "MetadataValues": [
+        {
+            "ID": 2963,
+            "MetadataFieldID": 5
+        }
+    ],
+    "DataQualityLevel": 2,
+    "DateCreated": "2016-02-07T04:06:00Z",
+    "SubmissionStatusTypeID": 100
+}

@@ -1,0 +1,42 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-03-05T16:26:00Z",
+    "ID": 209350,
+    "UUID": "CFD82AB0-1D73-4D7E-9B09-50DB1359223E",
+    "DataProviderID": 1,
+    "OperatorID": 3632,
+    "UsageTypeID": 4,
+    "UsageCost": "0,84€/kWh",
+    "AddressInfo": {
+        "ID": 209730,
+        "Title": "GASOLINERA +B ENERGIA Soria",
+        "AddressLine1": "Calle Miguel Roca Junyent",
+        "StateOrProvince": "Castilla y León",
+        "Postcode": "42004",
+        "CountryID": 210,
+        "Latitude": 41.75755663413585,
+        "Longitude": -2.4811418898352144,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 348328,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 300,
+            "Voltage": 920,
+            "PowerKW": 100,
+            "CurrentTypeID": 30,
+            "Quantity": 2,
+            "Comments": "Ecotap DC120 Charger (250-400A)"
+        }
+    ],
+    "NumberOfPoints": 1,
+    "GeneralComments": "app PowerGo",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-03-05T16:26:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2022-10-26T19:18:00Z",
+    "SubmissionStatusTypeID": 200
+}

@@ -1,0 +1,92 @@
+{
+    "UserComments": [
+        {
+            "ID": 24601,
+            "ChargePointID": 170599,
+            "CommentTypeID": 10,
+            "UserName": "Raule_19",
+            "Comment": "",
+            "Rating": 5,
+            "DateCreated": "2021-07-17T13:50:20.05Z",
+            "User": {
+                "ID": 19690,
+                "Username": "Raule_19"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 28653,
+            "ChargePointID": 170599,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM170599/OCM-170599.orig.2021071713491209.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM170599/OCM-170599.thmb.2021071713491209.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 19690,
+                "Username": "Raule_19"
+            },
+            "DateCreated": "2021-07-17T13:49:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-12-16T12:39:00Z",
+    "ID": 170599,
+    "UUID": "29397B3C-CD11-4BDF-9B62-57A0ED030E54",
+    "DataProviderID": 1,
+    "OperatorID": 2247,
+    "UsageTypeID": 4,
+    "UsageCost": "0,45€/kWh ",
+    "AddressInfo": {
+        "ID": 170958,
+        "Title": "Campanille - iberdrola",
+        "AddressLine1": "Campanille - Barcelona",
+        "Town": "Barberà del Vallès",
+        "StateOrProvince": "Catalonia",
+        "Postcode": "08210",
+        "CountryID": 210,
+        "Latitude": 41.50820791890686,
+        "Longitude": 2.135555389056776,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 260426,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 260427,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 260428,
+            "ConnectionTypeID": 1036,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 43,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-12-16T12:39:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2020-12-02T21:55:00Z",
+    "SubmissionStatusTypeID": 200
+}

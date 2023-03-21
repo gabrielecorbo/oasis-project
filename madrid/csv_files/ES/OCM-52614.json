@@ -1,0 +1,40 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-03-06T08:09:00Z",
+    "ID": 52614,
+    "UUID": "4A405D8C-0DE0-407A-BB8A-DB99307B9F3B",
+    "DataProviderID": 1,
+    "OperatorID": 207,
+    "UsageTypeID": 4,
+    "UsageCost": "0,39€/kWh",
+    "AddressInfo": {
+        "ID": 52960,
+        "Title": "Parking Saba Plaça del Sol",
+        "AddressLine1": "Plaça del Sol, 5",
+        "Town": "Barcelona",
+        "StateOrProvince": "Barcelona",
+        "Postcode": "08012",
+        "CountryID": 210,
+        "Latitude": 41.401478,
+        "Longitude": 2.156578,
+        "AccessComments": "Aparcament públic - Targeta BCN Live / Public parking - BCN Live card",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 65362,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 4
+        }
+    ],
+    "NumberOfPoints": 4,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-03-06T08:09:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2015-09-04T18:02:00Z",
+    "SubmissionStatusTypeID": 200
+}

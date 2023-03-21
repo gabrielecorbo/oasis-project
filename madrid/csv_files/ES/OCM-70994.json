@@ -1,0 +1,40 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-10-14T10:59:00Z",
+    "ID": 70994,
+    "UUID": "AB2C6D02-F044-4393-81FF-9C00E744D7B6",
+    "DataProviderID": 1,
+    "OperatorID": 45,
+    "UsageTypeID": 6,
+    "UsageCost": "Free",
+    "AddressInfo": {
+        "ID": 71340,
+        "Title": "Simon",
+        "AddressLine1": "Avinguda del Parc Logístic",
+        "Town": "Barcelona",
+        "StateOrProvince": "Catalonia",
+        "Postcode": "08080",
+        "CountryID": 210,
+        "Latitude": 41.33931088657022,
+        "Longitude": 2.1264820312231905,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 101719,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 6
+        }
+    ],
+    "NumberOfPoints": 6,
+    "GeneralComments": "Barcelona LIVE card",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-10-14T10:59:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2016-08-22T14:24:00Z",
+    "SubmissionStatusTypeID": 200
+}

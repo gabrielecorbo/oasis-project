@@ -1,0 +1,67 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-02-10T07:29:00Z",
+    "ID": 205964,
+    "UUID": "6C309E89-9283-4607-A5E0-97CBC7D7C760",
+    "DataProviderID": 1,
+    "OperatorID": 1,
+    "UsageTypeID": 4,
+    "UsageCost": "0,40€/kWh",
+    "AddressInfo": {
+        "ID": 206344,
+        "Title": "PREMIN DE IRUÑA",
+        "AddressLine1": "Paseo Premín de Iruña",
+        "Town": "Pamplona",
+        "StateOrProvince": "Comunidad Foral de Navarra",
+        "Postcode": "31008",
+        "CountryID": 210,
+        "Latitude": 42.80827210130329,
+        "Longitude": -1.6684059418003017,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 343692,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 343693,
+            "ConnectionTypeID": 1036,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 43,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        },
+        {
+            "ID": 343694,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 343695,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 4,
+    "GeneralComments": "App Vilalta Energía",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-02-10T07:29:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2022-10-07T09:44:00Z",
+    "SubmissionStatusTypeID": 200
+}

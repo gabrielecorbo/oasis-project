@@ -1,0 +1,39 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-09-26T18:46:00Z",
+    "ID": 175253,
+    "UUID": "9AD7A168-8DE6-4212-8E7A-53E452E6816D",
+    "DataProviderID": 1,
+    "OperatorID": 3499,
+    "UsageTypeID": 1,
+    "UsageCost": "Gratis",
+    "AddressInfo": {
+        "ID": 175612,
+        "Title": "Mercadona Calatayud",
+        "AddressLine1": "Avenida Diputación 13",
+        "Town": "Calatayud",
+        "StateOrProvince": "Aragon",
+        "Postcode": "50300",
+        "CountryID": 210,
+        "Latitude": 41.3469092235533,
+        "Longitude": -1.6418731228278602,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 271771,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 3.7,
+            "CurrentTypeID": 10,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-09-26T18:46:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2021-05-03T12:40:00Z",
+    "SubmissionStatusTypeID": 200
+}

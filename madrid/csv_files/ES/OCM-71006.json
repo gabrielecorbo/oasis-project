@@ -1,0 +1,59 @@
+{
+    "MediaItems": [
+        {
+            "ID": 20248,
+            "ChargePointID": 71006,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM71006/OCM-71006.orig.2019110510093121.png",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM71006/OCM-71006.thmb.2019110510093121.png",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 22930,
+                "Username": "Andykb"
+            },
+            "DateCreated": "2019-11-05T10:10:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-12-14T20:39:00Z",
+    "ID": 71006,
+    "UUID": "480B3C9E-D934-4D5F-AA12-3AEA84E0DC8F",
+    "DataProviderID": 1,
+    "OperatorID": 23,
+    "OperatorsReference": "23537",
+    "UsageTypeID": 4,
+    "UsageCost": "",
+    "AddressInfo": {
+        "ID": 71352,
+        "Title": "Tesla Supercharger Burgos",
+        "AddressLine1": "Ctra. Madrid-Irún, 137",
+        "Town": "Burgos",
+        "StateOrProvince": "Burgos",
+        "Postcode": "09001",
+        "CountryID": 210,
+        "Latitude": 42.312399876033936,
+        "Longitude": -3.704163167537672,
+        "RelatedURL": "https://www.teslamotors.com/supercharger",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 101740,
+            "ConnectionTypeID": 27,
+            "StatusTypeID": 0,
+            "LevelID": 3,
+            "PowerKW": 150,
+            "CurrentTypeID": 30,
+            "Quantity": 6
+        }
+    ],
+    "NumberOfPoints": 6,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-12-14T20:39:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2016-08-22T15:22:00Z",
+    "SubmissionStatusTypeID": 200
+}

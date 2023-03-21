@@ -1,0 +1,73 @@
+{
+    "MediaItems": [
+        {
+            "ID": 33361,
+            "ChargePointID": 172831,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM172831/OCM-172831.orig.2022082814110529.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM172831/OCM-172831.thmb.2022082814110529.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 40036,
+                "Username": "lmjgarcia"
+            },
+            "DateCreated": "2022-08-28T14:11:00Z"
+        }
+    ],
+    "IsRecentlyVerified": false,
+    "DateLastVerified": "2022-08-28T14:11:00Z",
+    "ID": 172831,
+    "UUID": "17D5EE19-ED8E-4B37-A094-D0930C9865A7",
+    "DataProviderID": 1,
+    "OperatorID": 3371,
+    "UsageTypeID": 4,
+    "AddressInfo": {
+        "ID": 173190,
+        "Title": "Copaboca Tienda",
+        "AddressLine1": "Calle Algarrada 4",
+        "Town": "Calahorra",
+        "StateOrProvince": "Rioja",
+        "Postcode": "",
+        "CountryID": 210,
+        "Latitude": 42.30908633925728,
+        "Longitude": -1.9550563360041906,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 264348,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 264349,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 264350,
+            "ConnectionTypeID": 1036,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 43,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-08-28T14:11:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2021-02-18T11:38:00Z",
+    "SubmissionStatusTypeID": 200
+}

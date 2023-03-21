@@ -1,0 +1,40 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-10-07T09:50:00Z",
+    "ID": 61129,
+    "UUID": "B065C1F1-7652-4D42-B987-80BA6D5A33F0",
+    "DataProviderID": 1,
+    "OperatorID": 1,
+    "UsageTypeID": 5,
+    "AddressInfo": {
+        "ID": 61475,
+        "Title": "Esquíroz Vuelta del Castillo",
+        "AddressLine1": "Calle de Esquiroz, 5",
+        "Town": "Pamplona",
+        "StateOrProvince": "Pamplona",
+        "Postcode": "31007",
+        "CountryID": 210,
+        "Latitude": 42.807966,
+        "Longitude": -1.6492,
+        "ContactTelephone1": "",
+        "RelatedURL": "https://sedeelectronica.pamplona.es...",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 77762,
+            "ConnectionTypeID": 25,
+            "LevelID": 2,
+            "PowerKW": 7.4,
+            "CurrentTypeID": 10,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "App Vilalta Energía",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-10-07T09:50:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2016-02-13T00:24:00Z",
+    "SubmissionStatusTypeID": 200
+}

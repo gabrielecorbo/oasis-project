@@ -1,0 +1,50 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-12-16T12:41:00Z",
+    "ID": 194144,
+    "UUID": "21DA7247-A079-448D-B225-861BAF918D20",
+    "DataProviderID": 1,
+    "OperatorID": 2247,
+    "UsageTypeID": 4,
+    "UsageCost": "0,45€/kWh ",
+    "AddressInfo": {
+        "ID": 194503,
+        "Title": "Rest. Viena Sabadell",
+        "AddressLine1": "57 Carrer Serra dels Galliners",
+        "Town": "Sabadell",
+        "StateOrProvince": "Catalonia",
+        "Postcode": "08214",
+        "CountryID": 210,
+        "Latitude": 41.51150808014043,
+        "Longitude": 2.106712222019155,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 316232,
+            "ConnectionTypeID": 33,
+            "Reference": "10619",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        },
+        {
+            "ID": 316233,
+            "ConnectionTypeID": 2,
+            "Reference": "10619",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-12-16T12:41:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2022-07-15T15:36:00Z",
+    "SubmissionStatusTypeID": 200
+}

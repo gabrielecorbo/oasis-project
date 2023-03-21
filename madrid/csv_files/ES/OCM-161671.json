@@ -1,0 +1,88 @@
+{
+    "MediaItems": [
+        {
+            "ID": 35419,
+            "ChargePointID": 161671,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM161671/OCM-161671.orig.2022111612583286.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM161671/OCM-161671.thmb.2022111612583286.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 40036,
+                "Username": "lmjgarcia"
+            },
+            "DateCreated": "2022-11-16T12:59:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-11-16T12:59:00Z",
+    "ID": 161671,
+    "UUID": "7E4268C6-F348-40D6-917D-92644D78B9B5",
+    "DataProviderID": 1,
+    "OperatorID": 1,
+    "UsageTypeID": 1,
+    "UsageCost": "0,35€/kWh",
+    "AddressInfo": {
+        "ID": 162028,
+        "Title": "Porsche DC City Charging - Nuevos Ministerios",
+        "AddressLine1": "Paseo de la Castellana, 100",
+        "AddressLine2": "Parking Saba, P-1, Pl. 95 & 94",
+        "Town": "Madrid",
+        "StateOrProvince": "Madrid",
+        "Postcode": "28046",
+        "CountryID": 210,
+        "Latitude": 40.44275588480008,
+        "Longitude": -3.6913544030869616,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 232646,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        },
+        {
+            "ID": 232647,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        },
+        {
+            "ID": 232648,
+            "ConnectionTypeID": 1036,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 63,
+            "Voltage": 400,
+            "PowerKW": 43,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        },
+        {
+            "ID": 338400,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 4,
+            "Comments": ""
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-11-16T12:59:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2020-07-20T14:02:00Z",
+    "SubmissionStatusTypeID": 200
+}

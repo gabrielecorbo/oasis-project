@@ -1,0 +1,91 @@
+{
+    "UserComments": [
+        {
+            "ID": 24746,
+            "ChargePointID": 85402,
+            "CommentTypeID": 10,
+            "UserName": "VM72",
+            "Comment": "Use is not free of charge. There’s a €0,45/kWh fee",
+            "DateCreated": "2021-08-19T16:28:28.45Z",
+            "User": {
+                "ID": 33156,
+                "Username": "VM72"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 35360,
+            "ChargePointID": 85402,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM85402/OCM-85402.orig.2022111212430765.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM85402/OCM-85402.thmb.2022111212430765.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 40036,
+                "Username": "lmjgarcia"
+            },
+            "DateCreated": "2022-11-12T12:43:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-02-18T14:01:00Z",
+    "ID": 85402,
+    "UUID": "2F75AF48-359C-4DC9-86AC-DF7E554C64EC",
+    "DataProviderID": 1,
+    "OperatorID": 210,
+    "OperatorsReference": "ESGICE2401",
+    "UsageTypeID": 4,
+    "UsageCost": "0,40€/kWh DC - 0,30€/kWh AC",
+    "AddressInfo": {
+        "ID": 85748,
+        "Title": "Ayunt. Madrid: Plaza Lealtad",
+        "AddressLine1": "Plaza de la Lealtad 3",
+        "Town": "Madrid",
+        "StateOrProvince": "Madrid",
+        "Postcode": "28014",
+        "CountryID": 210,
+        "Latitude": 40.4161266324797,
+        "Longitude": -3.69217161534424,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 121450,
+            "ConnectionTypeID": 33,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 345245,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 345246,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-02-18T14:01:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2017-04-03T23:50:00Z",
+    "SubmissionStatusTypeID": 200
+}

@@ -1,0 +1,51 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-02-10T07:44:00Z",
+    "ID": 99364,
+    "UUID": "004AFF8C-47C3-42BD-86EF-C5A1843AA1C8",
+    "DataProviderID": 1,
+    "OperatorID": 3279,
+    "OperatorsReference": "0153",
+    "UsageTypeID": 4,
+    "UsageCost": "",
+    "AddressInfo": {
+        "ID": 99710,
+        "Title": "McDonalds de Cendea de Galar",
+        "AddressLine1": "Polígono Galaria (parking Mcdonald's)",
+        "Town": "Cordovilla",
+        "StateOrProvince": "Navarra",
+        "CountryID": 210,
+        "Latitude": 42.786286223127064,
+        "Longitude": -1.6322593010293929,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 140420,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 230,
+            "PowerKW": 7,
+            "CurrentTypeID": 10,
+            "Quantity": 1
+        },
+        {
+            "ID": 140421,
+            "ConnectionTypeID": 28,
+            "StatusTypeID": 50,
+            "LevelID": 1,
+            "Voltage": 230,
+            "PowerKW": 2.3,
+            "CurrentTypeID": 10,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-02-10T07:44:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2018-01-25T19:04:00Z",
+    "SubmissionStatusTypeID": 200
+}

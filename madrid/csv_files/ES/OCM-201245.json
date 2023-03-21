@@ -1,0 +1,64 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-02-20T17:29:00Z",
+    "ID": 201245,
+    "UUID": "BB014FA8-434E-4F28-A237-CB44CD31374E",
+    "DataProviderID": 1,
+    "OperatorID": 2247,
+    "UsageTypeID": 4,
+    "UsageCost": "0,69€/kWh >200kW - 0,54€/kWh 80-200kW",
+    "AddressInfo": {
+        "ID": 201604,
+        "Title": "Iberdrola- Salamanca",
+        "AddressLine1": "Calle Puerto de Liverpool, 1341A, 37009, Salamanca, España",
+        "Town": "Salamanca",
+        "StateOrProvince": "Castile and León",
+        "Postcode": "37008",
+        "CountryID": 210,
+        "Latitude": 40.959482814772855,
+        "Longitude": -5.726512747465108,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 335642,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 600,
+            "Voltage": 1000,
+            "PowerKW": 400,
+            "CurrentTypeID": 30,
+            "Quantity": 2,
+            "Comments": "Ingeteam RAPID ST400 Charger (600A)"
+        },
+        {
+            "ID": 335643,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 300,
+            "Voltage": 1000,
+            "PowerKW": 200,
+            "CurrentTypeID": 30,
+            "Quantity": 6,
+            "Comments": "Ingeteam RAPID ST200 Charger (300A). Charging power limited for 400V cars"
+        },
+        {
+            "ID": 335644,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 200,
+            "PowerKW": 80,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 8,
+    "StatusTypeID": 100,
+    "DateLastStatusUpdate": "2023-02-20T17:29:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2022-08-25T08:57:00Z",
+    "SubmissionStatusTypeID": 200
+}

@@ -1,0 +1,57 @@
+{
+    "MediaItems": [
+        {
+            "ID": 36175,
+            "ChargePointID": 207373,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM207373/OCM-207373.orig.2023010511092263.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM207373/OCM-207373.thmb.2023010511092263.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 40036,
+                "Username": "lmjgarcia"
+            },
+            "DateCreated": "2023-01-05T11:09:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-01-05T11:09:00Z",
+    "ID": 207373,
+    "UUID": "F1E8FA39-558A-4070-A2F9-1CC362986D05",
+    "DataProviderID": 1,
+    "OperatorID": 207,
+    "UsageTypeID": 5,
+    "UsageCost": "0,45€/kWh + parking fee",
+    "AddressInfo": {
+        "ID": 207753,
+        "Title": "Parking Atocha i70",
+        "AddressLine1": "68 Calle de Atocha",
+        "Town": "Madrid",
+        "StateOrProvince": "Community of Madrid",
+        "Postcode": "28012",
+        "CountryID": 210,
+        "Latitude": 40.41166978768027,
+        "Longitude": -3.697805014283972,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 345249,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-01-05T11:09:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2022-10-10T11:08:00Z",
+    "SubmissionStatusTypeID": 200
+}

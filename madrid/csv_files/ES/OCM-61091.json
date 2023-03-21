@@ -1,0 +1,51 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-12-15T18:24:00Z",
+    "ID": 61091,
+    "UUID": "C778F049-0C09-44C9-805F-769F6517E6C1",
+    "DataProviderID": 1,
+    "OperatorID": 2247,
+    "UsageTypeID": 4,
+    "UsageCost": "0,15€/kWh",
+    "AddressInfo": {
+        "ID": 61437,
+        "Title": "San Agustín",
+        "AddressLine1": "Calle San Agustín, 1-3",
+        "Town": "Valladolid",
+        "StateOrProvince": "Valladolid",
+        "Postcode": "47003",
+        "CountryID": 210,
+        "Latitude": 41.65576468054485,
+        "Longitude": -4.730993009248209,
+        "ContactTelephone1": "",
+        "ContactEmail": "vehiculoelectrico@ava.es",
+        "RelatedURL": "http://www.cidaut.es/eren/",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 77666,
+            "ConnectionTypeID": 28,
+            "LevelID": 1,
+            "PowerKW": 2.3,
+            "CurrentTypeID": 10
+        },
+        {
+            "ID": 338503,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 230,
+            "PowerKW": 7.4,
+            "CurrentTypeID": 10,
+            "Quantity": 1
+        }
+    ],
+    "GeneralComments": "",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-12-15T18:24:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2016-02-13T00:23:00Z",
+    "SubmissionStatusTypeID": 200
+}

@@ -1,0 +1,98 @@
+{
+    "UserComments": [
+        {
+            "ID": 23621,
+            "ChargePointID": 170614,
+            "CommentTypeID": 50,
+            "UserName": "ACCIONA RECARGA",
+            "Comment": "Este punto no se encuentra disponible. En breves, les daremos noticias. Lamentamos las molestias.",
+            "Rating": 5,
+            "DateCreated": "2020-12-09T09:06:54.837Z",
+            "User": {
+                "ID": 27955,
+                "Username": "ACCIONA RECARGA"
+            },
+            "CheckinStatusTypeID": 210,
+            "IsActionedByEditor": false
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 25760,
+            "ChargePointID": 170614,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM170614/OCM-170614.orig.2020120909071984.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM170614/OCM-170614.thmb.2020120909071984.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 27955,
+                "Username": "ACCIONA RECARGA"
+            },
+            "DateCreated": "2020-12-09T09:07:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-02-21T18:47:00Z",
+    "ID": 170614,
+    "UUID": "1E10D62B-342E-4C23-AC2E-36087EBF06FB",
+    "DataProviderID": 1,
+    "OperatorID": 3459,
+    "UsageTypeID": 1,
+    "UsageCost": "0.41€/kWh",
+    "AddressInfo": {
+        "ID": 170973,
+        "Title": "Calle las Barracas",
+        "AddressLine1": "Calle las Barracas",
+        "Town": "Benicasim/Benicàssim",
+        "StateOrProvince": "Valencian Community",
+        "Postcode": "12560",
+        "CountryID": 210,
+        "Latitude": 40.04053260204137,
+        "Longitude": 0.051798317877683075,
+        "ContactTelephone1": "961679024",
+        "ContactTelephone2": "914047905",
+        "AccessComments": "app Acciona Recarga access code app inside",
+        "RelatedURL": "https://www.clientesrecarga-acciona.com/",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 260477,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1,
+            "Comments": "Power electronics NB120 Charger"
+        },
+        {
+            "ID": 260478,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 260479,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "",
+    "StatusTypeID": 100,
+    "DateLastStatusUpdate": "2023-02-21T18:47:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2020-12-03T12:49:00Z",
+    "SubmissionStatusTypeID": 200
+}

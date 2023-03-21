@@ -1,0 +1,96 @@
+{
+    "UserComments": [
+        {
+            "ID": 24896,
+            "ChargePointID": 174943,
+            "CommentTypeID": 10,
+            "UserName": "Niall C",
+            "Comment": "fablous fast and rapid charging. its at the rear of the forecourt shop.",
+            "Rating": 5,
+            "DateCreated": "2021-09-26T17:52:33.073Z",
+            "User": {
+                "ID": 34679,
+                "Username": "Niall C"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 33148,
+            "ChargePointID": 174943,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM174943/OCM-174943.orig.2022082420012523.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM174943/OCM-174943.thmb.2022082420012523.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 40036,
+                "Username": "lmjgarcia"
+            },
+            "DateCreated": "2022-08-24T20:01:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-02-21T18:02:00Z",
+    "ID": 174943,
+    "UUID": "511FE272-DDBD-4B1E-B2A1-A5369AA8D042",
+    "DataProviderID": 1,
+    "OperatorID": 3324,
+    "UsageTypeID": 4,
+    "UsageCost": "0,55€/kWh DC - 0,39€/kWh AC",
+    "AddressInfo": {
+        "ID": 175302,
+        "Title": "Estepona - Zunder",
+        "AddressLine1": "Estepona",
+        "AddressLine2": "",
+        "Town": "Estepona",
+        "StateOrProvince": "Andalucía",
+        "Postcode": "29680",
+        "CountryID": 210,
+        "Latitude": 36.43441263298935,
+        "Longitude": -5.160342078036933,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 271096,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 200,
+            "Voltage": 920,
+            "PowerKW": 90,
+            "CurrentTypeID": 30,
+            "Quantity": 2,
+            "Comments": "ABB Terra94 Charger"
+        },
+        {
+            "ID": 271097,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 200,
+            "PowerKW": 90,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        },
+        {
+            "ID": 271098,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 4,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-02-21T18:02:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2021-04-19T21:01:00Z",
+    "SubmissionStatusTypeID": 200
+}

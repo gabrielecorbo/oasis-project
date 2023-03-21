@@ -1,0 +1,39 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-01-18T18:25:00Z",
+    "ID": 209665,
+    "UUID": "194AB037-A9CB-4F6D-9B9F-7C71AF643324",
+    "DataProviderID": 1,
+    "OperatorID": 1,
+    "UsageTypeID": 1,
+    "UsageCost": "Free",
+    "AddressInfo": {
+        "ID": 210045,
+        "Title": "Carretera de la Vall del Prat",
+        "AddressLine1": "Carretera de la Vall del Prat",
+        "Town": "Alòs de Balaguer ",
+        "StateOrProvince": "Catalunya",
+        "Postcode": "25737",
+        "CountryID": 210,
+        "Latitude": 41.91204964330768,
+        "Longitude": 0.9615735533318457,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 348897,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 7.4,
+            "CurrentTypeID": 10,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-01-18T18:25:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2022-11-01T14:34:00Z",
+    "SubmissionStatusTypeID": 200
+}

@@ -1,0 +1,57 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-02-09T18:33:00Z",
+    "ID": 170661,
+    "UUID": "70151D16-B3E8-471A-BF46-4CEB4301C448",
+    "DataProviderID": 1,
+    "OperatorID": 2247,
+    "UsageTypeID": 4,
+    "UsageCost": "0,45€/kWh ",
+    "AddressInfo": {
+        "ID": 171020,
+        "Title": "Iberdrola Santa Margdalena de Polpis",
+        "AddressLine1": "Carrer d'Alcalà",
+        "Town": "Santa Magdalena de Polpís",
+        "StateOrProvince": "Castellón",
+        "Postcode": "12597",
+        "CountryID": 210,
+        "Latitude": 40.35535324809038,
+        "Longitude": 0.3013012274504945,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 260599,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        },
+        {
+            "ID": 260600,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        },
+        {
+            "ID": 260601,
+            "ConnectionTypeID": 1036,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 43,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 4,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-02-09T18:33:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2020-12-04T19:57:00Z",
+    "SubmissionStatusTypeID": 200
+}

@@ -1,0 +1,43 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-01-18T12:24:00Z",
+    "ID": 61029,
+    "UUID": "201A72AE-0F51-4882-89F1-A264957EDC6D",
+    "DataProviderID": 1,
+    "OperatorID": 3371,
+    "UsageTypeID": 4,
+    "UsageCost": "0,38€/kWh",
+    "AddressInfo": {
+        "ID": 61375,
+        "Title": "Kinépolis",
+        "AddressLine1": "Calle Edgar Neville, 1",
+        "Town": "Pozuelo",
+        "StateOrProvince": "Madrid",
+        "Postcode": "28223",
+        "CountryID": 210,
+        "Latitude": 40.39404,
+        "Longitude": -3.7966,
+        "ContactTelephone1": "",
+        "RelatedURL": "",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 77529,
+            "ConnectionTypeID": 25,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 400,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 8
+        }
+    ],
+    "NumberOfPoints": 8,
+    "GeneralComments": "parking level -1",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-01-18T12:24:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2016-02-13T00:23:00Z",
+    "SubmissionStatusTypeID": 200
+}

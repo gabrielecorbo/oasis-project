@@ -1,0 +1,49 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-10-14T11:38:00Z",
+    "ID": 164001,
+    "UUID": "F49856C7-C875-42AC-9297-3BE1BE76285F",
+    "DataProviderID": 1,
+    "OperatorID": 45,
+    "OperatorsReference": "40589",
+    "UsageTypeID": 6,
+    "AddressInfo": {
+        "ID": 164360,
+        "Title": "Majestic Hotel & Spa Barcelona GL",
+        "AddressLine1": "3 Passatge dels Camps Elisis",
+        "Town": "Barcelona",
+        "StateOrProvince": "Catalonia",
+        "Postcode": "8007",
+        "CountryID": 210,
+        "Latitude": 41.393651736100594,
+        "Longitude": 2.1640100304905445,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 235599,
+            "ConnectionTypeID": 30,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        },
+        {
+            "ID": 340595,
+            "ConnectionTypeID": 1036,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 11,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "1 Tesla Connector, up to 22kW.Available for customers. Please see front desk.",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-10-14T11:38:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2020-08-24T23:55:00Z",
+    "SubmissionStatusTypeID": 200
+}

@@ -1,0 +1,109 @@
+{
+    "MediaItems": [
+        {
+            "ID": 16497,
+            "ChargePointID": 108137,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM108137/OCM-108137.orig.2018090716462524.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM108137/OCM-108137.thmb.2018090716462524.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 16782,
+                "Username": "Amarre"
+            },
+            "DateCreated": "2018-09-07T16:47:00Z"
+        },
+        {
+            "ID": 16495,
+            "ChargePointID": 108137,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM108137/OCM-108137.orig.2018090716453990.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM108137/OCM-108137.thmb.2018090716453990.jpg",
+            "Comment": "Conector Mennekes sin cable.",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 16782,
+                "Username": "Amarre"
+            },
+            "DateCreated": "2018-09-07T16:46:00Z"
+        },
+        {
+            "ID": 16496,
+            "ChargePointID": 108137,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM108137/OCM-108137.orig.2018090716460069.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM108137/OCM-108137.thmb.2018090716460069.jpg",
+            "Comment": "Conector Mennekes sin cable.",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 16782,
+                "Username": "Amarre"
+            },
+            "DateCreated": "2018-09-07T16:46:00Z"
+        },
+        {
+            "ID": 16494,
+            "ChargePointID": 108137,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM108137/OCM-108137.orig.2018090716450251.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM108137/OCM-108137.thmb.2018090716450251.jpg",
+            "Comment": "Una plaza en el garaje cubierto.",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 16782,
+                "Username": "Amarre"
+            },
+            "DateCreated": "2018-09-07T16:45:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-01-20T23:33:00Z",
+    "ID": 108137,
+    "UUID": "82AD81AA-0961-4666-AC10-3984918F88AD",
+    "DataProviderID": 1,
+    "OperatorID": 3499,
+    "UsageTypeID": 1,
+    "AddressInfo": {
+        "ID": 108483,
+        "Title": "Mercadona Avenida Cataluña Zaragoza",
+        "AddressLine1": "Avenida Cataluña, 101",
+        "Town": "Zaragoza",
+        "Postcode": "50014",
+        "CountryID": 210,
+        "Latitude": 41.66424788646768,
+        "Longitude": -0.8625575670764078,
+        "ContactTelephone1": "900 500 103",
+        "AccessComments": "Acceso por la avenida Cataluña, 101, o por el Camino de Torrecillas.",
+        "RelatedURL": "https://info.mercadona.es",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 152771,
+            "ConnectionTypeID": 1036,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 400,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "GeneralComments": "Conector Mennekes sin cable.",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-01-20T23:33:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2018-09-07T16:43:00Z",
+    "SubmissionStatusTypeID": 200
+}

@@ -1,0 +1,42 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-09-17T17:12:00Z",
+    "ID": 61164,
+    "UUID": "B09CE10F-990F-4EB8-922F-F94E6B11D339",
+    "DataProviderID": 1,
+    "OperatorID": 91,
+    "UsageTypeID": 1,
+    "AddressInfo": {
+        "ID": 61510,
+        "Title": "Escuela Técnica Superior de Caminos, Canales y Puertos",
+        "AddressLine1": "Avenida los Castros, 44",
+        "Town": "Santander",
+        "StateOrProvince": "Cantabria",
+        "Postcode": "39005",
+        "CountryID": 210,
+        "Latitude": 43.471663,
+        "Longitude": -3.799128,
+        "ContactTelephone1": "+34 900102260",
+        "ContactEmail": "Contacto.emobility@eon.com",
+        "RelatedURL": "http://www.eonespana.com/es.html",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 77843,
+            "ConnectionTypeID": 25,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 220,
+            "PowerKW": 7.4,
+            "CurrentTypeID": 10,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-09-17T17:12:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2016-02-13T00:24:00Z",
+    "SubmissionStatusTypeID": 200
+}

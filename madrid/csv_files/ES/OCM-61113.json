@@ -1,0 +1,36 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-10-06T16:12:00Z",
+    "ID": 61113,
+    "UUID": "CEB3EC8E-2A35-4784-9B2A-A47B1F65B369",
+    "DataProviderID": 1,
+    "OperatorID": 1,
+    "UsageTypeID": 1,
+    "AddressInfo": {
+        "ID": 61459,
+        "Title": "Universidad de Vigo",
+        "AddressLine1": "Rúa as Pedreiras",
+        "Town": "Vigo",
+        "StateOrProvince": "Vigo",
+        "Postcode": "36310",
+        "CountryID": 210,
+        "Latitude": 42.170975,
+        "Longitude": -8.682324,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 77715,
+            "ConnectionTypeID": 25,
+            "LevelID": 2,
+            "PowerKW": 3.7,
+            "CurrentTypeID": 10
+        }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-10-06T16:12:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2016-02-13T00:24:00Z",
+    "SubmissionStatusTypeID": 200
+}

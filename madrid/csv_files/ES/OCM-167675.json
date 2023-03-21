@@ -1,0 +1,91 @@
+{
+    "UserComments": [
+        {
+            "ID": 23238,
+            "ChargePointID": 167675,
+            "CommentTypeID": 50,
+            "UserName": "vestapark",
+            "Rating": 5,
+            "DateCreated": "2020-09-21T08:45:52.577Z",
+            "User": {
+                "ID": 27391,
+                "Username": "vestapark"
+            },
+            "CheckinStatusTypeID": 140,
+            "IsActionedByEditor": false
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 24690,
+            "ChargePointID": 167675,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM167675/OCM-167675.orig.2020091407170297.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM167675/OCM-167675.thmb.2020091407170297.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 27391,
+                "Username": "vestapark"
+            },
+            "DateCreated": "2020-09-14T07:17:00Z"
+        },
+        {
+            "ID": 24689,
+            "ChargePointID": 167675,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM167675/OCM-167675.orig.2020091407145558.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM167675/OCM-167675.thmb.2020091407145558.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 27391,
+                "Username": "vestapark"
+            },
+            "DateCreated": "2020-09-14T07:15:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-10-13T18:44:00Z",
+    "ID": 167675,
+    "UUID": "690D3669-50EF-4B70-9ACD-E3A4B588461D",
+    "DataProviderID": 1,
+    "OperatorID": 45,
+    "UsageTypeID": 5,
+    "AddressInfo": {
+        "ID": 168034,
+        "Title": "Parking Ciutat de la Justícia de Barcelona i l'Hospitalet",
+        "AddressLine1": "Avinguda del Carrilet, 3",
+        "Town": "l'Hospitalet de Llobregat",
+        "StateOrProvince": "Barcelona",
+        "Postcode": "082028",
+        "CountryID": 210,
+        "Latitude": 41.365390778041075,
+        "Longitude": 2.1325966642230014,
+        "ContactTelephone1": "934 217 365",
+        "ContactEmail": "ciutatdelajusticia@vestapark.com",
+        "RelatedURL": "http://www.ciutatdelajusticia.com/",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 254617,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 11,
+            "CurrentTypeID": 20,
+            "Quantity": 3
+        }
+    ],
+    "NumberOfPoints": 3,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-10-13T18:44:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2020-09-09T16:21:00Z",
+    "SubmissionStatusTypeID": 200
+}

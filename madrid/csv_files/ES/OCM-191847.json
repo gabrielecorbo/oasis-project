@@ -1,0 +1,56 @@
+{
+    "MediaItems": [
+        {
+            "ID": 35358,
+            "ChargePointID": 191847,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM191847/OCM-191847.orig.2022111212032835.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM191847/OCM-191847.thmb.2022111212032835.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 40036,
+                "Username": "lmjgarcia"
+            },
+            "DateCreated": "2022-11-12T12:04:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-11-12T12:04:00Z",
+    "ID": 191847,
+    "UUID": "7C67D5C6-1083-4C45-A0BE-1B916E323BA0",
+    "DataProviderID": 1,
+    "OperatorID": 3559,
+    "UsageTypeID": 5,
+    "UsageCost": "0,35€/kWh + parking fee",
+    "AddressInfo": {
+        "ID": 192206,
+        "Title": "Parking - Serrano 41 (Telepark)",
+        "AddressLine1": " Calle Serrano, 41, 28001 Madrid, España",
+        "Town": "Madrid",
+        "StateOrProvince": "Community of Madrid",
+        "Postcode": "28001",
+        "CountryID": 210,
+        "Latitude": 40.42882067254183,
+        "Longitude": -3.687549403992108,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 311592,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "Quantity": 6
+        }
+    ],
+    "NumberOfPoints": 6,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-11-12T12:04:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2022-03-02T16:27:00Z",
+    "SubmissionStatusTypeID": 200
+}

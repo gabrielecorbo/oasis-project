@@ -1,0 +1,66 @@
+{
+    "MediaItems": [
+        {
+            "ID": 35589,
+            "ChargePointID": 24603,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM24603/OCM-24603.orig.2022112511273231.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM24603/OCM-24603.thmb.2022112511273231.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 40036,
+                "Username": "lmjgarcia"
+            },
+            "DateCreated": "2022-11-25T11:28:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-11-25T11:28:00Z",
+    "ID": 24603,
+    "UUID": "5728BDDE-4560-4340-9975-B33D1B2C36D8",
+    "DataProviderID": 1,
+    "OperatorID": 91,
+    "UsageTypeID": 4,
+    "AddressInfo": {
+        "ID": 24949,
+        "Title": "San Bernardo 122",
+        "AddressLine1": "Calle San Bernardo 122",
+        "Town": "Madrid",
+        "CountryID": 210,
+        "Latitude": 40.432228,
+        "Longitude": -3.704729,
+        "ContactTelephone1": "+34 902 540 810",
+        "ContactEmail": "ibil@ibil.es",
+        "AccessComments": "IBIL card",
+        "RelatedURL": "http://www.www.ibil.es",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 26885,
+            "ConnectionTypeID": 25,
+            "LevelID": 2,
+            "PowerKW": 3.7,
+            "CurrentTypeID": 10,
+            "Quantity": 1
+        },
+        {
+            "ID": 345289,
+            "ConnectionTypeID": 28,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 3.7,
+            "CurrentTypeID": 10,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-11-25T11:28:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2014-10-21T12:29:00Z",
+    "SubmissionStatusTypeID": 200
+}

@@ -1,0 +1,54 @@
+{
+    "UserComments": [
+        {
+            "ID": 20961,
+            "ChargePointID": 61094,
+            "CommentTypeID": 10,
+            "UserName": "eljohny",
+            "Comment": "",
+            "DateCreated": "2019-05-04T22:36:02.657Z",
+            "User": {
+                "ID": 20604,
+                "Username": "eljohny"
+            },
+            "CheckinStatusTypeID": 10
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-09-20T15:47:00Z",
+    "ID": 61094,
+    "UUID": "DF1EC265-CB08-4FFA-9D82-75F6A6A4FFA0",
+    "DataProviderID": 1,
+    "OperatorID": 45,
+    "UsageTypeID": 5,
+    "UsageCost": "",
+    "AddressInfo": {
+        "ID": 61440,
+        "Title": "Parking Indigo Plaza del Pilar",
+        "AddressLine1": "22 Plaza de Nuestra Señora del Pilar",
+        "Town": "Zaragoza",
+        "StateOrProvince": "Aragon",
+        "Postcode": "50003",
+        "CountryID": 210,
+        "Latitude": 41.65716379841413,
+        "Longitude": -0.8803802153718152,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 77676,
+            "ConnectionTypeID": 25,
+            "LevelID": 2,
+            "PowerKW": 7.4,
+            "CurrentTypeID": 10,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-09-20T15:47:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2016-02-13T00:24:00Z",
+    "SubmissionStatusTypeID": 200
+}

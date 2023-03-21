@@ -1,0 +1,56 @@
+{
+    "MediaItems": [
+        {
+            "ID": 36768,
+            "ChargePointID": 213350,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM213350/OCM-213350.orig.2023022517300609.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM213350/OCM-213350.thmb.2023022517300609.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 40036,
+                "Username": "lmjgarcia"
+            },
+            "DateCreated": "2023-02-25T17:30:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-02-25T17:30:00Z",
+    "ID": 213350,
+    "UUID": "7875F186-855B-492F-BE73-89B392D9FC57",
+    "DataProviderID": 1,
+    "OperatorID": 2247,
+    "UsageTypeID": 4,
+    "UsageCost": "0,39€/kWh",
+    "AddressInfo": {
+        "ID": 213730,
+        "Title": "Benferri",
+        "AddressLine1": "Calle Palacios",
+        "StateOrProvince": "Comunitat Valenciana",
+        "Postcode": "03316",
+        "CountryID": 210,
+        "Latitude": 38.14206089666254,
+        "Longitude": -0.9611831630995482,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 355364,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-02-25T17:30:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2023-02-05T18:50:00Z",
+    "SubmissionStatusTypeID": 200
+}

@@ -1,0 +1,67 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-09-13T10:46:00Z",
+    "ID": 163784,
+    "UUID": "73D9AEF7-28F6-4205-AFDB-0A0E2DD876E4",
+    "DataProviderID": 1,
+    "OperatorID": 45,
+    "OperatorsReference": "25374",
+    "UsageTypeID": 6,
+    "AddressInfo": {
+        "ID": 164141,
+        "Title": "Parador de Plasencia",
+        "AddressLine1": "S/N Plaza San Vicente Ferrer",
+        "Town": "Plasencia",
+        "Postcode": "10600",
+        "CountryID": 210,
+        "Latitude": 40.029114,
+        "Longitude": -6.093801,
+        "ContactTelephone1": "+34 927 425 870",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 235381,
+            "ConnectionTypeID": 30,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        },
+        {
+            "ID": 339163,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 11,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        },
+        {
+            "ID": 339164,
+            "ConnectionTypeID": 28,
+            "StatusTypeID": 50,
+            "LevelID": 1,
+            "PowerKW": 2.3,
+            "CurrentTypeID": 10,
+            "Quantity": 2
+        },
+        {
+            "ID": 339165,
+            "ConnectionTypeID": 17,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "1 Tesla Connector, up to 22kW.Available for customers. Please call ahead.",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-09-13T10:46:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2020-08-24T17:26:00Z",
+    "SubmissionStatusTypeID": 200
+}

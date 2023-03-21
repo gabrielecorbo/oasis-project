@@ -1,0 +1,42 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-12-14T13:00:00Z",
+    "ID": 188392,
+    "UUID": "7D20C49B-F3D4-4018-9543-A952E230C8E0",
+    "DataProviderID": 1,
+    "OperatorID": 2247,
+    "UsageTypeID": 4,
+    "UsageCost": "0,20€/kWh",
+    "AddressInfo": {
+        "ID": 188751,
+        "Title": "Camping Armanello",
+        "AddressLine1": "9 Cami de l'Armanello",
+        "Town": "Benidorm",
+        "StateOrProvince": "Valencian Community",
+        "Postcode": "03503",
+        "CountryID": 210,
+        "Latitude": 38.54785119133024,
+        "Longitude": -0.1104485549740275,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 304176,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 400,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 4,
+            "Comments": "Uso excluiso clientes"
+        }
+    ],
+    "NumberOfPoints": 4,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-12-14T13:00:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2021-07-21T07:57:00Z",
+    "SubmissionStatusTypeID": 200
+}

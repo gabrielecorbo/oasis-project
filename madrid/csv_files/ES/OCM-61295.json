@@ -1,0 +1,66 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-11-23T15:27:00Z",
+    "ID": 61295,
+    "UUID": "8940E0F5-2E4F-472F-9EDD-B3346167D184",
+    "DataProviderID": 1,
+    "OperatorID": 3553,
+    "UsageTypeID": 4,
+    "UsageCost": "0,35€/kWh + parking fee",
+    "AddressInfo": {
+        "ID": 61641,
+        "Title": "Parking Ntra. Sra. del Recuerdo",
+        "AddressLine1": "Calle de la Hiedra",
+        "Town": "Madrid",
+        "StateOrProvince": "Community of Madrid",
+        "Postcode": "28036",
+        "CountryID": 210,
+        "Latitude": 40.47268302735057,
+        "Longitude": -3.6788897753308447,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 78051,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 78052,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        },
+        {
+            "ID": 152860,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 349689,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 7.4,
+            "CurrentTypeID": 10,
+            "Quantity": 29
+        }
+    ],
+    "NumberOfPoints": 30,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-11-23T15:27:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2016-02-22T16:36:00Z",
+    "SubmissionStatusTypeID": 200
+}

@@ -1,0 +1,91 @@
+{
+    "MediaItems": [
+        {
+            "ID": 35356,
+            "ChargePointID": 191777,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM191777/OCM-191777.orig.2022111211495440.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM191777/OCM-191777.thmb.2022111211495440.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 40036,
+                "Username": "lmjgarcia"
+            },
+            "DateCreated": "2022-11-12T11:50:00Z"
+        },
+        {
+            "ID": 35357,
+            "ChargePointID": 191777,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM191777/OCM-191777.orig.2022111211500774.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM191777/OCM-191777.thmb.2022111211500774.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 40036,
+                "Username": "lmjgarcia"
+            },
+            "DateCreated": "2022-11-12T11:50:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-11-23T15:10:00Z",
+    "ID": 191777,
+    "UUID": "CD1A154C-674E-404B-8AD3-5CD2D1DFFE25",
+    "DataProviderID": 1,
+    "OperatorID": 3553,
+    "UsageTypeID": 4,
+    "UsageCost": "0,40€/kWh",
+    "AddressInfo": {
+        "ID": 192136,
+        "Title": "EMT Plaza de Colón",
+        "AddressLine1": " Calle de Jorge Juan, 4, 28001 Madrid, España",
+        "Town": "Madrid",
+        "StateOrProvince": "Community of Madrid",
+        "Postcode": "28001",
+        "CountryID": 210,
+        "Latitude": 40.42503709715285,
+        "Longitude": -3.689903682037766,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 311475,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 4
+        },
+        {
+            "ID": 311476,
+            "ConnectionTypeID": 1036,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 43,
+            "CurrentTypeID": 20,
+            "Quantity": 4
+        },
+        {
+            "ID": 311477,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 4
+        }
+    ],
+    "NumberOfPoints": 4,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-11-23T15:10:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2022-02-28T14:15:00Z",
+    "SubmissionStatusTypeID": 200
+}

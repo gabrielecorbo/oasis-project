@@ -1,0 +1,40 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-10-02T09:05:00Z",
+    "ID": 60917,
+    "UUID": "C081044D-B305-4939-98CF-C7A9D442187D",
+    "DataProviderID": 1,
+    "OperatorID": 45,
+    "UsageTypeID": 1,
+    "AddressInfo": {
+        "ID": 61263,
+        "Title": "Carrefour los Patios",
+        "AddressLine1": "Calle Montejaque 241",
+        "Town": "Málaga",
+        "StateOrProvince": "Málaga",
+        "Postcode": "29004",
+        "CountryID": 210,
+        "Latitude": 36.687015,
+        "Longitude": -4.458796,
+        "ContactTelephone1": "+34 914 90 89 00",
+        "RelatedURL": "http://www.carrefour.es/tiendas-car...",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 77281,
+            "ConnectionTypeID": 25,
+            "LevelID": 2,
+            "PowerKW": 11,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "Pedir tarjeta en recepción",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-10-02T09:05:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2016-02-13T00:23:00Z",
+    "SubmissionStatusTypeID": 200
+}
