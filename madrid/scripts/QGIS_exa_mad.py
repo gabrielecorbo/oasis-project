@@ -92,7 +92,6 @@ def polygon_df_to_gdf(df):
     geometry = [box(x1, y1, x2, y2) for x1,y1,x2,y2 in zip(df.left, df.bottom, df.right, df.top)]
     df = df.drop(['left', 'bottom', 'right', 'top'], axis=1)
     geodf = gpd.GeoDataFrame(df, geometry=geometry)
-    #print(geodf.head())
     return df
 
 
