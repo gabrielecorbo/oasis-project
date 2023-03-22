@@ -1,0 +1,24 @@
+Inizio lavoro:
+- debug codice manchester (scaricare pacchetti python e sistemare directory generica per github)
+- avevamo lo shape file dei traffic points, ma non i relativi valori (csv)
+- abbiamo scaricato, dal sito indicato dall'autore, il file csv (manchester traffic data) da associare allo shape di traffic points
+- abbiamo scaricato, dal sito del pakistano, lo shape file MAP di manchester
+
+10/03
+- Realizzato grid a esagoni [X]
+- Implementato mappa OSM satellitare [X]
+- Nuovi dati nuove città [X]
+- Distanza POI [X] e capire come inserirla [X?]
+- Media su punti traffico [X]
+
+22/03
+- Aggiunte mappe varie
+- Inizio analisi POIs
+- Riscrittura su Jupyter
+- Importazione di tutti i Json files con le colonnine di ricarica
+
+To do:
+- Riscrittura modello
+- Dati traffico come avevamo fatto a Loano
+- Clustering POIs
+- Aggiornare report
