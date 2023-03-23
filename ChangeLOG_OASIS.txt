@@ -17,8 +17,11 @@ Inizio lavoro:
 - Riscrittura su Jupyter
 - Importazione di tutti i Json files con le colonnine di ricarica
 
+23/03
+- Dati traffico come avevamo fatto a Loano
+- Espasione a rotterdam 
+
 To do:
 - Riscrittura modello
-- Dati traffico come avevamo fatto a Loano
 - Clustering POIs
 - Aggiornare report
