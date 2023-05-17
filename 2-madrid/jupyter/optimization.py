@@ -240,12 +240,19 @@ for line in range(opt_loc_df2.shape[0]):
 plt.show()
 
 # %%
-# parameters for economic analyisis 
+# parameters for economic analyisis connecting to medium voltage MTA3 (media tensione)
 
-init_cost= 50000 # deployment cost per each station in €
-ene_cost= 0.20 # cost of electric energy €/kWh
-ene_reve= 0.35 # revenue for electric energy €/kWh
+deploy_cost= 50000 # deployment cost per each station in € !!!!!!!!!!!!!17/05 DA CORREGGERE CON LORO VALORE
+manag_cost = 25.88 #capex for each pod
+power_fee = 58.25 #capex according to max power
+distance_fee = 487.19+48.79 # to be check!!
 
+ene_cost= 0.15+0.05+0.01 # cost of electric energy €/kWh + comprensive items + excise
+maintenance_cost = 500 # annual cost of maintenance for each col
+manag_cost_opex = 1113.24 #opex for each pod
+power_fee_opex = 46.25 #opex according to max power
+
+ene_reve= 0.35 # revenue for electric energy €/kWh !!!!!!!!!!!!!17/05 DA CORREGGERE CON LORO VALORE
 
 #economic analysis
 
@@ -255,10 +262,15 @@ brk=np.zeros(len(opt_loc))
 roi=np.zeros(len(opt_loc))
 years=3 #years for the roi
 
+CAPEX=np.zeros(len(opt_loc))
+OPEX=np.zeros(len(opt_loc))
+
 for k in opt_loc:
-    daily_rev[i]=(ene_reve-ene_cost)*GIS_df['Traffico'][k]*pen_rate*ut_rate*avg_cap
-    brk[i]=math.ceil((init_cost*num_col[i]/daily_rev[i]))
-    roi[i]=100*((years*365*daily_rev[i])-(init_cost*num_col[i]))/(init_cost*num_col[i])
+    daily_rev[i]=(ene_reve-ene_cost)*GIS_df['Traffico'][k]*pen_rate*ut_rate*avg_cap #revenue calcolate per soddisfare energia richiesta effettiva, non massima erogabile
+    CAPEX[i]=(deploy_cost+power_fee*crg_rate)*num_col[i]+manag_cost+distance_fee
+    OPEX[i]=manag_cost_opex+(power_fee_opex*crg_rate+maintenance_cost)*num_col[i]
+    brk[i]=math.ceil((CAPEX[i]/(daily_rev[i]-OPEX[i]/365)))
+    roi[i]=100*((years*365*daily_rev[i])-(CAPEX[i]+OPEX[i]*years))/(CAPEX[i])
     i=i+1
 print(brk)
 print(roi)

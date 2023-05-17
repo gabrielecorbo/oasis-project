@@ -133,7 +133,7 @@ traffic_points_clip.plot(ax=base,column='x',legend=True)#, cmap='cool')
 # %%
 (poi_gdf['fclass'].unique())     #135
 # %%
-#poi_gdf=poi_gdf.clip(rect)
+"""#poi_gdf=poi_gdf.clip(rect)
 vec_poi=np.ones(len(poi_gdf))
 print(poi_gdf['fclass'][2])
 for i in range(len(poi_gdf)):
@@ -143,7 +143,68 @@ for i in range(len(poi_gdf)):
     vec_poi[i]=2
         
 #vec_poi=pd.DataFrame(vec_poi.transpose())
-print(vec_poi) 
+print(vec_poi) """
+
+No_weight = pd.Series(['bench','camera_surveillance','drinking_water','comms_tower','recycling_glass',
+                       'recycling','car_wash','waste_basket','recycling_paper','recycling_metal',
+                       'water_well','toilet','police','recycling_clothes','vending_machine',
+                       'vending_cigarette'])
+
+Food      = pd.Series(['bar', 'convenience', 'greengrocer', 'cafe', 'restaurant',
+             'fast_food', 'supermarket', 'bakery', 'butcher', 'market_place', 'biergarten',
+             'food_court', 'ice_rink','pub','kiosk','beverages','vending_parking'])
+
+Retail    = pd.Series(['artwork', 'post_box', 'hairdresser',
+               'bookshop', 'bicycle_shop', 'furniture_shop', 'toy_shop', 'beauty_shop',
+               'general', 'telephone', 'doityourself', 'mobile_phone_shop', 'clothes',
+               'sports_shop', 'stationery', 'department_store', 'jeweller', 'video_shop',
+               'travel_agent', 'optician', 'shoe_shop','bicycle_rental','laundry',
+               'car_dealership','florist','car_rental','computer_shop','vending_any',
+               'gift_shop','garden_centre','newsagent'])
+
+Leisure   = pd.Series(['playground', 'park','dog_park', 'cinema',
+                'nightclub', 'town_hall', 'swimming_pool', 'mall', 'shelter', 'outdoor_shop',
+                'arts_centre',
+                'golf_course', 'fire_station', 'courthouse', 'fort', 'chalet', 'nursing_home',
+                'theme_park', 'water_tower','community_centre','pitch','attraction','theatre',
+                'track'])
+
+Tourism   = pd.Series(['hotel', 'monument', 'fountain', 'post_office', 'memorial',
+                'observation_tower', 'tourist_info', 'viewpoint', 'ruins', 'castle',
+                'wayside_cross', 'picnic_site', 'museum', 'battlefield',
+                'embassy','guesthouse','hostel','archaeological','tower','motel',
+                'windmill','water_mill','car_sharing','wayside_shrine'])
+
+Finance   = pd.Series(['bank', 'atm'])
+
+Health    = pd.Series(['pharmacy', 'dentist', 'hospital', 'clinic','sports_centre','veterinary','chemist','doctors'])
+
+Education = pd.Series(['kindergarten', 'school', 'college', 'university', 'library'])
+
+
+
+
+
+vec_poi=np.ones(len(poi_gdf))
+for i in range(len(poi_gdf)):
+    if poi_gdf["fclass"].iloc[i] in No_weight.values:
+        vec_poi[i]=0 # cluster ignobili che pesano 0
+    if poi_gdf["fclass"].iloc[i] in Food.values:
+        vec_poi[i]=0.29 # cluster Food
+    if poi_gdf["fclass"].iloc[i] in Retail.values:
+        vec_poi[i]=0.27 # cluster Retail
+    if poi_gdf["fclass"].iloc[i] in Leisure.values:
+        vec_poi[i]=0.17 # cluster Leisure
+    if poi_gdf["fclass"].iloc[i] in Tourism.values:
+        vec_poi[i]=0.14 # cluster Tourism   
+    if poi_gdf["fclass"].iloc[i] in Finance.values:
+        vec_poi[i]=0.08 # cluster Finance  
+    if poi_gdf["fclass"].iloc[i] in Health.values:
+        vec_poi[i]=0.02 # cluster Health
+    if poi_gdf["fclass"].iloc[i] in Education.values:
+        vec_poi[i]=0.02 # cluster Education   
+        
+vec_poi=pd.DataFrame(vec_poi.transpose())
 # %%
 count_poi = pd.DataFrame(poi_gdf['fclass'].value_counts())
 print(count_poi)
@@ -286,10 +347,10 @@ polys = gpd.read_file(os.getcwd()+'\\shapefiles\\grid_exa.shp')
 points_polys = gpd.sjoin(traffic_points, polys, how="right")
 # %%
 # parameter for sizing
-pen_rate=0.1 #penetration rate
-ut_rate=0.04 #utilization rate (definied as the number of EV that stops for a charge)
-wrk_hours=12 #working hours
-crg_rate=90 #charging rate in kW
-avg_bat=50 #average battery capacity of a EV in kWh
+pen_rate=0.04 #penetration rate at year 2025
+ut_rate=0.04 #utilization rate (definied as the number of EV that stops for a charge) !!!!!!!!!!!!!17/05 DA CORREGGERE CON LORO VALORE
+wrk_hours=12 #working hours !!!!!!!!!!!!!17/05 DA CORREGGERE CON LORO VALORE
+crg_rate=150 #charging rate in kW
+avg_bat=50 #average battery capacity of a EV in kWh 
 avg_crg=0.5 #average charging percentage of each session
 avg_cap=avg_bat*avg_crg #average charging capacity needed in a charging session
