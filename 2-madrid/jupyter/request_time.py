@@ -1,8 +1,18 @@
-import googlemaps
+# %%
+import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
+import geopandas as gpd
+import os
+from pulp import *
+import importlib
+import scripts.neighbors as neigh #scripts.
+importlib.reload(neigh)
+from import_data import exagon
 from datetime import datetime
+# %%
+import googlemaps 
 gmaps = googlemaps.Client(key = 'AIzaSyAXSd2GOBZnJTRu8_i9RDUVmd_adQeGLM4') #key='Add Your Key here'
-
 #%%
 def get_time(origin, destination, dep_time):
     directions_result = gmaps.directions(origin,
@@ -16,7 +26,11 @@ def get_time(origin, destination, dep_time):
 # Import GIS data and car park location data
 GIS_data = pd.read_csv(os.getcwd()+'\\dati.csv')
 GIS_df = pd.DataFrame(GIS_data)
-
+# %%
+radius=0.012
+y_lim = (40.3,40.58)                                    # y coordinates (boundaries of city of Madrid)
+x_lim = (-3.85,-3.55) 
+polygons,rows,cols,colore,tot_traffic = exagon(radius,y_lim,x_lim)
 #%%
 l=len(GIS_df)
 print(l)
@@ -102,7 +116,9 @@ GIS_df['New_traffic'] = traffic
 '''''
 N.B. i valori delle percentuali son cambiati da prima
 '''''
+gdf_roads_clip = gpd.read_file(os.getcwd()+'\\shapefiles\\map.shp')
 new_col = []
+traffic = traffic
 mas=np.max(traffic)
 for k in range(len(traffic)):
     if traffic[k]<=0.0*mas:
@@ -117,7 +133,14 @@ for k in range(len(traffic)):
         col='darkblue'
     new_col.append(col)
 poly_grid = gpd.GeoDataFrame({'geometry': polygons}) 
-base = gdf_roads_clip.plot(figsize=(12, 8), color='black', lw=0.4, zorder=0)  # Zorder controls the layering of the charts with
+base = gdf_roads_clip.plot(figsize=(12, 8), color='black', lw=0.4, zorder=0)  # Zorder controls the layering of the charts with  
 base.set_xlim(x_lim)
 base.set_ylim(y_lim)    
 poly_grid.plot(ax=base, facecolor=new_col, edgecolor='black', lw=0.5, zorder=15,alpha=0.55)
+# %%
+poly_grid = gpd.GeoDataFrame({'geometry': polygons}) 
+base = gdf_roads_clip.plot(figsize=(12, 8), color='black', lw=0.4, zorder=0, alpha=0.5)  # Zorder controls the layering of the charts with  
+base.set_xlim(x_lim)
+base.set_ylim(y_lim) 
+poly_grid.plot(ax=base,facecolor='None', edgecolor='black', lw=0.8, zorder=15, alpha=1)
+# %%
