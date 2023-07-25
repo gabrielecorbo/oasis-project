@@ -113,6 +113,12 @@ for col in coll:
     #print(col)
     poi_gdf[col] = poi_gdf[col].astype(str)
 poi_gdf.to_file(os.getcwd()+'\\shapefiles\\pois_clip.shp')
+print(poi_gdf)
+poi_df_clip=pd.DataFrame()
+poi_df_clip['longitud']=poi_gdf['longitud']
+poi_df_clip['latitud']=poi_gdf['latitud']
+poi_df=pd.DataFrame(poi_df_clip)
+poi_df.to_csv(os.getcwd()+'\\poi_df.csv')
 # %%
 traffic_points_clip=traffic_points_gdf.clip(rect)
 traffic_points_clip.to_file(os.getcwd()+'\\shapefiles\\traffic_points_clip.shp')

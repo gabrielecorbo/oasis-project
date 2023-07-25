@@ -8,40 +8,51 @@ import shapefile as shp
 import seaborn as sns
 import math
 from scipy.spatial import distance
-from shapely.geometry import Point
+from shapely.geometry import Point,LineString,Polygon
 from pulp import *
 import importlib
 import scripts.neighbors as neigh #scripts.
 importlib.reload(neigh)
-from import_data import exagon
+from import_data import exagon,read_shapefile
 from datetime import datetime
 # %%
 # Import GIS data and car park location data
 GIS_data = pd.read_csv(os.getcwd()+'\\dati.csv')
 GIS_df = pd.DataFrame(GIS_data)
-GIS_df['mixed_use_area_per_cell']=GIS_df['mixed_use_area_per_cell'].fillna(0)
-
 car_park_data = GIS_df.iloc[:,[0,3,4]]
 car_park_df = pd.DataFrame(car_park_data)
 # %%
-poi_gdf=shp.Reader(os.getcwd()+'\shapefiles\pois_clip.shp')
-gdf_roads_clip=shp.Reader(os.getcwd()+'\shapefiles\map.shp')
-poly_grid=shp.Reader(os.getcwd()+'\shapefiles\grid_exa.shp')
-# %%
-#import vector of weigthd POIs
-data_path = os.getcwd()+'\\csv_files\\vec_poi.csv'
-data_poi = pd.read_csv(data_path)
-vec_poi = pd.DataFrame(data=data_poi)
-# %%
-#import vector of flow traffic
-data_path = os.getcwd()+'\\csv_files\\flow_traffic.csv'
-flow_traffic = pd.read_csv(data_path)
-flow_traffic = pd.DataFrame(data=flow_traffic)
-# %%
-radius=0.012
 y_lim = (40.3,40.58)                                    # y coordinates (boundaries of city of Madrid)
 x_lim = (-3.85,-3.55) 
+# %%
+shp_path_roads_1 = os.getcwd()+'\\shapefiles\\gis_osm_roads_free_1.shp'
+sf_roads_1 = shp.Reader(shp_path_roads_1)
+df_roads = read_shapefile(sf_roads_1)
+df_roads['coords'] = df_roads['coords'].apply(LineString)
+df_roads = gpd.GeoDataFrame(df_roads, geometry='coords')
+rect=Polygon([(x_lim[0],y_lim[0]),(x_lim[0],y_lim[1]),(x_lim[1],y_lim[1]),(x_lim[1],y_lim[0]),(x_lim[0],y_lim[0])])
+gdf_roads_clip=df_roads.clip(rect)
+
+#gdf_roads_clip=shp.Reader(os.getcwd()+'\shapefiles\map.shp')
+#gdf_roads_clip=read_shapefile(gdf_roads_clip)
+#poly_grid=shp.Reader(os.getcwd()+'\shapefiles\grid_exa.shp')
+# %%
+#import vector of weigthd POIs
+data_path = os.getcwd()+'\\poi_df.csv'
+data_poi = pd.read_csv(data_path)
+poi_gdf = pd.DataFrame(data=data_poi)
+data_path = os.getcwd()+'\\vec_poi.csv'
+data_poi = pd.read_csv(data_path)
+vec_poi = pd.DataFrame(data=data_poi).iloc[:,1]
+# %%
+#import vector of flow traffic
+data_path = os.getcwd()+'\\flow_traffic.csv'
+flow_traffic = pd.read_csv(data_path)
+flow_traffic = pd.DataFrame(data=flow_traffic).iloc[:,1]
+# %%
+radius=0.012
 polygons,rows,cols,colore,tot_traffic = exagon(radius,y_lim,x_lim)
+poly_grid = gpd.GeoDataFrame({'geometry': polygons}) 
 # %%
 # parameter for sizing
 pen_rate=0.04 #penetration rate at year 2025
@@ -86,9 +97,13 @@ def gen_parameters(df_demand, df_parking):
     coords_pois = [(x, y) for x, y in zip(poi_gdf['longitud'], poi_gdf['latitud'])]
     distance_matrix_poi = distance.cdist(coords_parking, coords_pois, 'euclidean')
     distance_matrix_poi = pd.DataFrame(distance_matrix_poi, index=df_parking.index.tolist())
-    distance_poi = (distance_matrix_poi * vec_poi).sum()
+    print(distance_matrix_poi)
+    print(vec_poi)
+    #distance_poi = (distance_matrix_poi * vec_poi).sum()
+    distance_poi = np.dot(distance_matrix_poi,vec_poi)
     print('distance_poi')
     print(distance_poi)
+    print(len(distance_poi))
     max = np.max(distance_poi)
     min = np.min(distance_poi)
     d_poi_scale = (distance_poi - min)/(max - min) 
@@ -138,6 +153,7 @@ def optimize(df_demand, df_parking):
             if dr[i] < 0:       # Can't have negative demand therefore limit minimum demand to zero
                 dr[i] = 0
 
+    print(fti)
     # Objective function
     # The scaled distance from the POI is considered as a multiplication factor
     lam = 10
