@@ -110,8 +110,9 @@ max = np.max(traffic)
 min = np.min(traffic)
 traffic = (traffic - min)/(max - min) 
 plt.hist(traffic) 
-GIS_df['New_traffic'] = traffic
-
+#GIS_df['New_traffic'] = traffic
+flow_traffic=pd.DataFrame(traffic.transpose())
+flow_traffic.to_csv(os.getcwd()+'\\flow_traffic.csv')
 #%%
 '''''
 N.B. i valori delle percentuali son cambiati da prima
@@ -143,4 +144,42 @@ base = gdf_roads_clip.plot(figsize=(12, 8), color='black', lw=0.4, zorder=0, alp
 base.set_xlim(x_lim)
 base.set_ylim(y_lim) 
 poly_grid.plot(ax=base,facecolor='None', edgecolor='black', lw=0.8, zorder=15, alpha=1)
+# %%
+# APPROCCIO RAPPORTO ADIMENSIONALE
+time_rate_matrix = traffic_times/times
+time_rate_matrix = np.nan_to_num(time_rate_matrix)
+# %%
+traff_ex_rate = np.true_divide(time_rate_matrix.sum(1),(time_rate_matrix!=0).sum(1))
+traff_en_rate = np.true_divide(time_rate_matrix.sum(0),(time_rate_matrix!=0).sum(0))
+# %%
+traffic_rate = traff_ex_rate - traff_en_rate
+print((traffic_rate==0).sum())
+print((traffic_rate<0).sum())
+plt.hist(traffic_rate) 
+# %%
+max = np.max(traffic_rate)
+min = np.min(traffic_rate)
+traffic_rate = (traffic_rate - min)/(max - min) 
+plt.hist(traffic_rate) 
+# %%
+gdf_roads_clip = gpd.read_file(os.getcwd()+'\\shapefiles\\map.shp')
+new_col = []
+mas=np.max(traffic_rate)
+for k in range(len(traffic_rate)):
+    if traffic_rate[k]<=0.0*mas:
+        col='lightcyan'
+    elif traffic_rate[k]<=0.25*mas:
+        col='lightskyblue'
+    elif traffic_rate[k]<=0.5*mas:
+        col='deepskyblue'
+    elif traffic_rate[k]<=0.75*mas:
+        col='royalblue'
+    elif traffic_rate[k]<=mas:
+        col='darkblue'
+    new_col.append(col)
+poly_grid = gpd.GeoDataFrame({'geometry': polygons}) 
+base = gdf_roads_clip.plot(figsize=(12, 8), color='black', lw=0.4, zorder=0)  # Zorder controls the layering of the charts with  
+base.set_xlim(x_lim)
+base.set_ylim(y_lim)    
+poly_grid.plot(ax=base, facecolor=new_col, edgecolor='black', lw=0.5, zorder=15,alpha=0.55)
 # %%

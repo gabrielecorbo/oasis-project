@@ -205,6 +205,7 @@ for i in range(len(poi_gdf)):
         vec_poi[i]=0.02 # cluster Education   
         
 vec_poi=pd.DataFrame(vec_poi.transpose())
+vec_poi.to_csv(os.getcwd()+'\\vec_poi.csv')
 # %%
 count_poi = pd.DataFrame(poi_gdf['fclass'].value_counts())
 print(count_poi)

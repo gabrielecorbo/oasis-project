@@ -1,11 +1,56 @@
+# %%
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import geopandas as gpd
+import os
+import shapefile as shp
+import seaborn as sns
+import math
+from scipy.spatial import distance
+from shapely.geometry import Point
+from pulp import *
+import importlib
+import scripts.neighbors as neigh #scripts.
+importlib.reload(neigh)
+from import_data import exagon
+from datetime import datetime
+# %%
 # Import GIS data and car park location data
-#GIS_data = pd.read_csv(os.getcwd()+'\\dati.csv')
-#GIS_df = pd.DataFrame(GIS_data)
-#GIS_df['mixed_use_area_per_cell']=GIS_df['mixed_use_area_per_cell'].fillna(0)
+GIS_data = pd.read_csv(os.getcwd()+'\\dati.csv')
+GIS_df = pd.DataFrame(GIS_data)
+GIS_df['mixed_use_area_per_cell']=GIS_df['mixed_use_area_per_cell'].fillna(0)
 
 car_park_data = GIS_df.iloc[:,[0,3,4]]
 car_park_df = pd.DataFrame(car_park_data)
-
+# %%
+poi_gdf=shp.Reader(os.getcwd()+'\shapefiles\pois_clip.shp')
+gdf_roads_clip=shp.Reader(os.getcwd()+'\shapefiles\map.shp')
+poly_grid=shp.Reader(os.getcwd()+'\shapefiles\grid_exa.shp')
+# %%
+#import vector of weigthd POIs
+data_path = os.getcwd()+'\\csv_files\\vec_poi.csv'
+data_poi = pd.read_csv(data_path)
+vec_poi = pd.DataFrame(data=data_poi)
+# %%
+#import vector of flow traffic
+data_path = os.getcwd()+'\\csv_files\\flow_traffic.csv'
+flow_traffic = pd.read_csv(data_path)
+flow_traffic = pd.DataFrame(data=flow_traffic)
+# %%
+radius=0.012
+y_lim = (40.3,40.58)                                    # y coordinates (boundaries of city of Madrid)
+x_lim = (-3.85,-3.55) 
+polygons,rows,cols,colore,tot_traffic = exagon(radius,y_lim,x_lim)
+# %%
+# parameter for sizing
+pen_rate=0.04 #penetration rate at year 2025
+ut_rate=0.04 #utilization rate (definied as the number of EV that stops for a charge) !!!!!!!!!!!!!17/05 DA CORREGGERE CON LORO VALORE
+wrk_hours=12 #working hours !!!!!!!!!!!!!17/05 DA CORREGGERE CON LORO VALORE
+crg_rate=150 #charging rate in kW
+avg_bat=50 #average battery capacity of a EV in kWh 
+avg_crg=0.5 #average charging percentage of each session
+avg_cap=avg_bat*avg_crg #average charging capacity needed in a charging session
 #%%
 def gen_sets(df_demand, df_parking):
     """Generate sets to use in the optimization problem"""
@@ -21,8 +66,9 @@ def gen_parameters(df_demand, df_parking):
     including cost to install charging stations, operating costs and others..."""
 
     N = 10                               # Where vi is the charging possibility of an EV in cell i
-    fi = df_demand["New_traffic"]          # Where fi is the average traffic flow in grid i
+    fi = df_demand["Traffico"]          # Where fi is the average traffic in grid i
     di = fi                      # Where di represents the charging demand of EV in grid i
+    fti = flow_traffic             # Where fti is the flow traffic in grid i
     #di = di.to_dict()
 
     # distance matrix of charging station location candidates and charging demand location
@@ -49,7 +95,7 @@ def gen_parameters(df_demand, df_parking):
     plt.hist(d_poi_scale)
     #plt.show()
     #print(distance_poi.head())
-    return di, N, distance_matrix3, d_poi_scale
+    return di, fti, N, distance_matrix3, d_poi_scale
 
 #%%
 def gen_demand(df_demand):
@@ -67,7 +113,7 @@ def optimize(df_demand, df_parking):
     demand_lc, chg_lc = gen_sets(df_demand, df_parking)
 
     # Import parameters function
-    di, N, distance_matrix, d_poi_scale = gen_parameters(df_demand, df_parking)
+    di, fti, N, distance_matrix, d_poi_scale = gen_parameters(df_demand, df_parking)
 
     # Import current demand of car park z in cell i
     diz = gen_demand(df_demand)
@@ -95,7 +141,7 @@ def optimize(df_demand, df_parking):
     # Objective function
     # The scaled distance from the POI is considered as a multiplication factor
     lam = 10
-    prob += lpSum((dr[j]*x[j])*(1-lam*d_poi_scale[j]) for j in chg_lc) #
+    prob += lpSum((dr[j]*fti[j]*x[j])*(1-lam*d_poi_scale[j]) for j in chg_lc) #
 
     # Constraints
     for j in chg_lc:

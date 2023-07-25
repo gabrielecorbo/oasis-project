@@ -1,4 +1,4 @@
-import requests
+import request_time
 import pandas as pd
 import io
 import numpy as np
@@ -6,7 +6,7 @@ import csv
 
 def find_ev_chargers_location(lat, long, dist_from_coord):
 
-    response = requests.get(f"http://chargepoints.dft.gov.uk/api/retrieve/registry/lat/{lat}/long/{long}"
+    response = request_time.get(f"http://chargepoints.dft.gov.uk/api/retrieve/registry/lat/{lat}/long/{long}"
                             f"/dist/{dist_from_coord}/format/csv")
     r = response.content
     rawdata = pd.read_csv(io.StringIO(r.decode('utf-8')))
