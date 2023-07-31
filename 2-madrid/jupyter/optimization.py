@@ -56,9 +56,9 @@ poly_grid = gpd.GeoDataFrame({'geometry': polygons})
 # %%
 # parameter for sizing
 pen_rate=0.04 #penetration rate at year 2025
-ut_rate=0.04 #utilization rate (definied as the number of EV that stops for a charge) !!!!!!!!!!!!!17/05 DA CORREGGERE CON LORO VALORE
-wrk_hours=12 #working hours !!!!!!!!!!!!!17/05 DA CORREGGERE CON LORO VALORE
-crg_rate=150 #charging rate in kW
+catch_rate=0.04 #catch rate (definied as the number of EV that stops for a charge) 31/07 stimato, dipende da troppe variabili, spiegare su report..
+wrk_hours=12 #working hours !!!!!!!!!!!!!31/07 loro non danno valore, guardare https://www.mdpi.com/1996-1073/16/6/2619 e https://www.sciencedirect.com/science/article/pii/S258900422201906X
+crg_rate=150 #charging rate in kW 
 avg_bat=50 #average battery capacity of a EV in kWh 
 avg_crg=0.5 #average charging percentage of each session
 avg_cap=avg_bat*avg_crg #average charging capacity needed in a charging session
@@ -116,7 +116,7 @@ def gen_parameters(df_demand, df_parking):
 def gen_demand(df_demand):
     """generate the current satisfied demand for charging for each cell i"""
 
-    diz = df_demand["no_existing_chg"]/(pen_rate*ut_rate*avg_cap/wrk_hours/crg_rate)  # Number of existing chargers in cell i multiplied with a parameter to calculate the satisfied traffic
+    diz = df_demand["no_existing_chg"]/(pen_rate*catch_rate*avg_cap/wrk_hours/crg_rate)  # Number of existing chargers in cell i multiplied with a parameter to calculate the satisfied traffic
     #diz = diz.to_dict()
 
     return diz
@@ -286,7 +286,7 @@ opt_loc_gdf.to_file(os.getcwd()+'\\shapefiles\\opt_loc_exa.shp')
 i=0
 num_col=np.zeros(len(opt_loc))
 for k in opt_loc:
-    num_col[i]=math.ceil(GIS_df['Traffico'][k]*pen_rate*ut_rate*avg_cap/wrk_hours/crg_rate)
+    num_col[i]=math.ceil(GIS_df['Traffico'][k]*pen_rate*catch_rate*avg_cap/wrk_hours/crg_rate)
     i=i+1
 
 base = gdf_roads_clip.plot(figsize=(12, 8), color='grey', lw=0.4, zorder=0)
@@ -304,17 +304,17 @@ plt.show()
 # %%
 # parameters for economic analyisis connecting to medium voltage MTA3 (media tensione)
 
-deploy_cost= 50000 # deployment cost per each station in € !!!!!!!!!!!!!17/05 DA CORREGGERE CON LORO VALORE
+deploy_cost= 50000 # deployment cost per each station in € 31/07 corretto con il loro valore
 manag_cost = 25.88 #capex for each pod
 power_fee = 58.25 #capex according to max power
-distance_fee = 487.19+48.79 # to be check!!
+distance_fee = 487.19+48.79 # capex according to distance for grid
 
 ene_cost= 0.15+0.05+0.01 # cost of electric energy €/kWh + comprensive items + excise
-maintenance_cost = 500 # annual cost of maintenance for each col
+maintenance_cost = 500 # annual cost of maintenance for each station
 manag_cost_opex = 1113.24 #opex for each pod
 power_fee_opex = 46.25 #opex according to max power
 
-ene_reve= 0.35 # revenue for electric energy €/kWh !!!!!!!!!!!!!17/05 DA CORREGGERE CON LORO VALORE
+ene_reve= 0.60 # revenue for electric energy €/kWh 31/07 https://www.chargeprice.app/ molto utile!
 
 #economic analysis
 
@@ -328,7 +328,7 @@ CAPEX=np.zeros(len(opt_loc))
 OPEX=np.zeros(len(opt_loc))
 
 for k in opt_loc:
-    daily_rev[i]=(ene_reve-ene_cost)*GIS_df['Traffico'][k]*pen_rate*ut_rate*avg_cap #revenue calcolate per soddisfare energia richiesta effettiva, non massima erogabile
+    daily_rev[i]=(ene_reve-ene_cost)*GIS_df['Traffico'][k]*pen_rate*catch_rate*avg_cap #revenue calcolate per soddisfare energia richiesta effettiva, non massima erogabile
     CAPEX[i]=(deploy_cost+power_fee*crg_rate)*num_col[i]+manag_cost+distance_fee
     OPEX[i]=manag_cost_opex+(power_fee_opex*crg_rate+maintenance_cost)*num_col[i]
     brk[i]=math.ceil((CAPEX[i]/(daily_rev[i]-OPEX[i]/365)))
