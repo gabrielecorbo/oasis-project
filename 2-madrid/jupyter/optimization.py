@@ -76,7 +76,7 @@ def gen_parameters(df_demand, df_parking):
     """Generate parameters to use in the optimization problem,
     including cost to install charging stations, operating costs and others..."""
 
-    N = 10                               # Where vi is the charging possibility of an EV in cell i
+    N = 6                               # Where vi is the charging possibility of an EV in cell i
     fi = df_demand["Traffico"]          # Where fi is the average traffic in grid i
     di = fi                      # Where di represents the charging demand of EV in grid i
     fti = flow_traffic             # Where fti is the flow traffic in grid i
@@ -144,8 +144,8 @@ def optimize(df_demand, df_parking):
     zip_iterator = zip(demand_lc, [None]*len(demand_lc))
     dr = dict(zip_iterator)
 
-    print(di)
-    print(diz)
+    #print(di)
+    #print(diz)
     # For each cell i subtract the existing number of charging stations from the charging demands in cell i
     for i in demand_lc:
         for j in chg_lc:
@@ -153,14 +153,19 @@ def optimize(df_demand, df_parking):
             if dr[i] < 0:       # Can't have negative demand therefore limit minimum demand to zero
                 dr[i] = 0
 
-    print(fti)
+    #print(fti)
     # Objective function
     # The scaled distance from the POI is considered as a multiplication factor
-    lam = 10
+    lam = 1
     prob += lpSum((dr[j]*fti[j]*x[j])*(1-lam*d_poi_scale[j]) for j in chg_lc) #
 
     # Constraints
     for j in chg_lc:
+        print((dr[j]*fti[j])*(1-lam*d_poi_scale[j]))
+        print(dr[j])
+        print(fti[j])
+        print(1-lam*d_poi_scale[j])
+        print('___________________________')
         nei_j = neigh.neighbors(rows,cols,j)[0]
         nei_j.append(j)
         prob += lpSum(x[k] for k in nei_j) <= 1                                # Constraint 1
@@ -266,7 +271,8 @@ poly_grid.plot(ax=base, facecolor=col_opt, edgecolor='black', lw=0.5, zorder=15,
 # %%
 opt_locations=car_park_df.iloc[opt_loc]
 print(opt_locations[['centroid_x', 'centroid_y']])
-
+traff_opt_locations=GIS_df.iloc[opt_loc]
+print(traff_opt_locations[['Traffico', 'no_existing_chg']])
 def point_df_to_gdf2(df):
     """takes a dataframe with columns named 'longitude' and 'latitude'
     to transform to a geodataframe with point features"""
