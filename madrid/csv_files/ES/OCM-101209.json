@@ -1,0 +1,92 @@
+{
+    "UserComments": [
+        {
+            "ID": 19313,
+            "ChargePointID": 101209,
+            "CommentTypeID": 10,
+            "UserName": "xester",
+            "Rating": 5,
+            "DateCreated": "2018-03-20T18:15:09.21Z",
+            "User": {
+                "ID": 6169,
+                "Username": "xester"
+            },
+            "CheckinStatusTypeID": 10
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 15190,
+            "ChargePointID": 101209,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM101209/OCM-101209.orig.2018032018142415.jpeg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM101209/OCM-101209.thmb.2018032018142415.jpeg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 6169,
+                "Username": "xester"
+            },
+            "DateCreated": "2018-03-20T18:15:00Z"
+        },
+        {
+            "ID": 15189,
+            "ChargePointID": 101209,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM101209/OCM-101209.orig.2018032018140217.jpeg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM101209/OCM-101209.thmb.2018032018140217.jpeg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 6169,
+                "Username": "xester"
+            },
+            "DateCreated": "2018-03-20T18:14:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-01-04T09:10:00Z",
+    "ID": 101209,
+    "UUID": "15F8A253-3048-4F88-A046-CEFB3147956F",
+    "DataProviderID": 1,
+    "OperatorID": 3556,
+    "UsageTypeID": 4,
+    "UsageCost": "0,25€/kWh",
+    "AddressInfo": {
+        "ID": 101555,
+        "Title": "Parking de l'Hort del Tàrrech",
+        "AddressLine1": "Raval de Sant Rafael 71",
+        "Town": "La Selva del Camp",
+        "StateOrProvince": "Tarragona",
+        "Postcode": "43470",
+        "CountryID": 210,
+        "Latitude": 41.21488565504157,
+        "Longitude": 1.1359781080465154,
+        "ContactTelephone2": "",
+        "ContactEmail": "comunicacio@laselvadelcamp.cat",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 142884,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 16,
+            "Voltage": 400,
+            "PowerKW": 11,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-01-04T09:10:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2018-03-20T18:07:00Z",
+    "SubmissionStatusTypeID": 200
+}

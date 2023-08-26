@@ -1,0 +1,74 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-02-19T16:16:00Z",
+    "ID": 134886,
+    "UUID": "015D4200-534B-48AD-8174-875FD9D1B1E6",
+    "DataProviderID": 1,
+    "OperatorID": 207,
+    "UsageTypeID": 4,
+    "UsageCost": "0,50€/kWh DC - 0,45€/kWh AC",
+    "AddressInfo": {
+        "ID": 135232,
+        "Title": "Àrea de Bassella",
+        "AddressLine1": "Ctra. C14 Km. 134",
+        "Town": "Bassella",
+        "StateOrProvince": "Lleida",
+        "Postcode": "25289",
+        "CountryID": 210,
+        "Latitude": 42.005888365582706,
+        "Longitude": 1.2949722241313566,
+        "ContactTelephone1": "0034 973 462 731",
+        "ContactEmail": "info@bassella.com",
+        "AccessComments": "It is a service area, containing following services:\r\nREPSOL petrol station with mini supermarket and a bar in it\r\nCar Washing area\r\nSecond building containing a fast food restaurant (Pans and Company) and a motorcycle museum. \r\nPicknic Area\r\nHuge parking area",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 188720,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 75,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 400,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        },
+        {
+            "ID": 188721,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 75,
+            "LevelID": 3,
+            "Amps": 125,
+            "Voltage": 400,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 188722,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 75,
+            "LevelID": 3,
+            "Amps": 125,
+            "Voltage": 400,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 188723,
+            "ConnectionTypeID": 30,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "We do have 2 different charging stations: \r\nOne from TESLA with a universal charger and a charger only for Tesla Vehicles. \r\nOne from ENDESA, which is much faster and powerful",
+    "StatusTypeID": 75,
+    "DateLastStatusUpdate": "2023-02-19T16:16:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2019-11-28T14:00:00Z",
+    "SubmissionStatusTypeID": 200
+}

@@ -1,0 +1,51 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-01-05T19:16:00Z",
+    "ID": 44062,
+    "UUID": "A355E14F-BCC2-4C91-A04F-9AD717255BCE",
+    "DataProviderID": 1,
+    "OperatorID": 3556,
+    "UsageTypeID": 1,
+    "UsageCost": "free",
+    "AddressInfo": {
+        "ID": 44408,
+        "Title": "Pla Vinyet",
+        "AddressLine1": "Carrer de Cèsar Martorell",
+        "Town": "San Cugat",
+        "StateOrProvince": "Barcelona",
+        "Postcode": "08172",
+        "CountryID": 210,
+        "Latitude": 41.4697958,
+        "Longitude": 2.08703590000005,
+        "ContactTelephone1": "6600086",
+        "ContactTelephone2": "6600086",
+        "ContactEmail": "creandomomentos@gmail.com",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 53774,
+            "ConnectionTypeID": 28,
+            "StatusTypeID": 50,
+            "LevelID": 1,
+            "PowerKW": 2.3,
+            "CurrentTypeID": 10,
+            "Quantity": 1
+        },
+        {
+            "ID": 345670,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-01-05T19:16:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2015-04-13T16:08:00Z",
+    "SubmissionStatusTypeID": 200
+}

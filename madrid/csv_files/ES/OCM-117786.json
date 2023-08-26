@@ -1,0 +1,131 @@
+{
+    "MediaItems": [
+        {
+            "ID": 17692,
+            "ChargePointID": 117786,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM117786/OCM-117786.orig.2019030212213039.png",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM117786/OCM-117786.thmb.2019030212213039.png",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 20079,
+                "Username": "Victor TeslaModelS"
+            },
+            "DateCreated": "2019-03-02T12:22:00Z"
+        },
+        {
+            "ID": 17691,
+            "ChargePointID": 117786,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM117786/OCM-117786.orig.2019030209472414.png",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM117786/OCM-117786.thmb.2019030209472414.png",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 20079,
+                "Username": "Victor TeslaModelS"
+            },
+            "DateCreated": "2019-03-02T09:48:00Z"
+        },
+        {
+            "ID": 17689,
+            "ChargePointID": 117786,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM117786/OCM-117786.orig.2019030209442072.png",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM117786/OCM-117786.thmb.2019030209442072.png",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 20079,
+                "Username": "Victor TeslaModelS"
+            },
+            "DateCreated": "2019-03-02T09:45:00Z"
+        },
+        {
+            "ID": 17690,
+            "ChargePointID": 117786,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM117786/OCM-117786.orig.2019030209451455.png",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM117786/OCM-117786.thmb.2019030209451455.png",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 20079,
+                "Username": "Victor TeslaModelS"
+            },
+            "DateCreated": "2019-03-02T09:45:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-02-19T16:07:00Z",
+    "ID": 117786,
+    "UUID": "C38E3AA9-2230-47E4-8133-4D6C1994E839",
+    "DataProviderID": 1,
+    "OperatorID": 45,
+    "UsageTypeID": 6,
+    "UsageCost": "16€/dia",
+    "AddressInfo": {
+        "ID": 118132,
+        "Title": "CastellonSuits.com",
+        "AddressLine1": "Plaza del Notario Mas 22",
+        "Town": "Castellón de la Plana",
+        "StateOrProvince": "Castellón",
+        "Postcode": "12001",
+        "CountryID": 210,
+        "Latitude": 39.9880463,
+        "Longitude": -0.0411383,
+        "ContactTelephone1": "699307609",
+        "ContactEmail": "ceo@victornavarro.com",
+        "AccessComments": "Para clientes del Edificio. Gratis durante 2019. Contactar por telefono para grabar matricula en lectores ",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 166662,
+            "ConnectionTypeID": 30,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 400,
+            "PowerKW": 11,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        },
+        {
+            "ID": 166663,
+            "ConnectionTypeID": 1036,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 400,
+            "PowerKW": 11,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        },
+        {
+            "ID": 338520,
+            "ConnectionTypeID": 28,
+            "StatusTypeID": 50,
+            "LevelID": 1,
+            "PowerKW": 2.3,
+            "CurrentTypeID": 10,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 6,
+    "GeneralComments": "Disponemos de 6 cargadores. Tesla y Porsche Destination Charger",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-02-19T16:07:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2019-03-01T16:23:00Z",
+    "SubmissionStatusTypeID": 200
+}

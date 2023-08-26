@@ -1,0 +1,38 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-11-23T15:20:00Z",
+    "ID": 191744,
+    "UUID": "1265AF88-D366-4FD3-BCAF-E0E537B77569",
+    "DataProviderID": 1,
+    "OperatorID": 3553,
+    "UsageTypeID": 4,
+    "UsageCost": "0,35€/kWh",
+    "AddressInfo": {
+        "ID": 192103,
+        "Title": "EMT Fuente de la Mora Parking disuasorio",
+        "AddressLine1": " Av. de Manoteras, 1D, 28050 Madrid, España",
+        "Town": "Madrid",
+        "StateOrProvince": "Community of Madrid",
+        "Postcode": "28050",
+        "CountryID": 210,
+        "Latitude": 40.48472568096574,
+        "Longitude": -3.6629082012561867,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 311412,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 7,
+            "Quantity": 6
+        }
+    ],
+    "NumberOfPoints": 6,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-11-23T15:20:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2022-02-24T12:10:00Z",
+    "SubmissionStatusTypeID": 200
+}

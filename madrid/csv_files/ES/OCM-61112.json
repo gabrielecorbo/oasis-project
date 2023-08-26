@@ -1,0 +1,39 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-09-18T15:11:00Z",
+    "ID": 61112,
+    "UUID": "6A490114-916B-40B0-964F-E35F6D6F81FE",
+    "DataProviderID": 1,
+    "OperatorID": 1,
+    "UsageTypeID": 6,
+    "AddressInfo": {
+        "ID": 61458,
+        "Title": "Fundación para el desarrollo de las Nuevas Tecnologías del Hidrógeno en Aragón",
+        "AddressLine1": "Calle Cuatro",
+        "Town": "Huesca",
+        "StateOrProvince": "Huesca",
+        "Postcode": "22004",
+        "CountryID": 210,
+        "Latitude": 42.109067,
+        "Longitude": -0.459882,
+        "ContactTelephone1": "+34 974 990 000",
+        "RelatedURL": "http://www.greengrouping.com",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 77714,
+            "ConnectionTypeID": 28,
+            "LevelID": 2,
+            "PowerKW": 3.7,
+            "CurrentTypeID": 10,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-09-18T15:11:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2016-02-13T00:24:00Z",
+    "SubmissionStatusTypeID": 200
+}

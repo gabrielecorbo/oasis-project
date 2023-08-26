@@ -1,0 +1,67 @@
+{
+    "UserComments": [
+        {
+            "ID": 17564,
+            "ChargePointID": 61296,
+            "CommentTypeID": 50,
+            "UserName": "Boilerman",
+            "Comment": "You have to ask the security for activating. If you have a rfid card from ibil you can activate it self with your card. It works perfect.",
+            "Rating": 5,
+            "DateCreated": "2017-08-08T18:51:55.54Z",
+            "User": {
+                "ID": 14200,
+                "Username": "Boilerman"
+            },
+            "CheckinStatusTypeID": 10
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-12-01T15:39:00Z",
+    "ID": 61296,
+    "UUID": "C876A904-44AB-4D3B-94A7-349C704B20CF",
+    "DataProviderID": 1,
+    "OperatorID": 1,
+    "UsageTypeID": 6,
+    "AddressInfo": {
+        "ID": 61642,
+        "Title": "Universidad de Alicante",
+        "AddressLine1": "Carretera Alicante, 94C",
+        "Town": "Sant Vicent del Raspeig",
+        "StateOrProvince": "Alicante",
+        "Postcode": "03690",
+        "CountryID": 210,
+        "Latitude": 38.38291000820243,
+        "Longitude": -0.5083803426394979,
+        "AccessComments": "Para estudiantes de la universidad. Pedir tarjeta para activar.",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 78053,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 230,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        },
+        {
+            "ID": 78054,
+            "ConnectionTypeID": 28,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 16,
+            "Voltage": 230,
+            "PowerKW": 3.7,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-12-01T15:39:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2016-02-22T18:12:00Z",
+    "SubmissionStatusTypeID": 200
+}

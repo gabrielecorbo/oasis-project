@@ -1,0 +1,39 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-03-04T20:34:00Z",
+    "ID": 207421,
+    "UUID": "820CD73A-AC76-41DE-8926-049D09862E76",
+    "DataProviderID": 1,
+    "OperatorID": 207,
+    "UsageTypeID": 5,
+    "UsageCost": "0,39€/kWh AC ",
+    "AddressInfo": {
+        "ID": 207801,
+        "Title": "Parking Blas Infante",
+        "AddressLine1": "Carrer de Blas Infante",
+        "Town": "Lleida",
+        "StateOrProvince": "Catalonia",
+        "Postcode": "25001",
+        "CountryID": 210,
+        "Latitude": 41.612093942371985,
+        "Longitude": 0.6279802722652903,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 345340,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 7.4,
+            "CurrentTypeID": 10,
+            "Quantity": 4
+        }
+    ],
+    "NumberOfPoints": 4,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-03-04T20:34:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2022-10-10T18:53:00Z",
+    "SubmissionStatusTypeID": 200
+}

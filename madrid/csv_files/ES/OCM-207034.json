@@ -1,0 +1,39 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-12-16T11:00:00Z",
+    "ID": 207034,
+    "UUID": "4D2CF055-867C-4518-9107-5E703F6C1F94",
+    "DataProviderID": 1,
+    "OperatorID": 2247,
+    "UsageTypeID": 4,
+    "UsageCost": "0,20€/kWh",
+    "AddressInfo": {
+        "ID": 207414,
+        "Title": "PARKING EIXAMPLE",
+        "AddressLine1": "25b Carrer de Juli Garreta",
+        "Town": "Girona",
+        "StateOrProvince": "Catalonia",
+        "Postcode": "17002",
+        "CountryID": 210,
+        "Latitude": 41.97811599835126,
+        "Longitude": 2.818989189066542,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 344770,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 7.4,
+            "CurrentTypeID": 10,
+            "Quantity": 4
+        }
+    ],
+    "NumberOfPoints": 4,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-12-16T11:00:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2022-10-08T13:33:00Z",
+    "SubmissionStatusTypeID": 200
+}

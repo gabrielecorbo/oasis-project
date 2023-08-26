@@ -1,0 +1,76 @@
+{
+    "MediaItems": [
+        {
+            "ID": 35992,
+            "ChargePointID": 157313,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM157313/OCM-157313.orig.2022121910461894.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM157313/OCM-157313.thmb.2022121910461894.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 40036,
+                "Username": "lmjgarcia"
+            },
+            "DateCreated": "2022-12-19T10:46:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-12-19T10:46:00Z",
+    "ID": 157313,
+    "UUID": "91257438-3276-4C30-9511-595D73F398F2",
+    "DataProviderID": 1,
+    "OperatorID": 2247,
+    "UsageTypeID": 4,
+    "UsageCost": "0,45€/kWh ",
+    "AddressInfo": {
+        "ID": 157667,
+        "Title": "Finestrat",
+        "AddressLine1": "Carrer Astúries",
+        "Town": "Finestrat",
+        "StateOrProvince": "Alicante",
+        "Postcode": "03509",
+        "CountryID": 210,
+        "Latitude": 38.53646889705914,
+        "Longitude": -0.17943864041490087,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 226569,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        },
+        {
+            "ID": 226570,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        },
+        {
+            "ID": 226571,
+            "ConnectionTypeID": 1036,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 43,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 4,
+    "GeneralComments": "App. Iberdrola",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-12-19T10:46:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2020-05-26T15:58:00Z",
+    "SubmissionStatusTypeID": 200
+}

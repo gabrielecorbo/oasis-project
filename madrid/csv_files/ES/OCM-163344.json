@@ -1,0 +1,93 @@
+{
+    "UserComments": [
+        {
+            "ID": 23176,
+            "ChargePointID": 163344,
+            "CommentTypeID": 10,
+            "UserName": "Jim3cantos",
+            "Comment": "Operational as of 28/8/2020",
+            "Rating": 5,
+            "DateCreated": "2020-09-03T16:36:18.617Z",
+            "User": {
+                "ID": 6750,
+                "Username": "Jim3cantos"
+            },
+            "CheckinStatusTypeID": 0,
+            "IsActionedByEditor": false
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 33312,
+            "ChargePointID": 163344,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM163344/OCM-163344.orig.2022082808073399.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM163344/OCM-163344.thmb.2022082808073399.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 40036,
+                "Username": "lmjgarcia"
+            },
+            "DateCreated": "2022-08-28T08:08:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-02-21T17:53:00Z",
+    "ID": 163344,
+    "UUID": "DD9109EC-D020-4310-97B9-06B31C400E44",
+    "DataProviderID": 1,
+    "OperatorID": 3324,
+    "UsageTypeID": 4,
+    "UsageCost": "0,39€/kWh",
+    "AddressInfo": {
+        "ID": 163701,
+        "Title": "Galp Villagordo del Cabriel (Dir. Madrid) - Zunder",
+        "AddressLine1": "Galp",
+        "Town": "Villargordo del Cabriel",
+        "StateOrProvince": "Valencian Community",
+        "Postcode": "",
+        "CountryID": 210,
+        "Latitude": 39.52915705440614,
+        "Longitude": -1.4333520522936851,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 234911,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 2,
+            "Comments": "ABB Terra54 Charger"
+        },
+        {
+            "ID": 234912,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        },
+        {
+            "ID": 338726,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 22,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 4,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-02-21T17:53:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2020-08-21T10:30:00Z",
+    "SubmissionStatusTypeID": 200
+}

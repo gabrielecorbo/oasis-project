@@ -1,0 +1,86 @@
+{
+    "MediaItems": [
+        {
+            "ID": 35399,
+            "ChargePointID": 130819,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM130819/OCM-130819.orig.2022111411431035.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM130819/OCM-130819.thmb.2022111411431035.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 40036,
+                "Username": "lmjgarcia"
+            },
+            "DateCreated": "2022-11-14T11:43:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-11-14T11:43:00Z",
+    "ID": 130819,
+    "UUID": "E5DDF790-96FD-4092-B7FC-6EA6B70B4A96",
+    "DataProviderID": 1,
+    "OperatorID": 3552,
+    "UsageTypeID": 4,
+    "UsageCost": "0,35kWh DC 50 kW - 0,10€/min AC",
+    "AddressInfo": {
+        "ID": 131165,
+        "Title": "Hotel Claridge",
+        "AddressLine1": "Plaza del Conde de Casal 6",
+        "Town": "Madrid",
+        "StateOrProvince": "Madrid",
+        "Postcode": "28007",
+        "CountryID": 210,
+        "Latitude": 40.40624839329729,
+        "Longitude": -3.6692776247764414,
+        "ContactTelephone1": "",
+        "ContactEmail": "reservas@hotelclaridge.com",
+        "AccessComments": "parking level -3",
+        "RelatedURL": "http://www.hotelclaridge.com/",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 183150,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 125,
+            "Voltage": 400,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        },
+        {
+            "ID": 183151,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 125,
+            "Voltage": 400,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        },
+        {
+            "ID": 183152,
+            "ConnectionTypeID": 1036,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 63,
+            "Voltage": 400,
+            "PowerKW": 43,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-11-14T11:43:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2019-08-16T21:39:00Z",
+    "SubmissionStatusTypeID": 200
+}

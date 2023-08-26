@@ -1,0 +1,145 @@
+{
+    "UserComments": [
+        {
+            "ID": 23113,
+            "ChargePointID": 147977,
+            "CommentTypeID": 10,
+            "UserName": "Jim3cantos",
+            "Comment": "fully operational",
+            "Rating": 5,
+            "DateCreated": "2020-08-18T14:29:35.73Z",
+            "User": {
+                "ID": 6750,
+                "Username": "Jim3cantos"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 24343,
+            "ChargePointID": 147977,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM147977/OCM-147977.orig.2020081908193141.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM147977/OCM-147977.thmb.2020081908193141.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 6750,
+                "Username": "Jim3cantos"
+            },
+            "DateCreated": "2020-08-19T08:20:00Z"
+        },
+        {
+            "ID": 24344,
+            "ChargePointID": 147977,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM147977/OCM-147977.orig.2020081908194349.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM147977/OCM-147977.thmb.2020081908194349.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 6750,
+                "Username": "Jim3cantos"
+            },
+            "DateCreated": "2020-08-19T08:20:00Z"
+        },
+        {
+            "ID": 24342,
+            "ChargePointID": 147977,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM147977/OCM-147977.orig.2020081908190467.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM147977/OCM-147977.thmb.2020081908190467.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 6750,
+                "Username": "Jim3cantos"
+            },
+            "DateCreated": "2020-08-19T08:19:00Z"
+        },
+        {
+            "ID": 24320,
+            "ChargePointID": 147977,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM147977/OCM-147977.orig.2020081814324603.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM147977/OCM-147977.thmb.2020081814324603.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 6750,
+                "Username": "Jim3cantos"
+            },
+            "DateCreated": "2020-08-18T14:33:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-02-21T17:43:00Z",
+    "ID": 147977,
+    "UUID": "AF39F034-E4C8-400B-B150-F7D3F2CD3E87",
+    "DataProviderID": 1,
+    "OperatorID": 3324,
+    "UsageTypeID": 1,
+    "UsageCost": "0,39€/KWh",
+    "AddressInfo": {
+        "ID": 148329,
+        "Title": "Zunder - Puerta de la Montaña",
+        "AddressLine1": "Cepsa",
+        "AddressLine2": "N-611, Puebla de San Vicente",
+        "Town": "Palencia",
+        "StateOrProvince": "Castile and León",
+        "Postcode": "34492",
+        "CountryID": 210,
+        "Latitude": 42.71830653103993,
+        "Longitude": -4.290948400684215,
+        "RelatedURL": "https://easycharger.es",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 205428,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 2,
+            "Comments": "Tritium DC50 Charger"
+        },
+        {
+            "ID": 205429,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        },
+        {
+            "ID": 205430,
+            "ConnectionTypeID": 1036,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 63,
+            "Voltage": 400,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-02-21T17:43:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2020-01-21T21:35:00Z",
+    "SubmissionStatusTypeID": 200
+}

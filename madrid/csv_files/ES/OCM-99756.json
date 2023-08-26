@@ -1,0 +1,42 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-10-16T14:03:00Z",
+    "ID": 99756,
+    "UUID": "80444BD4-7DFF-4DFD-A5D2-5060C55E4E08",
+    "DataProviderID": 1,
+    "OperatorID": 3283,
+    "OperatorsReference": "0009,0010",
+    "UsageTypeID": 4,
+    "UsageCost": "€0/kWh",
+    "AddressInfo": {
+        "ID": 100102,
+        "Title": "Poliesportiu municipal de Sencelles",
+        "AddressLine1": "Poliesportiu municipal de Sencelles",
+        "Town": "Sencelles",
+        "StateOrProvince": "Balearic Islands",
+        "Postcode": "",
+        "CountryID": 210,
+        "Latitude": 39.64491556759427,
+        "Longitude": 2.8966863666115614,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 140940,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 230,
+            "PowerKW": 7.4,
+            "CurrentTypeID": 10,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-10-16T14:03:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2018-02-03T15:29:00Z",
+    "SubmissionStatusTypeID": 200
+}

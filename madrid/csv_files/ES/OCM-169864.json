@@ -1,0 +1,92 @@
+{
+    "UserComments": [
+        {
+            "ID": 23616,
+            "ChargePointID": 169864,
+            "CommentTypeID": 10,
+            "UserName": "ACCIONA RECARGA",
+            "Comment": "Este punto no se encuentra disponible. En breves, les daremos noticias. Lamentamos las molestias.",
+            "DateCreated": "2020-12-09T08:59:25.54Z",
+            "User": {
+                "ID": 27955,
+                "Username": "ACCIONA RECARGA"
+            },
+            "CheckinStatusTypeID": 210,
+            "IsActionedByEditor": false
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 25663,
+            "ChargePointID": 169864,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM169864/OCM-169864.orig.2020120312020190.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM169864/OCM-169864.thmb.2020120312020190.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 27955,
+                "Username": "ACCIONA RECARGA"
+            },
+            "DateCreated": "2020-12-03T12:02:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-02-21T18:25:00Z",
+    "ID": 169864,
+    "UUID": "5EE4C80E-4D31-4DFD-9931-D7C16B64FD57",
+    "DataProviderID": 1,
+    "OperatorID": 3459,
+    "UsageTypeID": 1,
+    "UsageCost": "0,57€/kWh",
+    "AddressInfo": {
+        "ID": 170223,
+        "Title": "Carrer Barreiros",
+        "AddressLine1": "Carrer Barreiros",
+        "Town": "Llers",
+        "StateOrProvince": "Catalonia",
+        "Postcode": "17600",
+        "CountryID": 210,
+        "Latitude": 42.29987998902297,
+        "Longitude": 2.937432729565103,
+        "ContactTelephone1": "961679024",
+        "ContactTelephone2": "914047405",
+        "RelatedURL": "http://www.cargacoches.com",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 258840,
+            "ConnectionTypeID": 33,
+            "Reference": "",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 375,
+            "Voltage": 920,
+            "PowerKW": 150,
+            "CurrentTypeID": 30,
+            "Quantity": 1,
+            "Comments": "ABB Terra HP175 Charger"
+        },
+        {
+            "ID": 258841,
+            "ConnectionTypeID": 2,
+            "Reference": "",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 200,
+            "PowerKW": 90,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "GeneralComments": "",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-02-21T18:25:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2020-11-11T16:07:00Z",
+    "SubmissionStatusTypeID": 200
+}

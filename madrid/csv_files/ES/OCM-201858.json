@@ -1,0 +1,70 @@
+{
+    "MediaItems": [
+        {
+            "ID": 35810,
+            "ChargePointID": 201858,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM201858/OCM-201858.orig.2022120614172410.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM201858/OCM-201858.thmb.2022120614172410.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 40036,
+                "Username": "lmjgarcia"
+            },
+            "DateCreated": "2022-12-06T14:17:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-12-14T10:33:00Z",
+    "ID": 201858,
+    "UUID": "9A4D0769-7B5B-46F9-80D6-5C8B75EC6017",
+    "DataProviderID": 1,
+    "OperatorID": 2247,
+    "UsageTypeID": 4,
+    "UsageCost": "0,45€/kWh",
+    "AddressInfo": {
+        "ID": 202222,
+        "Title": "McDonald's Torrevieja",
+        "AddressLine1": "Carretera de Villa Martín",
+        "Town": "Orihuela",
+        "StateOrProvince": "Valencian Community",
+        "Postcode": "03189",
+        "CountryID": 210,
+        "Latitude": 37.926021058827686,
+        "Longitude": -0.7356904590205886,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 337203,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 125,
+            "Voltage": 400,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        },
+        {
+            "ID": 337204,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 125,
+            "Voltage": 400,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-12-14T10:33:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2022-09-05T10:54:00Z",
+    "SubmissionStatusTypeID": 200
+}

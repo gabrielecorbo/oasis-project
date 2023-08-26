@@ -1,0 +1,53 @@
+{
+    "UserComments": [
+        {
+            "ID": 4254,
+            "ChargePointID": 23788,
+            "CommentTypeID": 10,
+            "UserName": "",
+            "Comment": "",
+            "DateCreated": "2015-04-18T01:53:41.977Z",
+            "CheckinStatusTypeID": 10
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-02-11T09:38:00Z",
+    "ID": 23788,
+    "UUID": "06F1C278-BA3A-46EC-9FCF-A3E715F4396D",
+    "DataProviderID": 1,
+    "OperatorID": 3276,
+    "UsageTypeID": 4,
+    "UsageCost": "parking fee + 0,20€/kWh (0,01€/min parked without charging)",
+    "AddressInfo": {
+        "ID": 24133,
+        "Title": "Parking APK2 Mondragones",
+        "AddressLine1": "Calle Rivera del Beiro S/N",
+        "Town": "Granada",
+        "StateOrProvince": "Andalucía",
+        "CountryID": 210,
+        "Latitude": 37.190977990899,
+        "Longitude": -3.60995814232786,
+        "ContactTelephone1": "958198484",
+        "ContactEmail": "parkingmondragones@gmail.com",
+        "AccessComments": "Pedir tarjeta en recepción",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 25817,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 32,
+            "PowerKW": 7.4,
+            "CurrentTypeID": 10,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-02-11T09:38:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2014-05-29T18:23:00Z",
+    "SubmissionStatusTypeID": 200
+}

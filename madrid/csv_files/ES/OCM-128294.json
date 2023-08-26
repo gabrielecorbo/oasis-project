@@ -1,0 +1,99 @@
+{
+    "UserComments": [
+        {
+            "ID": 21252,
+            "ChargePointID": 128294,
+            "CommentTypeID": 110,
+            "UserName": "Bikeymouse",
+            "Comment": "Location is not fully correct. Look at Google maps for exact location. (I have also updated this here, but that is not yet (?) vissable.",
+            "Rating": 4,
+            "DateCreated": "2019-07-27T16:47:58.02Z",
+            "User": {
+                "ID": 21735,
+                "Username": "Bikeymouse"
+            },
+            "CheckinStatusTypeID": 10
+        },
+        {
+            "ID": 21251,
+            "ChargePointID": 128294,
+            "CommentTypeID": 110,
+            "UserName": "Bikeymouse",
+            "Comment": "All charging stalls also support CCS combo type 2 charging, e.g. for the Tesla Model 3.",
+            "DateCreated": "2019-07-27T16:44:15.327Z",
+            "User": {
+                "ID": 21735,
+                "Username": "Bikeymouse"
+            },
+            "CheckinStatusTypeID": 10
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 19050,
+            "ChargePointID": 128294,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM128294/OCM-128294.orig.2019072716415807.jpeg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM128294/OCM-128294.thmb.2019072716415807.jpeg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 21735,
+                "Username": "Bikeymouse"
+            },
+            "DateCreated": "2019-07-27T16:42:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-02-17T18:42:00Z",
+    "ID": 128294,
+    "UUID": "02404DE9-D948-44E1-A336-C249BF017D69",
+    "DataProviderID": 1,
+    "OperatorID": 3534,
+    "OperatorsReference": "50839",
+    "UsageTypeID": 4,
+    "UsageCost": "",
+    "AddressInfo": {
+        "ID": 128640,
+        "Title": "Reocín Tesla Supercharger",
+        "AddressLine1": "Barrio la Veguilla",
+        "AddressLine2": "Reocín",
+        "Town": "Reocín",
+        "StateOrProvince": "Cantabria",
+        "Postcode": "39538 ",
+        "CountryID": 210,
+        "Latitude": 43.35557540040247,
+        "Longitude": -4.094875235114955,
+        "AccessComments": "Behind Hotel Puerta de Santillana",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 179583,
+            "ConnectionTypeID": 27,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 150,
+            "CurrentTypeID": 30,
+            "Quantity": 8
+        },
+        {
+            "ID": 181865,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 0,
+            "LevelID": 3,
+            "PowerKW": 150,
+            "CurrentTypeID": 30,
+            "Quantity": 8
+        }
+    ],
+    "NumberOfPoints": 8,
+    "GeneralComments": "Charging8 Superchargers, available 24/7, up to 150kW",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-02-17T18:42:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2019-06-21T06:06:00Z",
+    "SubmissionStatusTypeID": 200
+}

@@ -1,0 +1,39 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-02-11T11:18:00Z",
+    "ID": 203087,
+    "UUID": "E5D096EC-ED44-4606-80EA-897FE4EC60DC",
+    "DataProviderID": 1,
+    "OperatorID": 3276,
+    "UsageTypeID": 4,
+    "UsageCost": "0,42€/kWh (0,05€/min parked without charging)",
+    "AddressInfo": {
+        "ID": 203454,
+        "Title": "Rest. Cristobal Sepúlveda",
+        "AddressLine1": "Calle del Conde de Sepúlveda",
+        "Town": "Sepúlveda",
+        "StateOrProvince": "Castile and León",
+        "Postcode": "40300",
+        "CountryID": 210,
+        "Latitude": 41.2970012424868,
+        "Longitude": -3.7507951363922984,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 339464,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 7.4,
+            "CurrentTypeID": 10,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-02-11T11:18:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2022-09-14T16:29:00Z",
+    "SubmissionStatusTypeID": 200
+}

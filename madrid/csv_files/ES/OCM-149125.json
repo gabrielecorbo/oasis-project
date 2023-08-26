@@ -1,0 +1,95 @@
+{
+    "UserComments": [
+        {
+            "ID": 22181,
+            "ChargePointID": 149125,
+            "CommentTypeID": 10,
+            "UserName": "Apartamentos Zarautz",
+            "Comment": "Apartamentos Zarautz te permite la carga de tu coche eléctrico en sus plazas de garaje durante tu estancia.",
+            "Rating": 4,
+            "RelatedURL": "https://apartamentoszarautz.com",
+            "DateCreated": "2020-02-18T10:22:56.84Z",
+            "User": {
+                "ID": 25086,
+                "Username": "Apartamentos Zarautz"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 21339,
+            "ChargePointID": 149125,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM149125/OCM-149125.orig.2020022410392560.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM149125/OCM-149125.thmb.2020022410392560.jpg",
+            "Comment": "Nuestro punto de carga",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 25086,
+                "Username": "Apartamentos Zarautz"
+            },
+            "DateCreated": "2020-02-24T10:39:00Z"
+        },
+        {
+            "ID": 21277,
+            "ChargePointID": 149125,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM149125/OCM-149125.orig.2020021810194291.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM149125/OCM-149125.thmb.2020021810194291.jpg",
+            "Comment": "Apartamentos Zarautz te permite la carga de tu coche eléctrico en sus aparcamientos durante tu estancia",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 25086,
+                "Username": "Apartamentos Zarautz"
+            },
+            "DateCreated": "2020-02-18T10:20:00Z"
+        }
+    ],
+    "IsRecentlyVerified": false,
+    "DateLastVerified": "2020-02-24T10:50:00Z",
+    "ID": 149125,
+    "UUID": "3A30E3B3-E359-4379-B0BB-22730CD43220",
+    "DataProviderID": 1,
+    "OperatorID": 2247,
+    "UsageTypeID": 6,
+    "AddressInfo": {
+        "ID": 149478,
+        "Title": "Apartamentos Zarautz",
+        "AddressLine1": "Mandabide kalea",
+        "Town": "Zarautz",
+        "StateOrProvince": "Guipúzcoa",
+        "Postcode": "20800",
+        "CountryID": 210,
+        "Latitude": 43.28663984121246,
+        "Longitude": -2.168054429206677,
+        "ContactTelephone1": "635715192",
+        "ContactEmail": "apartamentoszarautz@gmail.com",
+        "RelatedURL": "https://apartamentoszarautz.com",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 207085,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 1,
+            "Amps": 10,
+            "Voltage": 220,
+            "PowerKW": 2.2,
+            "CurrentTypeID": 10,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2020-02-24T10:50:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2020-02-18T09:38:00Z",
+    "SubmissionStatusTypeID": 200
+}

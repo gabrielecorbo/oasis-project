@@ -1,0 +1,52 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-12-16T09:05:00Z",
+    "ID": 160826,
+    "UUID": "F90C10BF-BD14-4A6C-BEA1-50A251FF8A55",
+    "DataProviderID": 1,
+    "OperatorID": 2247,
+    "UsageTypeID": 4,
+    "UsageCost": "0,45€/kWh",
+    "AddressInfo": {
+        "ID": 161183,
+        "Title": "E.S. Valcarce",
+        "AddressLine1": "Polígono 24, 61",
+        "Town": "Tudela",
+        "StateOrProvince": "Navarra",
+        "CountryID": 210,
+        "Latitude": 42.12165861066629,
+        "Longitude": -1.6747772355533925,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 231478,
+            "ConnectionTypeID": 33,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        },
+        {
+            "ID": 231480,
+            "ConnectionTypeID": 2,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        },
+        {
+            "ID": 231482,
+            "ConnectionTypeID": 1036,
+            "LevelID": 2,
+            "PowerKW": 43,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 3,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-12-16T09:05:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2020-06-28T15:46:00Z",
+    "SubmissionStatusTypeID": 200
+}

@@ -1,0 +1,58 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-10-21T22:11:00Z",
+    "ID": 60692,
+    "UUID": "9608411C-5AB5-468E-9E9E-13E6378128C0",
+    "DataProviderID": 1,
+    "OperatorID": 3577,
+    "UsageTypeID": 1,
+    "AddressInfo": {
+        "ID": 61038,
+        "Title": "B:SM 13 - García Fària ",
+        "AddressLine1": "Passeig de Garcia Fària, 71",
+        "Town": "Barcelona ",
+        "CountryID": 210,
+        "Latitude": 41.4067,
+        "Longitude": 2.2184,
+        "ContactTelephone1": "93.356.09.17 ",
+        "AccessComments": " ",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 76936,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 220,
+            "PowerKW": 7,
+            "CurrentTypeID": 10,
+            "Quantity": 4
+        },
+        {
+            "ID": 76937,
+            "ConnectionTypeID": 28,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 220,
+            "PowerKW": 3.5,
+            "CurrentTypeID": 10,
+            "Quantity": 4
+        }
+    ],
+    "NumberOfPoints": 4,
+    "GeneralComments": "http://www.aparcamentsbsm.cat/index.php/fichas-xarxa-02/garcia-faria2406-es.html",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-10-21T22:11:00Z",
+    "MetadataValues": [
+        {
+            "ID": 2942,
+            "MetadataFieldID": 5
+        }
+    ],
+    "DataQualityLevel": 2,
+    "DateCreated": "2016-02-07T04:06:00Z",
+    "SubmissionStatusTypeID": 100
+}

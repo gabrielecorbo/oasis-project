@@ -1,0 +1,85 @@
+{
+    "UserComments": [
+        {
+            "ID": 24167,
+            "ChargePointID": 174625,
+            "CommentTypeID": 10,
+            "UserName": "xester",
+            "Rating": 5,
+            "DateCreated": "2021-04-09T17:59:16.227Z",
+            "User": {
+                "ID": 6169,
+                "Username": "xester"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 24166,
+            "ChargePointID": 174625,
+            "CommentTypeID": 10,
+            "UserName": "xester",
+            "Rating": 5,
+            "DateCreated": "2021-04-09T17:58:51.563Z",
+            "User": {
+                "ID": 6169,
+                "Username": "xester"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-02-24T12:13:00Z",
+    "ID": 174625,
+    "UUID": "20CEC88D-B2E8-4601-86D1-9C46B5DB7C3A",
+    "DataProviderID": 1,
+    "OperatorID": 3523,
+    "UsageTypeID": 6,
+    "AddressInfo": {
+        "ID": 174984,
+        "Title": "Centro Porsche MADRID OESTE",
+        "AddressLine1": "C/ Ciruela, 5",
+        "AddressLine2": "P.E. Carrelero II",
+        "Town": "Majadahonda",
+        "StateOrProvince": "Madrid",
+        "Postcode": "28220",
+        "CountryID": 210,
+        "Latitude": 40.45548975127974,
+        "Longitude": -3.871470876418158,
+        "ContactTelephone1": "91 634 78 10",
+        "RelatedURL": "http://www.porsche.es",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 270565,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 500,
+            "Voltage": 920,
+            "PowerKW": 320,
+            "CurrentTypeID": 30,
+            "Quantity": 2,
+            "Comments": "Porsche HPD2020 charger.The DC Charge allows charging one vehicle at 320kW, or two simultaneous charges at 160kW. Boosted with a 160 kWh battery. Charging power limited for 400V cars"
+        },
+        {
+            "ID": 270566,
+            "ConnectionTypeID": 1036,
+            "StatusTypeID": 150,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 400,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 4,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-02-24T12:13:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2021-04-09T17:59:00Z",
+    "SubmissionStatusTypeID": 200
+}

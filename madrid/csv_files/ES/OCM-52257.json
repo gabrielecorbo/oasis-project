@@ -1,0 +1,134 @@
+{
+    "MediaItems": [
+        {
+            "ID": 10758,
+            "ChargePointID": 52257,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM52257/OCM-52257.orig.2017040617211974.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM52257/OCM-52257.thmb.2017040617211974.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 13734,
+                "Username": "carlosarques7"
+            },
+            "DateCreated": "2017-04-06T17:22:00Z"
+        },
+        {
+            "ID": 10756,
+            "ChargePointID": 52257,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM52257/OCM-52257.orig.2017040617203535.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM52257/OCM-52257.thmb.2017040617203535.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 13734,
+                "Username": "carlosarques7"
+            },
+            "DateCreated": "2017-04-06T17:21:00Z"
+        },
+        {
+            "ID": 10757,
+            "ChargePointID": 52257,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM52257/OCM-52257.orig.2017040617205150.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM52257/OCM-52257.thmb.2017040617205150.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 13734,
+                "Username": "carlosarques7"
+            },
+            "DateCreated": "2017-04-06T17:21:00Z"
+        },
+        {
+            "ID": 10755,
+            "ChargePointID": 52257,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM52257/OCM-52257.orig.2017040617200143.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM52257/OCM-52257.thmb.2017040617200143.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 13734,
+                "Username": "carlosarques7"
+            },
+            "DateCreated": "2017-04-06T17:20:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-10-21T22:34:00Z",
+    "ID": 52257,
+    "UUID": "9513E314-5C08-49F9-806F-B2EAA5FA98D7",
+    "DataProviderID": 1,
+    "OperatorID": 3577,
+    "UsageTypeID": 4,
+    "AddressInfo": {
+        "ID": 52603,
+        "Title": "B:SM Av. Paral·lel 40",
+        "AddressLine1": "Avenida del Paralelo, 40",
+        "Town": "Barcelona",
+        "StateOrProvince": "Barcelona",
+        "Postcode": "08004",
+        "CountryID": 210,
+        "Latitude": 41.3748452,
+        "Longitude": 2.17256339999994,
+        "ContactTelephone1": "934023420",
+        "AccessComments": "Tarjeta Live Barcelona",
+        "RelatedURL": "http://livebarcelona.cat",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 64900,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 7.3,
+            "CurrentTypeID": 10,
+            "Quantity": 2
+        },
+        {
+            "ID": 64901,
+            "ConnectionTypeID": 1036,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 43,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        },
+        {
+            "ID": 64902,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 64903,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 5,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-10-21T22:34:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2015-08-27T11:11:00Z",
+    "SubmissionStatusTypeID": 200
+}

@@ -1,0 +1,49 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-10-30T18:43:00Z",
+    "ID": 61142,
+    "UUID": "5D26FCF1-254F-4044-B017-53A88A86578F",
+    "DataProviderID": 1,
+    "OperatorID": 91,
+    "UsageTypeID": 4,
+    "AddressInfo": {
+        "ID": 61488,
+        "Title": "Parking Ensanche",
+        "AddressLine1": "Plaza del Ensanche, 13",
+        "Town": "Bilbao",
+        "StateOrProvince": "Vizcaya",
+        "Postcode": "48009",
+        "CountryID": 210,
+        "Latitude": 43.263558,
+        "Longitude": -2.93107,
+        "ContactTelephone1": "+34 944 242 204",
+        "ContactTelephone2": "607233778",
+        "RelatedURL": "http://www.interparking-spain.com",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 77793,
+            "ConnectionTypeID": 25,
+            "LevelID": 2,
+            "PowerKW": 11,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        },
+        {
+            "ID": 348677,
+            "ConnectionTypeID": 28,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 3.7,
+            "CurrentTypeID": 10,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-10-30T18:43:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2016-02-13T00:24:00Z",
+    "SubmissionStatusTypeID": 200
+}

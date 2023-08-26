@@ -1,0 +1,129 @@
+{
+    "MediaItems": [
+        {
+            "ID": 35064,
+            "ChargePointID": 192057,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM192057/OCM-192057.orig.2022101915062285.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM192057/OCM-192057.thmb.2022101915062285.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 18365,
+                "Username": "RouteXL"
+            },
+            "DateCreated": "2022-10-19T15:06:00Z"
+        },
+        {
+            "ID": 33310,
+            "ChargePointID": 192057,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM192057/OCM-192057.orig.2022082807561529.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM192057/OCM-192057.thmb.2022082807561529.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 40036,
+                "Username": "lmjgarcia"
+            },
+            "DateCreated": "2022-08-28T07:56:00Z"
+        },
+        {
+            "ID": 33305,
+            "ChargePointID": 192057,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM192057/OCM-192057.orig.2022082807452225.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM192057/OCM-192057.thmb.2022082807452225.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 40036,
+                "Username": "lmjgarcia"
+            },
+            "DateCreated": "2022-08-28T07:45:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-02-21T18:05:00Z",
+    "ID": 192057,
+    "UUID": "21CD9AE3-2519-4485-8F78-BC2D04206890",
+    "DataProviderID": 1,
+    "OperatorID": 3324,
+    "UsageTypeID": 4,
+    "UsageCost": "0,55€/kWh >90kW - 0,39€/kWh DC50kW/AC",
+    "AddressInfo": {
+        "ID": 192416,
+        "Title": "Zunder L'Aldea",
+        "AddressLine1": "Zunder L'Aldea",
+        "Town": "l'Aldea",
+        "StateOrProvince": "Catalonia",
+        "Postcode": "",
+        "CountryID": 210,
+        "Latitude": 40.75318756729615,
+        "Longitude": 0.6064715469103703,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 311981,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 350,
+            "Voltage": 1000,
+            "PowerKW": 180,
+            "CurrentTypeID": 30,
+            "Quantity": 2,
+            "Comments": "Ingeteam RAPID180 Charger. The DC charger allows charging one vehicle at 180kW, or two simultaneous charges at 90kW. Charging power limited for 400V cars"
+        },
+        {
+            "ID": 311982,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 2,
+            "Comments": "Efacec QC45 Charger"
+        },
+        {
+            "ID": 311983,
+            "ConnectionTypeID": 1036,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 43,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        },
+        {
+            "ID": 311984,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        },
+        {
+            "ID": 349943,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 6,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-02-21T18:05:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2022-03-16T09:51:00Z",
+    "SubmissionStatusTypeID": 200
+}

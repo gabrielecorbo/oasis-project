@@ -1,0 +1,48 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-10-21T12:30:00Z",
+    "ID": 60903,
+    "UUID": "29BDA3F3-9975-41AF-A0BE-BB118E225F63",
+    "DataProviderID": 1,
+    "OperatorID": 1,
+    "UsageTypeID": 1,
+    "AddressInfo": {
+        "ID": 61249,
+        "Title": "Ayuntamiento de Agüimes",
+        "AddressLine1": "Calle Doctor Joaquín Artiles, 1",
+        "Town": "Agüimes",
+        "StateOrProvince": "Las Palmas",
+        "Postcode": "35260",
+        "CountryID": 210,
+        "Latitude": 27.904029,
+        "Longitude": -15.4458,
+        "RelatedURL": "http://www.aguimes.es",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 77260,
+            "ConnectionTypeID": 25,
+            "LevelID": 2,
+            "PowerKW": 4.5,
+            "CurrentTypeID": 10,
+            "Quantity": 1
+        },
+        {
+            "ID": 347451,
+            "ConnectionTypeID": 28,
+            "StatusTypeID": 50,
+            "LevelID": 1,
+            "PowerKW": 2.3,
+            "CurrentTypeID": 10,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "GeneralComments": "Tarjeta CTR",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-10-21T12:30:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2016-02-13T00:23:00Z",
+    "SubmissionStatusTypeID": 200
+}

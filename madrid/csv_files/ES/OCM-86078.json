@@ -1,0 +1,58 @@
+{
+    "MediaItems": [
+        {
+            "ID": 35517,
+            "ChargePointID": 86078,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM86078/OCM-86078.orig.2022112210225116.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM86078/OCM-86078.thmb.2022112210225116.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 40036,
+                "Username": "lmjgarcia"
+            },
+            "DateCreated": "2022-11-22T10:23:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-11-22T10:39:00Z",
+    "ID": 86078,
+    "UUID": "1D249364-D563-4ED0-8A69-0C114C8B765F",
+    "DataProviderID": 1,
+    "OperatorID": 45,
+    "UsageTypeID": 1,
+    "UsageCost": "Free",
+    "AddressInfo": {
+        "ID": 86424,
+        "Title": "Hipercor Campo de las Naciones",
+        "AddressLine1": "Centro Comercial Campo de las Naciones, Av. de los Andes, 50",
+        "Town": "Madrid",
+        "StateOrProvince": "Madrid",
+        "Postcode": "28042",
+        "CountryID": 210,
+        "Latitude": 40.45560354325298,
+        "Longitude": -3.6170061713651194,
+        "AccessComments": "Parking level -1",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 122421,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 0,
+            "LevelID": 2,
+            "PowerKW": 11,
+            "CurrentTypeID": 20,
+            "Quantity": 3
+        }
+    ],
+    "NumberOfPoints": 3,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-11-22T10:39:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2017-04-25T11:04:00Z",
+    "SubmissionStatusTypeID": 200
+}

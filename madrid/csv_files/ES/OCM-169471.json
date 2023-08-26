@@ -1,0 +1,133 @@
+{
+    "UserComments": [
+        {
+            "ID": 23440,
+            "ChargePointID": 169471,
+            "CommentTypeID": 10,
+            "UserName": "ACCIONA RECARGA",
+            "Comment": "Operativo. Realizar la carga a través de la app CHARGEANDPARKING",
+            "Rating": 5,
+            "DateCreated": "2020-10-26T09:27:53.787Z",
+            "User": {
+                "ID": 27955,
+                "Username": "ACCIONA RECARGA"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 25661,
+            "ChargePointID": 169471,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM169471/OCM-169471.orig.2020120311572385.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM169471/OCM-169471.thmb.2020120311572385.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 27955,
+                "Username": "ACCIONA RECARGA"
+            },
+            "DateCreated": "2020-12-03T11:57:00Z"
+        },
+        {
+            "ID": 25235,
+            "ChargePointID": 169471,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM169471/OCM-169471.orig.2020102609263445.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM169471/OCM-169471.thmb.2020102609263445.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 27955,
+                "Username": "ACCIONA RECARGA"
+            },
+            "DateCreated": "2020-10-26T09:27:00Z"
+        },
+        {
+            "ID": 25234,
+            "ChargePointID": 169471,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM169471/OCM-169471.orig.2020102609261360.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM169471/OCM-169471.thmb.2020102609261360.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 27955,
+                "Username": "ACCIONA RECARGA"
+            },
+            "DateCreated": "2020-10-26T09:26:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-02-21T18:24:00Z",
+    "ID": 169471,
+    "UUID": "D29A8DFB-9F98-46FD-A463-A2A0839B88FC",
+    "DataProviderID": 1,
+    "OperatorID": 3459,
+    "UsageTypeID": 1,
+    "UsageCost": "0,41€/kWh",
+    "AddressInfo": {
+        "ID": 169830,
+        "Title": "CARGACOCHES - Vallfogona de Ripollés",
+        "AddressLine1": "Carrer camí del cementiri, 2",
+        "Town": "Vallfogona de Ripollès",
+        "StateOrProvince": "Catalonia",
+        "Postcode": "17860",
+        "CountryID": 210,
+        "Latitude": 42.19724597375517,
+        "Longitude": 2.305741667022403,
+        "ContactTelephone1": "961679024",
+        "ContactTelephone2": "914047905",
+        "AccessComments": "ChargeandParking app",
+        "RelatedURL": "http://www.chargeandparking.com",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 257900,
+            "ConnectionTypeID": 1036,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 43,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        },
+        {
+            "ID": 257901,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 125,
+            "Voltage": 400,
+            "PowerKW": 22,
+            "CurrentTypeID": 30,
+            "Quantity": 1,
+            "Comments": "ABB Terra54 Charger"
+        },
+        {
+            "ID": 257902,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Voltage": 400,
+            "PowerKW": 22,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-02-21T18:24:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2020-10-19T11:37:00Z",
+    "SubmissionStatusTypeID": 200
+}

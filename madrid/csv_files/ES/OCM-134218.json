@@ -1,0 +1,55 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-02-20T17:38:00Z",
+    "ID": 134218,
+    "UUID": "05181296-3DAB-4E07-94EC-0D32A4D5C0F8",
+    "DataProviderID": 1,
+    "OperatorID": 91,
+    "UsageTypeID": 4,
+    "UsageCost": "0.646€/kWh; min 8€",
+    "AddressInfo": {
+        "ID": 134564,
+        "Title": "Repsol, Ugaldebieta",
+        "AddressLine1": "AU A-8 P.K. 131.00",
+        "Town": "Abanto y Ciérvana - Abanto Zierbena",
+        "StateOrProvince": "Biscay",
+        "Postcode": "48500",
+        "CountryID": 210,
+        "Latitude": 43.32844869905932,
+        "Longitude": -3.0679072105095884,
+        "RelatedURL": "https://www.ibil.es/",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 187798,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 600,
+            "Voltage": 920,
+            "PowerKW": 400,
+            "CurrentTypeID": 30,
+            "Quantity": 4,
+            "Comments": "Ingeteam RAPID ST400 Charger (600A)"
+        },
+        {
+            "ID": 187799,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 200,
+            "Voltage": 500,
+            "PowerKW": 100,
+            "CurrentTypeID": 30,
+            "Quantity": 4
+        }
+    ],
+    "NumberOfPoints": 4,
+    "GeneralComments": "Minimum charge: 8€ (around 18kWh)",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-02-20T17:38:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2019-11-04T14:34:00Z",
+    "SubmissionStatusTypeID": 200
+}

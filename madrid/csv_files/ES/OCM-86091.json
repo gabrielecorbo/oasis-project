@@ -1,0 +1,72 @@
+{
+    "UserComments": [
+        {
+            "ID": 24295,
+            "ChargePointID": 86091,
+            "CommentTypeID": 10,
+            "UserName": "Raule_19",
+            "Comment": "carga pero muy lento",
+            "Rating": 3,
+            "DateCreated": "2021-05-07T16:11:29.303Z",
+            "User": {
+                "ID": 19690,
+                "Username": "Raule_19"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 20657,
+            "ChargePointID": 86091,
+            "CommentTypeID": 10,
+            "UserName": "Raule_19",
+            "Comment": "falla mucho",
+            "Rating": 1,
+            "DateCreated": "2019-01-22T17:09:25.25Z",
+            "User": {
+                "ID": 19690,
+                "Username": "Raule_19"
+            }
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-01-05T19:09:00Z",
+    "ID": 86091,
+    "UUID": "47649211-AE8A-438A-8F36-6B52DAAE9B84",
+    "DataProviderID": 1,
+    "OperatorID": 3556,
+    "UsageTypeID": 4,
+    "UsageCost": "Free",
+    "AddressInfo": {
+        "ID": 86437,
+        "Title": "Saltoki Barberá del Valles",
+        "AddressLine1": "Carrer Gorchs Lladó, 81",
+        "Town": "Barberà del Vallès",
+        "StateOrProvince": "Barcelona",
+        "Postcode": "08210",
+        "CountryID": 210,
+        "Latitude": 41.5175788,
+        "Longitude": 2.15494139999998,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 122440,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 400,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "Tarjeta Saltoki",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-01-05T19:09:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2017-04-25T11:49:00Z",
+    "SubmissionStatusTypeID": 200
+}

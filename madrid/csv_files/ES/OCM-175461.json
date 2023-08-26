@@ -1,0 +1,91 @@
+{
+    "MediaItems": [
+        {
+            "ID": 27854,
+            "ChargePointID": 175461,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM175461/OCM-175461.orig.2021052409210062.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM175461/OCM-175461.thmb.2021052409210062.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 16790,
+                "Username": "Mikel Ortega"
+            },
+            "DateCreated": "2021-05-24T09:21:00Z"
+        },
+        {
+            "ID": 27855,
+            "ChargePointID": 175461,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM175461/OCM-175461.orig.2021052409211574.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM175461/OCM-175461.thmb.2021052409211574.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 16790,
+                "Username": "Mikel Ortega"
+            },
+            "DateCreated": "2021-05-24T09:21:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-12-16T08:27:00Z",
+    "ID": 175461,
+    "UUID": "503D1013-8656-47F8-AE0C-D06365CF3D39",
+    "DataProviderID": 1,
+    "OperatorID": 2247,
+    "UsageTypeID": 4,
+    "UsageCost": "0,45€/kWh 50kW - 0,39€/kWh 22kW AC",
+    "AddressInfo": {
+        "ID": 175820,
+        "Title": "Estación de Servicio Astigarraga",
+        "AddressLine1": "Estación de Servicio Astigarraga",
+        "Town": "Astigarraga",
+        "StateOrProvince": "Basque Country",
+        "Postcode": "20115",
+        "CountryID": 210,
+        "Latitude": 43.281933713032714,
+        "Longitude": -1.9166511949172218,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 272270,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 150,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        },
+        {
+            "ID": 272275,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 150,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 272276,
+            "ConnectionTypeID": 1036,
+            "StatusTypeID": 150,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 4,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-12-16T08:27:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2021-05-21T09:33:00Z",
+    "SubmissionStatusTypeID": 200
+}

@@ -1,0 +1,36 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-01-16T09:01:00Z",
+    "ID": 61072,
+    "UUID": "C2C14FE8-3C1E-4F96-B59D-42C9B6104818",
+    "DataProviderID": 1,
+    "OperatorID": 45,
+    "UsageTypeID": 2,
+    "AddressInfo": {
+        "ID": 61418,
+        "Title": "Cesvimap",
+        "AddressLine1": "Poligono las Hervencias",
+        "Town": "Ávila",
+        "StateOrProvince": "Castile and León",
+        "Postcode": "05004",
+        "CountryID": 210,
+        "Latitude": 40.664385118009506,
+        "Longitude": -4.681599122162851,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 77627,
+            "ConnectionTypeID": 25,
+            "LevelID": 2,
+            "PowerKW": 3.7,
+            "CurrentTypeID": 10
+        }
+    ],
+    "GeneralComments": "",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-01-16T09:01:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2016-02-13T00:23:00Z",
+    "SubmissionStatusTypeID": 200
+}

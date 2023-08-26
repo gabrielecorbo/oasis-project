@@ -1,0 +1,78 @@
+{
+    "MediaItems": [
+        {
+            "ID": 24504,
+            "ChargePointID": 165123,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM165123/OCM-165123.orig.2020082909050601.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM165123/OCM-165123.thmb.2020082909050601.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 18063,
+                "Username": "Alvaro Gutierrez"
+            },
+            "DateCreated": "2020-08-29T09:05:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-12-21T14:33:00Z",
+    "ID": 165123,
+    "UUID": "D49B7611-B24C-43AD-95CF-3BEFD00F0DFE",
+    "DataProviderID": 1,
+    "OperatorID": 2247,
+    "UsageTypeID": 4,
+    "UsageCost": "0,45€ kWh",
+    "AddressInfo": {
+        "ID": 165482,
+        "Title": "Hotel Campanile",
+        "AddressLine1": "calle nadadora Carmen Soto",
+        "AddressLine2": "San Fernando - Princesa Mercedes",
+        "Town": "Alicante",
+        "StateOrProvince": "Alicante",
+        "Postcode": "03006",
+        "CountryID": 210,
+        "Latitude": 38.33672858487455,
+        "Longitude": -0.501860442287466,
+        "AccessComments": "Dentro del Hotel Campanile",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 236737,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 236738,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 236739,
+            "ConnectionTypeID": 1036,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 44,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-12-21T14:33:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2020-08-25T21:44:00Z",
+    "SubmissionStatusTypeID": 200
+}

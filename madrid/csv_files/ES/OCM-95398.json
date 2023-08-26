@@ -1,0 +1,39 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-12-22T11:01:00Z",
+    "ID": 95398,
+    "UUID": "06DBDFB9-5E69-4DDE-A35A-A1F6BA4A48C3",
+    "DataProviderID": 1,
+    "OperatorID": 3534,
+    "UsageTypeID": 4,
+    "UsageCost": "",
+    "AddressInfo": {
+        "ID": 95744,
+        "Title": "Tesla Supercharger Hotel Resort El Montico",
+        "AddressLine1": "Autovía de Castilla",
+        "Town": "Tordesillas",
+        "StateOrProvince": "Castile and León",
+        "Postcode": "47132",
+        "CountryID": 210,
+        "Latitude": 41.515986034161614,
+        "Longitude": -4.943125327238505,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 135144,
+            "ConnectionTypeID": 27,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 150,
+            "CurrentTypeID": 30,
+            "Quantity": 8
+        }
+    ],
+    "NumberOfPoints": 4,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-12-22T11:01:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2017-11-09T14:40:00Z",
+    "SubmissionStatusTypeID": 200
+}

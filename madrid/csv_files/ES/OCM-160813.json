@@ -1,0 +1,118 @@
+{
+    "UserComments": [
+        {
+            "ID": 22902,
+            "ChargePointID": 160813,
+            "CommentTypeID": 10,
+            "UserName": "AquaHotel Aquamarina",
+            "Rating": 5,
+            "RelatedURL": "http://www.aquahotel.com/hoteles/onabrava-spa/",
+            "DateCreated": "2020-07-13T16:21:26.99Z",
+            "User": {
+                "ID": 23477,
+                "Username": "AquaHotel Aquamarina"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 23057,
+            "ChargePointID": 160813,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM160813/OCM-160813.orig.2020071316231895.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM160813/OCM-160813.thmb.2020071316231895.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 23477,
+                "Username": "AquaHotel Aquamarina"
+            },
+            "DateCreated": "2020-07-13T16:23:00Z"
+        },
+        {
+            "ID": 23056,
+            "ChargePointID": 160813,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM160813/OCM-160813.orig.2020071316221119.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM160813/OCM-160813.thmb.2020071316221119.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 23477,
+                "Username": "AquaHotel Aquamarina"
+            },
+            "DateCreated": "2020-07-13T16:22:00Z"
+        },
+        {
+            "ID": 22803,
+            "ChargePointID": 160813,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM160813/OCM-160813.orig.2020062617493109.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM160813/OCM-160813.thmb.2020062617493109.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 23477,
+                "Username": "AquaHotel Aquamarina"
+            },
+            "DateCreated": "2020-06-26T17:50:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-10-12T13:05:00Z",
+    "ID": 160813,
+    "UUID": "40FA0819-C431-4D3A-914F-3D2508E369AE",
+    "DataProviderID": 1,
+    "OperatorID": 45,
+    "UsageTypeID": 6,
+    "UsageCost": "10",
+    "AddressInfo": {
+        "ID": 161170,
+        "Title": "Aqua Hotel Onabrava & Spa",
+        "AddressLine1": "Carrer del Pla de la Torre",
+        "Town": "Santa Susanna",
+        "StateOrProvince": "Barcelona",
+        "Postcode": "08398",
+        "CountryID": 210,
+        "Latitude": 41.63207332212099,
+        "Longitude": 2.717231566421333,
+        "ContactTelephone1": "93.767.83.70",
+        "ContactEmail": "onabrava@aquahotel.com",
+        "AccessComments": "41°37'55.7\"N 2°43'02.1\"E",
+        "RelatedURL": "https://www.aquahotel.com/hoteles/onabrava-spa/",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 231448,
+            "ConnectionTypeID": 1,
+            "StatusTypeID": 50,
+            "CurrentTypeID": 10
+        },
+        {
+            "ID": 231449,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 400,
+            "PowerKW": 22,
+            "CurrentTypeID": 20
+        }
+    ],
+    "NumberOfPoints": 1,
+    "GeneralComments": "Por favor, contacten con nosotros para realizar la reserva. Gracias.",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-10-12T13:05:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2020-06-26T17:49:00Z",
+    "SubmissionStatusTypeID": 200
+}

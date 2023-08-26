@@ -1,0 +1,73 @@
+{
+    "UserComments": [
+        {
+            "ID": 22967,
+            "ChargePointID": 114357,
+            "CommentTypeID": 50,
+            "UserName": "Raule_19",
+            "Comment": "han bajado la carga de 50kw a 27kw",
+            "Rating": 3,
+            "DateCreated": "2020-07-28T14:46:05.263Z",
+            "User": {
+                "ID": 19690,
+                "Username": "Raule_19"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 20610,
+            "ChargePointID": 114357,
+            "CommentTypeID": 10,
+            "UserName": "Raule_19",
+            "Comment": "llegar y cargar,estupendo.",
+            "Rating": 5,
+            "DateCreated": "2019-01-08T16:46:32.603Z",
+            "User": {
+                "ID": 19690,
+                "Username": "Raule_19"
+            },
+            "CheckinStatusTypeID": 10
+        }
+    ],
+    "IsRecentlyVerified": false,
+    "DateLastVerified": "2021-05-08T09:47:00Z",
+    "ID": 114357,
+    "UUID": "DDA262DA-1A45-4E04-921C-63F0B6CBEEA6",
+    "DataProviderID": 1,
+    "OperatorID": 1,
+    "UsageTypeID": 4,
+    "UsageCost": "0.18€ kwh",
+    "AddressInfo": {
+        "ID": 114703,
+        "Title": "Santi Enrique Nissan Barberá del Vallés ",
+        "AddressLine1": "Carretera de Barcelona",
+        "Town": "Vallés Occidental",
+        "StateOrProvince": "Vallés Occidental",
+        "Postcode": "08210",
+        "CountryID": 210,
+        "Latitude": 41.5141529299426,
+        "Longitude": 2.12819904868776,
+        "AccessComments": "app nissancharge",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 160978,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Voltage": 400,
+            "PowerKW": 40,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "GeneralComments": "punto de carga para clientes nissan y en horario de concesionario ",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2021-05-08T09:47:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2019-01-06T17:41:00Z",
+    "SubmissionStatusTypeID": 200
+}

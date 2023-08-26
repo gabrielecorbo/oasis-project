@@ -1,0 +1,105 @@
+{
+    "UserComments": [
+        {
+            "ID": 23309,
+            "ChargePointID": 168589,
+            "CommentTypeID": 10,
+            "UserName": "xester",
+            "DateCreated": "2020-10-02T08:01:11.097Z",
+            "User": {
+                "ID": 6169,
+                "Username": "xester"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 23308,
+            "ChargePointID": 168589,
+            "CommentTypeID": 10,
+            "UserName": "xester",
+            "DateCreated": "2020-10-02T08:01:02.363Z",
+            "User": {
+                "ID": 6169,
+                "Username": "xester"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-02-24T12:19:00Z",
+    "ID": 168589,
+    "UUID": "D5DD820F-EEE9-410A-A0F6-87E2BE06C693",
+    "DataProviderID": 1,
+    "OperatorID": 3523,
+    "UsageTypeID": 6,
+    "UsageCost": "",
+    "AddressInfo": {
+        "ID": 168948,
+        "Title": "Centro Porsche Madrid Norte",
+        "AddressLine1": "Avda. De Burgos, 87",
+        "Town": "Madrid",
+        "StateOrProvince": "Madrid",
+        "Postcode": "28050",
+        "CountryID": 210,
+        "Latitude": 40.4902436127941,
+        "Longitude": -3.6733219711926495,
+        "ContactTelephone1": "+34 91 203 54 10",
+        "RelatedURL": "http://www.porsche.es",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 256077,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 500,
+            "Voltage": 920,
+            "PowerKW": 320,
+            "CurrentTypeID": 30,
+            "Quantity": 2,
+            "Comments": "Porsche HPD2020 charger.The DC Charge allows charging one vehicle at 320kW, or two simultaneous charges at 160kW. Boosted with a 160 kWh battery. Charging power limited for 400V cars"
+        },
+        {
+            "ID": 256078,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 500,
+            "Voltage": 920,
+            "PowerKW": 320,
+            "CurrentTypeID": 30,
+            "Quantity": 2,
+            "Comments": "Porsche HPD2020 charger.The DC Charge allows charging one vehicle at 320kW, or two simultaneous charges at 160kW. Boosted with a 160 kWh battery. Charging power limited for 400V cars"
+        },
+        {
+            "ID": 388588,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 500,
+            "Voltage": 920,
+            "PowerKW": 320,
+            "CurrentTypeID": 30,
+            "Quantity": 2,
+            "Comments": "Porsche HPD2020 charger.The DC Charge allows charging one vehicle at 320kW, or two simultaneous charges at 160kW. Boosted with a 160 kWh battery. Charging power limited for 400V cars"
+        },
+        {
+            "ID": 388589,
+            "ConnectionTypeID": 1036,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 8,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-02-24T12:19:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2020-10-02T08:01:00Z",
+    "SubmissionStatusTypeID": 200
+}

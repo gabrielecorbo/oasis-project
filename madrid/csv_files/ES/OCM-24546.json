@@ -1,0 +1,44 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-10-06T18:58:00Z",
+    "ID": 24546,
+    "UUID": "38757B28-76EB-4FA8-BFF3-444ABFD70307",
+    "DataProviderID": 1,
+    "OperatorID": 91,
+    "UsageTypeID": 4,
+    "AddressInfo": {
+        "ID": 24892,
+        "Title": "Parque Tec. Alava",
+        "AddressLine1": "Albert Einstein 15",
+        "Town": "Vitoria-Gasteiz",
+        "Postcode": "01510",
+        "CountryID": 210,
+        "Latitude": 42.91121,
+        "Longitude": -2.666609,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 26801,
+            "ConnectionTypeID": 25,
+            "LevelID": 2,
+            "PowerKW": 3.7,
+            "CurrentTypeID": 10,
+            "Quantity": 2
+        },
+        {
+            "ID": 26802,
+            "ConnectionTypeID": 28,
+            "LevelID": 2,
+            "PowerKW": 3.7,
+            "CurrentTypeID": 10,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-10-06T18:58:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2014-10-07T08:57:00Z",
+    "SubmissionStatusTypeID": 200
+}

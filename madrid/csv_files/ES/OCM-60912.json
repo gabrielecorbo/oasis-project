@@ -1,0 +1,41 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-10-20T14:37:00Z",
+    "ID": 60912,
+    "UUID": "9D2CA8D4-C2BB-45BD-B203-DEDB20565821",
+    "DataProviderID": 1,
+    "OperatorID": 45,
+    "UsageTypeID": 6,
+    "AddressInfo": {
+        "ID": 61258,
+        "Title": "Cámara de Lanzarote",
+        "AddressLine1": "Carretera San Bartolomé, 296",
+        "Town": "Arrecife",
+        "StateOrProvince": "Las Palmas",
+        "Postcode": "35500",
+        "CountryID": 210,
+        "Latitude": 28.97663,
+        "Longitude": -13.571446,
+        "ContactTelephone1": "+34 928 82 41 61",
+        "ContactEmail": "info@camaralanzarote.org",
+        "RelatedURL": "http://www.camaralanzarote.org",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 77273,
+            "ConnectionTypeID": 28,
+            "LevelID": 2,
+            "PowerKW": 3.7,
+            "CurrentTypeID": 10,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "Pedir tarjeta en Cámara de Comercio",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-10-20T14:37:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2016-02-13T00:23:00Z",
+    "SubmissionStatusTypeID": 200
+}

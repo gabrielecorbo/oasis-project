@@ -1,0 +1,96 @@
+{
+    "MediaItems": [
+        {
+            "ID": 1619,
+            "ChargePointID": 48455,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM48455/OCM-48455.orig.2015062912105005.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM48455/OCM-48455.thmb.2015062912105005.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 5005,
+                "Username": "luposlip"
+            },
+            "DateCreated": "2015-06-29T12:11:00Z"
+        },
+        {
+            "ID": 1618,
+            "ChargePointID": 48455,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM48455/OCM-48455.orig.2015062910242905.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM48455/OCM-48455.thmb.2015062910242905.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 5005,
+                "Username": "luposlip"
+            },
+            "DateCreated": "2015-06-29T10:25:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-10-21T22:32:00Z",
+    "ID": 48455,
+    "UUID": "30043D91-281A-418F-BAFA-11FD06A8F359",
+    "DataProviderID": 1,
+    "OperatorID": 3577,
+    "UsageTypeID": 4,
+    "UsageCost": "?",
+    "AddressInfo": {
+        "ID": 48801,
+        "Title": "B:SM Sants Estació",
+        "AddressLine1": "Carrer de Viriat, 23",
+        "Town": "Barcelona",
+        "Postcode": "08014",
+        "CountryID": 210,
+        "Latitude": 41.3799955,
+        "Longitude": 2.1391364,
+        "ContactTelephone1": "+4542600624",
+        "ContactEmail": "luposlip@gmail.com",
+        "AccessComments": "2 EV parking lots",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 59908,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 63,
+            "Voltage": 400,
+            "PowerKW": 43,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        },
+        {
+            "ID": 59909,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        },
+        {
+            "ID": 59910,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 4,
+    "GeneralComments": "Need some sort of membership card - DBT? Ajuntament de Barcelona",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-10-21T22:32:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2015-06-26T15:25:00Z",
+    "SubmissionStatusTypeID": 200
+}

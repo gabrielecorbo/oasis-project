@@ -1,0 +1,127 @@
+{
+    "MediaItems": [
+        {
+            "ID": 13873,
+            "ChargePointID": 96844,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM96844/OCM-96844.orig.2017123118302586.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM96844/OCM-96844.thmb.2017123118302586.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 16782,
+                "Username": "Amarre"
+            },
+            "DateCreated": "2017-12-31T18:31:00Z"
+        },
+        {
+            "ID": 13874,
+            "ChargePointID": 96844,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM96844/OCM-96844.orig.2017123118304581.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM96844/OCM-96844.thmb.2017123118304581.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 16782,
+                "Username": "Amarre"
+            },
+            "DateCreated": "2017-12-31T18:31:00Z"
+        },
+        {
+            "ID": 13875,
+            "ChargePointID": 96844,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM96844/OCM-96844.orig.2017123118310662.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM96844/OCM-96844.thmb.2017123118310662.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 16782,
+                "Username": "Amarre"
+            },
+            "DateCreated": "2017-12-31T18:31:00Z"
+        },
+        {
+            "ID": 13872,
+            "ChargePointID": 96844,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM96844/OCM-96844.orig.2017123118300646.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM96844/OCM-96844.thmb.2017123118300646.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 16782,
+                "Username": "Amarre"
+            },
+            "DateCreated": "2017-12-31T18:30:00Z"
+        },
+        {
+            "ID": 13871,
+            "ChargePointID": 96844,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM96844/OCM-96844.orig.2017123117565664.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM96844/OCM-96844.thmb.2017123117565664.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 16782,
+                "Username": "Amarre"
+            },
+            "DateCreated": "2017-12-31T17:57:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-09-18T14:23:00Z",
+    "ID": 96844,
+    "UUID": "433F9C88-A3E6-4555-990D-538B9507634F",
+    "DataProviderID": 1,
+    "OperatorID": 45,
+    "UsageTypeID": 1,
+    "UsageCost": "0",
+    "AddressInfo": {
+        "ID": 97190,
+        "Title": "Centro Comercial Augusta",
+        "AddressLine1": "Avenida de Navarra, 180",
+        "Town": "Zaragoza",
+        "StateOrProvince": "Zaragoza",
+        "Postcode": "50011",
+        "CountryID": 210,
+        "Latitude": 41.659303326504,
+        "Longitude": -0.920989731213357,
+        "ContactTelephone1": "976 759 650",
+        "ContactEmail": "informacion@centroaugusta.com",
+        "AccessComments": "Blue parking. Next to parking spot P40.",
+        "RelatedURL": "http://www.centroaugusta.com/",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 137164,
+            "ConnectionTypeID": 28,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Voltage": 230,
+            "PowerKW": 3.7,
+            "CurrentTypeID": 10,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "Only business hours. Monday to Saturday from 10:00 to 22:00.",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-09-18T14:23:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2017-12-31T17:54:00Z",
+    "SubmissionStatusTypeID": 200
+}

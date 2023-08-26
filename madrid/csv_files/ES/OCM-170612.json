@@ -1,0 +1,86 @@
+{
+    "UserComments": [
+        {
+            "ID": 23619,
+            "ChargePointID": 170612,
+            "CommentTypeID": 50,
+            "UserName": "ACCIONA RECARGA",
+            "Comment": "Este punto no se encuentra disponible. En breves, les daremos noticias. Lamentamos las molestias.",
+            "Rating": 5,
+            "DateCreated": "2020-12-09T09:02:09.54Z",
+            "User": {
+                "ID": 27955,
+                "Username": "ACCIONA RECARGA"
+            },
+            "CheckinStatusTypeID": 210,
+            "IsActionedByEditor": false
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 25758,
+            "ChargePointID": 170612,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM170612/OCM-170612.orig.2020120909022543.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM170612/OCM-170612.thmb.2020120909022543.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 27955,
+                "Username": "ACCIONA RECARGA"
+            },
+            "DateCreated": "2020-12-09T09:02:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-10-25T09:39:00Z",
+    "ID": 170612,
+    "UUID": "EB71AC48-9B3C-4B95-9A25-C0D7972FE710",
+    "DataProviderID": 1,
+    "OperatorID": 3459,
+    "UsageTypeID": 1,
+    "UsageCost": "0,36€/kWh",
+    "AddressInfo": {
+        "ID": 170971,
+        "Title": "Carrer Romaní",
+        "AddressLine1": "Carrer Romaní",
+        "Town": "Alp",
+        "StateOrProvince": "Catalonia",
+        "Postcode": "",
+        "CountryID": 210,
+        "Latitude": 42.3454574325566,
+        "Longitude": 1.9571784520059055,
+        "AccessComments": "App Red Cargacoches",
+        "RelatedURL": "http://www.cargacoches.com",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 260472,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        },
+        {
+            "ID": 260473,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "(I.V.A. included)",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-10-25T09:39:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2020-12-03T12:42:00Z",
+    "SubmissionStatusTypeID": 200
+}

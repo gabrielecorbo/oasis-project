@@ -1,0 +1,39 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-10-03T08:50:00Z",
+    "ID": 155386,
+    "UUID": "E7B93BDE-037D-4EC6-879B-AE88397F283F",
+    "DataProviderID": 1,
+    "OperatorID": 45,
+    "UsageTypeID": 6,
+    "UsageCost": "Free for hotel apartment guests",
+    "AddressInfo": {
+        "ID": 155740,
+        "Title": "Apartamentos Maier (Anexo)",
+        "AddressLine1": "Calle Arbolí",
+        "Town": "Cádiz",
+        "StateOrProvince": "Andalusia",
+        "Postcode": "11005",
+        "CountryID": 210,
+        "Latitude": 36.52956109419209,
+        "Longitude": -6.2975744177673505,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 218770,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 11,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-10-03T08:50:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2020-04-09T11:10:00Z",
+    "SubmissionStatusTypeID": 200
+}

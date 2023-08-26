@@ -1,0 +1,58 @@
+{
+    "MediaItems": [
+        {
+            "ID": 35687,
+            "ChargePointID": 202474,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM202474/OCM-202474.orig.2022113012032928.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM202474/OCM-202474.thmb.2022113012032928.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 40036,
+                "Username": "lmjgarcia"
+            },
+            "DateCreated": "2022-11-30T12:04:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-02-10T22:19:00Z",
+    "ID": 202474,
+    "UUID": "B6292A92-D6F5-4B94-99F8-4855F11764CF",
+    "DataProviderID": 1,
+    "OperatorID": 3276,
+    "UsageTypeID": 4,
+    "UsageCost": "parking fee + 0,20€/kWh (0,01€/min parked without charging)",
+    "AddressInfo": {
+        "ID": 202841,
+        "Title": "Parking APK2 Carlet",
+        "AddressLine1": "Carlet",
+        "Town": "Alacant",
+        "StateOrProvince": "Valencian Community",
+        "Postcode": "03007",
+        "CountryID": 210,
+        "Latitude": 38.3419729943715,
+        "Longitude": -0.49478251676111995,
+        "AccessComments": "parking level -1",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 338609,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 7.4,
+            "CurrentTypeID": 10,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-02-10T22:19:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2022-09-11T11:09:00Z",
+    "SubmissionStatusTypeID": 200
+}

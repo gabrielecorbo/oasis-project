@@ -1,0 +1,63 @@
+{
+    "UserComments": [
+        {
+            "ID": 14545,
+            "ChargePointID": 52136,
+            "CommentTypeID": 100,
+            "UserName": "vicens",
+            "Comment": "Este punto de recarga tiene dos enchufes y dos plazas. Un enchufe mennekes o tipo 2 monofasico de 32A y un schuko de 16A.\nSe puede usar para motos, coches y furgonetas.",
+            "DateCreated": "2016-11-17T16:54:46.76Z",
+            "User": {
+                "ID": 12032,
+                "Username": "vicens"
+            },
+            "CheckinStatusTypeID": 10
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-10-08T15:22:00Z",
+    "ID": 52136,
+    "UUID": "D467C7C9-66F2-40DC-8620-CA5AF1421784",
+    "DataProviderID": 1,
+    "OperatorID": 1,
+    "UsageTypeID": 1,
+    "AddressInfo": {
+        "ID": 52482,
+        "Title": "Ayuntamiento Montornes del Valles",
+        "AddressLine1": "Avinguda de la Llibertat, 4",
+        "Town": "Montornès del Vallès",
+        "StateOrProvince": "Barcelona",
+        "Postcode": "08170",
+        "CountryID": 210,
+        "Latitude": 41.54558,
+        "Longitude": 2.26666999999998,
+        "AccessComments": "Tarjeta del ayuntamiento.",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 64676,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 7.4,
+            "CurrentTypeID": 10,
+            "Quantity": 1
+        },
+        {
+            "ID": 344855,
+            "ConnectionTypeID": 28,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 3.7,
+            "CurrentTypeID": 10,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-10-08T15:22:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2015-08-19T19:31:00Z",
+    "SubmissionStatusTypeID": 200
+}

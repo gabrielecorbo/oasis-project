@@ -1,0 +1,52 @@
+{
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-10-14T13:21:00Z",
+    "ID": 149371,
+    "UUID": "4F991E1D-67EC-46DC-869F-1865831D1418",
+    "DataProviderID": 1,
+    "OperatorID": 3305,
+    "UsageTypeID": 4,
+    "UsageCost": "0",
+    "AddressInfo": {
+        "ID": 149724,
+        "Title": "Montgat - Rodalies",
+        "AddressLine1": "carrer de Marina",
+        "Town": "Montgat",
+        "StateOrProvince": "Catalonia",
+        "Postcode": "08911",
+        "CountryID": 210,
+        "Latitude": 41.4641749351193,
+        "Longitude": 2.274080552951318,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 207389,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 230,
+            "PowerKW": 7.4,
+            "CurrentTypeID": 10,
+            "Quantity": 3
+        },
+        {
+            "ID": 207390,
+            "ConnectionTypeID": 28,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 16,
+            "Voltage": 230,
+            "PowerKW": 3.6,
+            "CurrentTypeID": 10,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 3,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-10-14T13:21:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2020-02-24T05:00:00Z",
+    "SubmissionStatusTypeID": 200
+}

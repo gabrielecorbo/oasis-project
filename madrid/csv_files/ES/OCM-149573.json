@@ -1,0 +1,95 @@
+{
+    "UserComments": [
+        {
+            "ID": 22234,
+            "ChargePointID": 149573,
+            "CommentTypeID": 50,
+            "UserName": "Jim3cantos",
+            "Comment": "Operational as per Iberdrola app. See also comments in Electromaps: https://www.electromaps.com/mapa/p/94973",
+            "DateCreated": "2020-03-01T20:55:20.22Z",
+            "User": {
+                "ID": 6750,
+                "Username": "Jim3cantos"
+            },
+            "CheckinStatusTypeID": 210,
+            "IsActionedByEditor": false
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 21429,
+            "ChargePointID": 149573,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM149573/OCM-149573.orig.2020030207151581.jpg",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM149573/OCM-149573.thmb.2020030207151581.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 6750,
+                "Username": "Jim3cantos"
+            },
+            "DateCreated": "2020-03-02T07:15:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2023-02-26T08:39:00Z",
+    "ID": 149573,
+    "UUID": "545359E7-F14E-4C1D-8EA7-5FC7513DCB68",
+    "DataProviderID": 1,
+    "OperatorID": 2247,
+    "UsageTypeID": 4,
+    "UsageCost": "0,45€/kWh ",
+    "AddressInfo": {
+        "ID": 149926,
+        "Title": "E.S. Valcarce (Iberdrola)",
+        "AddressLine1": "Avenida de Castilla y León",
+        "Town": "Arévalo",
+        "StateOrProvince": "Castile and León",
+        "Postcode": "05200",
+        "CountryID": 210,
+        "Latitude": 41.07804200710237,
+        "Longitude": -4.734307947619186,
+        "ContactTelephone1": "900 92 92 93",
+        "RelatedURL": "https://www.iberdrola.es/servicios/vehiculo-electrico/punto-recarga",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 207680,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        },
+        {
+            "ID": 207681,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        },
+        {
+            "ID": 207682,
+            "ConnectionTypeID": 1036,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 63,
+            "Voltage": 400,
+            "PowerKW": 43,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 4,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-02-26T08:39:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2020-02-29T16:01:00Z",
+    "SubmissionStatusTypeID": 200
+}

@@ -1,0 +1,94 @@
+{
+    "MediaItems": [
+        {
+            "ID": 20242,
+            "ChargePointID": 80061,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM80061/OCM-80061.orig.2019110510015351.png",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM80061/OCM-80061.thmb.2019110510015351.png",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 22930,
+                "Username": "Andykb"
+            },
+            "DateCreated": "2019-11-05T10:02:00Z"
+        },
+        {
+            "ID": 20236,
+            "ChargePointID": 80061,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM80061/OCM-80061.orig.2019110509562216.png",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM80061/OCM-80061.thmb.2019110509562216.png",
+            "Comment": "Only 11 Kw",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 22930,
+                "Username": "Andykb"
+            },
+            "DateCreated": "2019-11-05T09:57:00Z"
+        },
+        {
+            "ID": 20237,
+            "ChargePointID": 80061,
+            "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM80061/OCM-80061.orig.2019110509565593.png",
+            "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/ES/OCM80061/OCM-80061.thmb.2019110509565593.png",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 22930,
+                "Username": "Andykb"
+            },
+            "DateCreated": "2019-11-05T09:57:00Z"
+        }
+    ],
+    "IsRecentlyVerified": true,
+    "DateLastVerified": "2022-09-20T13:07:00Z",
+    "ID": 80061,
+    "UUID": "AA28C26E-C813-4F89-83B4-0EC58436DE7C",
+    "DataProviderID": 1,
+    "OperatorID": 45,
+    "OperatorsReference": "19518",
+    "UsageTypeID": 6,
+    "UsageCost": "Free",
+    "AddressInfo": {
+        "ID": 80407,
+        "Title": "Villa Padierna Palace Hotel",
+        "AddressLine1": "Villa Padierna Palace Hotel",
+        "Town": "Bel-Air",
+        "StateOrProvince": "Málaga",
+        "Postcode": "29679",
+        "CountryID": 210,
+        "Latitude": 36.476715,
+        "Longitude": -5.053016,
+        "ContactTelephone1": "+34 902 20 06 76",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 114710,
+            "ConnectionTypeID": 30,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 400,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "2 Tesla Connector, up to 22kW.Available for patrons only. Please see front desk.",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-09-20T13:07:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2017-01-30T18:34:00Z",
+    "SubmissionStatusTypeID": 200
+}
