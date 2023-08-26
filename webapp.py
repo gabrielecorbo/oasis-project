@@ -2,6 +2,7 @@ import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
 from streamlit_image_select import image_select
+from madrid.jupyter.optimization import gen_sets  
 
 # web interface
 st.title('Optimal allocation of EV charging stations')
