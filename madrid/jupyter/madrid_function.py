@@ -377,13 +377,7 @@ def madrid_function(N):
     car_park_df = pd.DataFrame(car_park_data)
     y_lim = (40.3,40.58)                                    # y coordinates (boundaries of city of Madrid)
     x_lim = (-3.85,-3.55) 
-    shp_charg_stat = shp.Reader(os.getcwd()+local_path+'\\shapefiles\\EV_points.shp')
-    df_charg_stat = read_shapefile(shp_charg_stat)
-    df_charg_stat['longitud']=[df_charg_stat['coords'][i][0][0] for i in range(len(df_charg_stat))]
-    df_charg_stat['latitud']=[df_charg_stat['coords'][i][0][1] for i in range(len(df_charg_stat))]
-    drop_columns = ['coords']
-    df_charg_stat = df_charg_stat.drop(labels=drop_columns, axis=1)
-    existing_chargers_gdf = point_df_to_gdf_mad(df_charg_stat)
+    
     #locate madrid traffic data
     data_path = os.getcwd()+local_path+'\\csv_files\\traffic_points.csv'
     data = pd.read_csv(data_path)

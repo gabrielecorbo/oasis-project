@@ -377,15 +377,9 @@ def manchester_function(N):
     car_park_df = pd.DataFrame(car_park_data)
     x_lim = (-2.27002, -2.14955)
     y_lim = (53.43895, 53.51545)
-    shp_charg_stat = shp.Reader(os.getcwd()+local_path+'\\shapefiles\\EV_points.shp')
-    df_charg_stat = read_shapefile(shp_charg_stat)
-    df_charg_stat['longitude']=[df_charg_stat['coords'][i][0][0] for i in range(len(df_charg_stat))]
-    df_charg_stat['latitude']=[df_charg_stat['coords'][i][0][1] for i in range(len(df_charg_stat))]
-    drop_columns = ['coords']
-    df_charg_stat = df_charg_stat.drop(labels=drop_columns, axis=1)
-    existing_chargers_gdf = point_df_to_gdf_man(df_charg_stat)
+    
     #locate madrid traffic data
-    data_path = os.getcwd()+local_path+'\\csv_files\\traffic_points.csv'
+    data_path = os.getcwd()+local_path+'\\csv_files\\traffic_data.csv'
     data = pd.read_csv(data_path)
     raw_traffic_df = pd.DataFrame(data=data)
     traffic_points_gdf = point_df_to_gdf_man(raw_traffic_df)
