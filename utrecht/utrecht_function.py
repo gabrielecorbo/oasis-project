@@ -232,13 +232,7 @@ def gen_parameters(df_demand, df_parking, flow_traffic, poi_gdf, vec_poi):
     coords_pois = [(x, y) for x, y in zip(poi_gdf['long'], poi_gdf['lat'])]
     distance_matrix_poi = distance.cdist(coords_parking, coords_pois, 'euclidean')
     distance_matrix_poi = pd.DataFrame(distance_matrix_poi, index=df_parking.index.tolist())
-    print(distance_matrix_poi)
-    print(vec_poi)
-    #distance_poi = (distance_matrix_poi * vec_poi).sum()
     distance_poi = np.dot(distance_matrix_poi,vec_poi)
-    print('distance_poi')
-    print(distance_poi)
-    print(len(distance_poi))
     max = np.max(distance_poi)
     min = np.min(distance_poi)
     d_poi_scale = (distance_poi - min)/(max - min) 
@@ -298,11 +292,6 @@ def optimize(df_demand, df_parking, number, flow_traffic, poi_gdf, vec_poi, pen_
 
     # Constraints
     for j in chg_lc:
-        print((dr[j]*fti[j])*(1-lam*d_poi_scale[j]))
-        print(dr[j])
-        print(fti[j])
-        print(1-lam*d_poi_scale[j])
-        print('___________________________')
         nei_j = neighbors(rows,cols,j)[0]
         nei_j.append(j)
         prob += lpSum(x[k] for k in nei_j) <= 1                                # Constraint 1

@@ -15,7 +15,7 @@ st.title('Optimal allocation of EV charging stations')
 st.markdown("""
 Original repository: 
 
-This web app ... 
+This web app permits to choose between 6 european cities and the number of EV charger stations to allocate and returns a plot of a hexagonal grid with the optimal allocation site highlighted 
 """)
 
 # utils
@@ -48,7 +48,7 @@ def pred(N,city_sel):
     st.pyplot(fig)
     return
 
-city_sel = st.selectbox('City', cities, key='Cities')
+city_sel = st.selectbox('Select a city', cities, key='Cities')
 
 img = image_select(
     label="Select a plot",
