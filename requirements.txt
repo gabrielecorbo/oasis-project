@@ -4,7 +4,7 @@ streamlit_image_select
 matplotlib
 streamlit
 geopandas
-shapefile
+pyshp
 seaborn
 os
 math
