@@ -6,7 +6,7 @@ streamlit
 geopandas
 pyshp
 seaborn
-os
+os-sys
 math
 scipy
 shapely
