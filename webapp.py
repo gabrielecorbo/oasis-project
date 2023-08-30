@@ -1,5 +1,4 @@
 import streamlit as st
-import numpy as np
 import matplotlib.pyplot as plt
 from streamlit_image_select import image_select
 from madrid.jupyter.madrid_function import madrid_function  

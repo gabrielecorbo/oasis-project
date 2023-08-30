@@ -1,0 +1,5 @@
+numpy
+pandas
+streamlit_image_select
+matplotlib
+streamlit
