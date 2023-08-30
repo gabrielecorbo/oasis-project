@@ -11,10 +11,9 @@ from rotterdam.rotterdam_function import rotterdam_function
 
 # web interface
 st.title('Optimal allocation of EV charging stations')
+# Original repository: 
 
 st.markdown("""
-Original repository: 
-
 This web app permits to choose between 6 european cities and the number of EV charger stations to allocate and returns a plot of a hexagonal grid with the optimal allocation site highlighted 
 """)
 
