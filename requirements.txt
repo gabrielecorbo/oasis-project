@@ -7,9 +7,9 @@ geopandas
 pyshp
 seaborn
 os-sys
-math
+python-math
 scipy
 shapely
-pulp
-csv
-copy
+PuLP
+python-csv
+pycopy-copy
