@@ -12,4 +12,3 @@ scipy
 shapely
 PuLP
 python-csv
-pycopy-copy
