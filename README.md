@@ -71,7 +71,7 @@ The final presentation can be found here:
 - Gabriele Corbo ([@gabrielecorbo](https://www.github.com/gabrielecorbo))
 - Michelangelo Giuffrida ([@michealangel](https://www.github.com/michealangel))
 - Riccardo Rosi ([@RickRos98](https://www.github.com/RickRos98))
-- Paolo Timis
+- Paolo Timis ([@paolotimis](https://www.github.com/paolotimis))
 - Aurelio Zizzo
 
 
