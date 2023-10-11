@@ -12,7 +12,7 @@ from import_data import exagon
 from datetime import datetime
 # %%
 import googlemaps 
-gmaps = googlemaps.Client(key = 'AIzaSyAXSd2GOBZnJTRu8_i9RDUVmd_adQeGLM4') #key='Add Your Key here'
+gmaps = googlemaps.Client(key = ' ') #key='Add Your Key here'
 #%%
 def get_time(origin, destination, dep_time):
     directions_result = gmaps.directions(origin,
